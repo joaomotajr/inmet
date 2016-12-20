@@ -57,3 +57,8 @@ C:\CSHARP\INMET\Robot INMET\obj\x86\Debug\INMET.exe.manifest
 C:\CSHARP\INMET\Robot INMET\obj\x86\Debug\INMET.application
 C:\CSHARP\INMET\Robot INMET\obj\x86\Debug\INMET.exe
 C:\CSHARP\INMET\Robot INMET\obj\x86\Debug\INMET.pdb
+C:\projects\inmet\Robot INMET\obj\x86\Debug\Interop.FCEngine.dll
+C:\projects\inmet\Robot INMET\obj\x86\Debug\Interop.FREngine.dll
+C:\projects\inmet\Robot INMET\obj\x86\Debug\Robot INMET.csproj.ResolveComReference.cache
+C:\projects\inmet\Robot INMET\obj\x86\Debug\INMET.exe
+C:\projects\inmet\Robot INMET\obj\x86\Debug\INMET.pdb
