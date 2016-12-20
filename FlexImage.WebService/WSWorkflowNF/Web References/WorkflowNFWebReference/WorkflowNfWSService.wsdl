@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WorkflowNfWSService" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="BusinessException" type="tns:BusinessException" />
+      <xs:element name="ServiceException" type="tns:ServiceException" />
+      <xs:element name="classifyAndTypingService" type="tns:classifyAndTypingService" />
+      <xs:element name="classifyAndTypingServiceResponse" type="tns:classifyAndTypingServiceResponse" />
+      <xs:element name="deleteBatchNf" type="tns:deleteBatchNf" />
+      <xs:element name="deleteBatchNfResponse" type="tns:deleteBatchNfResponse" />
+      <xs:element name="deleteDocNf" type="tns:deleteDocNf" />
+      <xs:element name="deleteDocNfResponse" type="tns:deleteDocNfResponse" />
+      <xs:element name="deleteType" type="tns:deleteType" />
+      <xs:element name="deleteTypeResponse" type="tns:deleteTypeResponse" />
+      <xs:element name="findAllKeyDef" type="tns:findAllKeyDef" />
+      <xs:element name="findAllKeyDefResponse" type="tns:findAllKeyDefResponse" />
+      <xs:element name="findAllKeyType" type="tns:findAllKeyType" />
+      <xs:element name="findAllKeyTypeResponse" type="tns:findAllKeyTypeResponse" />
+      <xs:element name="findAllType" type="tns:findAllType" />
+      <xs:element name="findAllTypeResponse" type="tns:findAllTypeResponse" />
+      <xs:element name="findDocKeyByDocNfId" type="tns:findDocKeyByDocNfId" />
+      <xs:element name="findDocKeyByDocNfIdResponse" type="tns:findDocKeyByDocNfIdResponse" />
+      <xs:element name="findKeyListByKeyDefId" type="tns:findKeyListByKeyDefId" />
+      <xs:element name="findKeyListByKeyDefIdResponse" type="tns:findKeyListByKeyDefIdResponse" />
+      <xs:element name="findTypeById" type="tns:findTypeById" />
+      <xs:element name="findTypeByIdResponse" type="tns:findTypeByIdResponse" />
+      <xs:element name="getBPMLoginAddress" type="tns:getBPMLoginAddress" />
+      <xs:element name="getBPMLoginAddressResponse" type="tns:getBPMLoginAddressResponse" />
+      <xs:element name="getBatchNfDetails" type="tns:getBatchNfDetails" />
+      <xs:element name="getBatchNfDetailsResponse" type="tns:getBatchNfDetailsResponse" />
+      <xs:element name="getDocsByFolderId" type="tns:getDocsByFolderId" />
+      <xs:element name="getDocsByFolderIdResponse" type="tns:getDocsByFolderIdResponse" />
+      <xs:element name="getDocsForOCR" type="tns:getDocsForOCR" />
+      <xs:element name="getDocsForOCRResponse" type="tns:getDocsForOCRResponse" />
+      <xs:element name="getFile" type="tns:getFile" />
+      <xs:element name="getFileResponse" type="tns:getFileResponse" />
+      <xs:element name="getHierarchyTypes" type="tns:getHierarchyTypes" />
+      <xs:element name="getHierarchyTypesResponse" type="tns:getHierarchyTypesResponse" />
+      <xs:element name="getObjectsInQueue" type="tns:getObjectsInQueue" />
+      <xs:element name="getObjectsInQueueResponse" type="tns:getObjectsInQueueResponse" />
+      <xs:element name="getPreDocByKey" type="tns:getPreDocByKey" />
+      <xs:element name="getPreDocByKeyResponse" type="tns:getPreDocByKeyResponse" />
+      <xs:element name="importFile" type="tns:importFile" />
+      <xs:element name="importFileResponse" type="tns:importFileResponse" />
+      <xs:element name="resetQueues" type="tns:resetQueues" />
+      <xs:element name="resetQueuesResponse" type="tns:resetQueuesResponse" />
+      <xs:element name="savePre" type="tns:savePre" />
+      <xs:element name="savePreResponse" type="tns:savePreResponse" />
+      <xs:element name="saveType" type="tns:saveType" />
+      <xs:element name="saveTypeResponse" type="tns:saveTypeResponse" />
+      <xs:element name="searchDocuments" type="tns:searchDocuments" />
+      <xs:element name="searchDocumentsResponse" type="tns:searchDocumentsResponse" />
+      <xs:element name="setDocOCR" type="tns:setDocOCR" />
+      <xs:element name="setDocOCRResponse" type="tns:setDocOCRResponse" />
+      <xs:element name="startProcess" type="tns:startProcess" />
+      <xs:element name="startProcessResponse" type="tns:startProcessResponse" />
+      <xs:element name="stopProcess" type="tns:stopProcess" />
+      <xs:element name="stopProcessResponse" type="tns:stopProcessResponse" />
+      <xs:element name="updateDocNf" type="tns:updateDocNf" />
+      <xs:element name="updateDocNfResponse" type="tns:updateDocNfResponse" />
+      <xs:element name="updateFile" type="tns:updateFile" />
+      <xs:element name="updateFileResponse" type="tns:updateFileResponse" />
+      <xs:element name="updateType" type="tns:updateType" />
+      <xs:element name="updateTypeResponse" type="tns:updateTypeResponse" />
+      <xs:element name="uploadDocOfTemplate" type="tns:uploadDocOfTemplate" />
+      <xs:element name="uploadDocOfTemplateResponse" type="tns:uploadDocOfTemplateResponse" />
+      <xs:element name="getMediaType" type="tns:getMediaType" />
+      <xs:element name="getMediaTypeResponse" type="tns:getMediaTypeResponse" />
+      <xs:element name="getDocForBackup" type="tns:getDocForBackup" />
+      <xs:element name="getDocForBackupResponse" type="tns:getDocForBackupResponse" />
+      <xs:element name="setDocsBackuped" type="tns:setDocsBackuped" />
+      <xs:element name="setDocsBackupedResponse" type="tns:setDocsBackupedResponse" />
+      <xs:element name="findDocNfById" type="tns:findDocNfById" />
+      <xs:element name="findDocNfByIdResponse" type="tns:findDocNfByIdResponse" />
+      <xs:element name="initProcess" type="tns:initProcess" />
+      <xs:element name="initProcessResponse" type="tns:initProcessResponse" />
+      <xs:element name="findDocByBatchNfId" type="tns:findDocByBatchNfId" />
+      <xs:element name="findDocByBatchNfIdResponse" type="tns:findDocByBatchNfIdResponse" />
+      <xs:element name="finalizeProcess" type="tns:finalizeProcess" />
+      <xs:element name="finalizeProcessResponse" type="tns:finalizeProcessResponse" />
+      <xs:element name="searchFA" type="tns:searchFA" />
+      <xs:element name="searchFAResponse" type="tns:searchFAResponse" />
+      <xs:element name="getDocsInBox" type="tns:getDocsInBox" />
+      <xs:element name="getDocsInBoxResponse" type="tns:getDocsInBoxResponse" />
+      <xs:element name="getBoxInfo" type="tns:getBoxInfo" />
+      <xs:element name="getBoxInfoResponse" type="tns:getBoxInfoResponse" />
+      <xs:complexType name="getBoxInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="boxId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBoxInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:boxDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="boxDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boxId" type="xs:long" />
+          <xs:element minOccurs="0" name="boxTypeId" type="xs:long" />
+          <xs:element minOccurs="0" name="warehouseId" type="xs:long" />
+          <xs:element minOccurs="0" name="boxGroup" type="xs:string" />
+          <xs:element minOccurs="0" name="boxYear" type="xs:int" />
+          <xs:element minOccurs="0" name="boxDesc1" type="xs:string" />
+          <xs:element minOccurs="0" name="boxDesc2" type="xs:string" />
+          <xs:element minOccurs="0" name="boxDesc3" type="xs:string" />
+          <xs:element minOccurs="0" name="boxNum" type="xs:string" />
+          <xs:element minOccurs="0" name="boxOpenDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="boxCloseDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="boxX" type="xs:int" />
+          <xs:element minOccurs="0" name="boxY" type="xs:int" />
+          <xs:element minOccurs="0" name="boxZ" type="xs:int" />
+          <xs:element minOccurs="0" name="usrIdOpen" type="xs:long" />
+          <xs:element minOccurs="0" name="usrIdClose" type="xs:long" />
+          <xs:element minOccurs="0" name="boxPrintControl" type="xs:int" />
+          <xs:element minOccurs="0" name="keyListId" type="xs:long" />
+          <xs:element minOccurs="0" name="transferListId" type="xs:long" />
+          <xs:element minOccurs="0" name="oldtransferListId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInBox">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="boxId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInBoxResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:searchDocRepoDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="finalizeProcess">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="finalizeProcessResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findDocByBatchNfId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDocByBatchNfIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docId" type="xs:long" />
+          <xs:element minOccurs="0" name="docStatus" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="initProcess">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="initType" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowProcessName" type="xs:string" />
+          <xs:element minOccurs="0" name="userSender" type="xs:string" />
+          <xs:element minOccurs="0" name="userReceiver" type="xs:string" />
+          <xs:element minOccurs="0" name="bpmTaskInstance" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="initProcessResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findDocNfById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDocNfByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:docNf" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocsBackuped">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docs" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mediaTypeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocsBackupedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getDocForBackup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="max" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocForBackupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getMediaType">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getMediaTypeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:mediaType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mediaType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mediaTypeId" type="xs:long" />
+          <xs:element minOccurs="0" name="mediaTypeName" type="xs:string" />
+          <xs:element minOccurs="0" name="mediaTypeCapacity" type="xs:long" />
+          <xs:element minOccurs="0" name="mediaTypeValidity" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:fileDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="fileDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bytes" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="extension" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getObjectsInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getObjectsInQueueResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:queueObject" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queueObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bpmBatchDTO" type="tns:bpmBatchDTO" />
+          <xs:element minOccurs="0" name="docNf" type="tns:docNf" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bpmBatchDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="taskId" type="xs:string" />
+          <xs:element minOccurs="0" name="taskURL" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowProcessName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BusinessException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ServiceException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="searchDocuments">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="query" type="xs:string" />
+          <xs:element minOccurs="0" name="page" type="xs:int" />
+          <xs:element minOccurs="0" name="findType" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="searchDocumentsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:searchDocRepoDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="searchDocRepoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docsRepoDTO" nillable="true" type="tns:docRepoDTO" />
+          <xs:element minOccurs="0" name="page" type="xs:int" />
+          <xs:element minOccurs="0" name="records" type="xs:int" />
+          <xs:element minOccurs="0" name="totalPages" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docRepoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="docDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="docId" type="xs:long" />
+          <xs:element minOccurs="0" name="docStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfVirtualFolder" type="xs:long" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:long" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="groupTypeName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="keyDefsDTO" nillable="true" type="tns:keyDefRepoDTO" />
+          <xs:element name="locked" type="xs:boolean" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyDefRepoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docKeyValue" type="xs:string" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="classifyAndTypingService">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNf" type="tns:docNf" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docKeys" type="tns:docKeyDTO" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="typingKeyStroke" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docKeyDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docKeyValue" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="classifyAndTypingServiceResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findAllKeyDef">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findAllKeyDefResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:keyDefDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyDefDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefMandatory" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+          <xs:element minOccurs="0" name="keyTypeDTO" type="tns:keyTypeDTO" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyTypeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyTypeId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyTypeMask" type="xs:string" />
+          <xs:element minOccurs="0" name="keyTypeName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHierarchyTypes">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHierarchyTypesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:typeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="typeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="checked" type="xs:int" />
+          <xs:element minOccurs="0" name="parentId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeActive" type="xs:int" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeFolder" type="xs:int" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="types" nillable="true" type="tns:typeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBatchNfDetails">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBatchNfDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:batchNfDetailsDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="batchNfDetailsDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docsNfDTO" nillable="true" type="tns:docNfDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docNfDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uploadDocOfTemplate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="templateId" type="xs:long" />
+          <xs:element minOccurs="0" name="templateDraftId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="file" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uploadDocOfTemplateResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="resetQueues">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="resetQueuesResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getBPMLoginAddress">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getBPMLoginAddressResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findKeyListByKeyDefId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findKeyListByKeyDefIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:keyListDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyListDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyListDesc" type="xs:string" />
+          <xs:element minOccurs="0" name="keyListId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDocKeyByDocNfId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDocKeyByDocNfIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docKeyDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateDocNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNf" type="tns:docNf" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docKeysDTO" type="tns:docKeyDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateDocNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="deleteBatchNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteBatchNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="deleteDocNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteDocNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="savePre">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="preDocKeysDTO" type="tns:preDocKeyDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="preDocKeyDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="preDocKeyValue" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="savePreResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsByFolderId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsByFolderIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docRepoDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPreDocByKey">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="word" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPreDocByKeyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:preDocumentDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="preDocumentDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="preDocKeiesDTO" nillable="true" type="tns:preDocKeyDTO" />
+          <xs:element minOccurs="0" name="preDocumentCreated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="preDocumentId" type="xs:long" />
+          <xs:element minOccurs="0" name="preDocumentProcessed" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="preDocumentStatus" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsForOCR">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docsRequested" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsForOCRResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocOCR">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfOcr" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocOCRResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findAllKeyType">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findAllKeyTypeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:keyTypeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findAllType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findAllTypeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:typeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeDTOWS" type="tns:typeDTOWS" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="typeDTOWS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="keyDefs" nillable="true" type="tns:keyDefDTOWS" />
+          <xs:element minOccurs="0" name="typeActive" type="xs:int" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeAvgKeyStroke" type="xs:int" />
+          <xs:element minOccurs="0" name="typeAvgRecognition" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typeAvgTypingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="typeDebCred" type="xs:int" />
+          <xs:element minOccurs="0" name="typeFinalDest" type="xs:int" />
+          <xs:element minOccurs="0" name="typeFolder" type="xs:int" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeMedia" type="xs:string" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" name="typeNearline" type="xs:int" />
+          <xs:element minOccurs="0" name="typeOcrFullText" type="xs:string" />
+          <xs:element minOccurs="0" name="typeOcrTemplate" type="xs:string" />
+          <xs:element minOccurs="0" name="typeOffline" type="xs:int" />
+          <xs:element minOccurs="0" name="typeOnline" type="xs:int" />
+          <xs:element minOccurs="0" name="typeParent" type="xs:long" />
+          <xs:element minOccurs="0" name="typeReceiptNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="typeReceiptType" type="xs:int" />
+          <xs:element minOccurs="0" name="typeRetention1" type="xs:int" />
+          <xs:element minOccurs="0" name="typeRetention2" type="xs:int" />
+          <xs:element minOccurs="0" name="typeSendBack" type="xs:int" />
+          <xs:element minOccurs="0" name="typeShortcut" type="xs:string" />
+          <xs:element minOccurs="0" name="typeUse" type="xs:int" />
+          <xs:element minOccurs="0" name="typeXml" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyDefDTOWS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefActive" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefAutoJoin" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefAutoJoinDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefDefaultTxt" type="xs:string" />
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefMandatory" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+          <xs:element minOccurs="0" name="keyDefOcrEnabled" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefOcrScoreMin" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefOcrX1" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefOcrX2" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefOcrY1" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefOcrY2" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="keyTypeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveTypeResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findTypeById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findTypeByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:typeDTOWS" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeDTOWS" type="tns:typeDTOWS" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateTypeResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="startProcess">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="startProcessResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="stopProcess">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="processInstance" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="stopProcessResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteTypeResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="importFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="file" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="importFileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docNfDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="file" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateFileResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="searchFA">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="agencia" type="xs:string" />
+          <xs:element minOccurs="0" name="conta" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="searchFAResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:searchDocRepoDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="WorkflowNfService_getDocsInBox">
+    <part name="getDocsInBox" element="tns:getDocsInBox" />
+  </message>
+  <message name="WorkflowNfService_finalizeProcess">
+    <part name="finalizeProcess" element="tns:finalizeProcess" />
+  </message>
+  <message name="WorkflowNfService_findDocKeyByDocNfIdResponse">
+    <part name="findDocKeyByDocNfIdResponse" element="tns:findDocKeyByDocNfIdResponse" />
+  </message>
+  <message name="WorkflowNfService_startProcess">
+    <part name="startProcess" element="tns:startProcess" />
+  </message>
+  <message name="WorkflowNfService_findAllKeyDefResponse">
+    <part name="findAllKeyDefResponse" element="tns:findAllKeyDefResponse" />
+  </message>
+  <message name="WorkflowNfService_importFile">
+    <part name="importFile" element="tns:importFile" />
+  </message>
+  <message name="WorkflowNfService_findAllType">
+    <part name="findAllType" element="tns:findAllType" />
+  </message>
+  <message name="WorkflowNfService_setDocOCRResponse">
+    <part name="setDocOCRResponse" element="tns:setDocOCRResponse" />
+  </message>
+  <message name="WorkflowNfService_findTypeByIdResponse">
+    <part name="findTypeByIdResponse" element="tns:findTypeByIdResponse" />
+  </message>
+  <message name="WorkflowNfService_getObjectsInQueueResponse">
+    <part name="getObjectsInQueueResponse" element="tns:getObjectsInQueueResponse" />
+  </message>
+  <message name="WorkflowNfService_saveType">
+    <part name="saveType" element="tns:saveType" />
+  </message>
+  <message name="WorkflowNfService_getDocsInBoxResponse">
+    <part name="getDocsInBoxResponse" element="tns:getDocsInBoxResponse" />
+  </message>
+  <message name="WorkflowNfService_searchFA">
+    <part name="searchFA" element="tns:searchFA" />
+  </message>
+  <message name="WorkflowNfService_resetQueuesResponse">
+    <part name="resetQueuesResponse" element="tns:resetQueuesResponse" />
+  </message>
+  <message name="WorkflowNfService_uploadDocOfTemplate">
+    <part name="uploadDocOfTemplate" element="tns:uploadDocOfTemplate" />
+  </message>
+  <message name="WorkflowNfService_updateDocNfResponse">
+    <part name="updateDocNfResponse" element="tns:updateDocNfResponse" />
+  </message>
+  <message name="WorkflowNfService_findDocNfById">
+    <part name="findDocNfById" element="tns:findDocNfById" />
+  </message>
+  <message name="WorkflowNfService_findAllKeyDef">
+    <part name="findAllKeyDef" element="tns:findAllKeyDef" />
+  </message>
+  <message name="WorkflowNfService_savePre">
+    <part name="savePre" element="tns:savePre" />
+  </message>
+  <message name="WorkflowNfService_getBPMLoginAddressResponse">
+    <part name="getBPMLoginAddressResponse" element="tns:getBPMLoginAddressResponse" />
+  </message>
+  <message name="WorkflowNfService_deleteBatchNfResponse">
+    <part name="deleteBatchNfResponse" element="tns:deleteBatchNfResponse" />
+  </message>
+  <message name="WorkflowNfService_findKeyListByKeyDefId">
+    <part name="findKeyListByKeyDefId" element="tns:findKeyListByKeyDefId" />
+  </message>
+  <message name="WorkflowNfService_stopProcessResponse">
+    <part name="stopProcessResponse" element="tns:stopProcessResponse" />
+  </message>
+  <message name="WorkflowNfService_getFileResponse">
+    <part name="getFileResponse" element="tns:getFileResponse" />
+  </message>
+  <message name="WorkflowNfService_searchDocumentsResponse">
+    <part name="searchDocumentsResponse" element="tns:searchDocumentsResponse" />
+  </message>
+  <message name="WorkflowNfService_findTypeById">
+    <part name="findTypeById" element="tns:findTypeById" />
+  </message>
+  <message name="WorkflowNfService_setDocsBackupedResponse">
+    <part name="setDocsBackupedResponse" element="tns:setDocsBackupedResponse" />
+  </message>
+  <message name="WorkflowNfService_getHierarchyTypes">
+    <part name="getHierarchyTypes" element="tns:getHierarchyTypes" />
+  </message>
+  <message name="ServiceException">
+    <part name="ServiceException" element="tns:ServiceException" />
+  </message>
+  <message name="WorkflowNfService_savePreResponse">
+    <part name="savePreResponse" element="tns:savePreResponse" />
+  </message>
+  <message name="WorkflowNfService_findDocNfByIdResponse">
+    <part name="findDocNfByIdResponse" element="tns:findDocNfByIdResponse" />
+  </message>
+  <message name="WorkflowNfService_findAllKeyTypeResponse">
+    <part name="findAllKeyTypeResponse" element="tns:findAllKeyTypeResponse" />
+  </message>
+  <message name="WorkflowNfService_getPreDocByKeyResponse">
+    <part name="getPreDocByKeyResponse" element="tns:getPreDocByKeyResponse" />
+  </message>
+  <message name="WorkflowNfService_importFileResponse">
+    <part name="importFileResponse" element="tns:importFileResponse" />
+  </message>
+  <message name="WorkflowNfService_findDocByBatchNfId">
+    <part name="findDocByBatchNfId" element="tns:findDocByBatchNfId" />
+  </message>
+  <message name="WorkflowNfService_getBatchNfDetails">
+    <part name="getBatchNfDetails" element="tns:getBatchNfDetails" />
+  </message>
+  <message name="WorkflowNfService_updateTypeResponse">
+    <part name="updateTypeResponse" element="tns:updateTypeResponse" />
+  </message>
+  <message name="WorkflowNfService_deleteTypeResponse">
+    <part name="deleteTypeResponse" element="tns:deleteTypeResponse" />
+  </message>
+  <message name="WorkflowNfService_updateDocNf">
+    <part name="updateDocNf" element="tns:updateDocNf" />
+  </message>
+  <message name="WorkflowNfService_getBPMLoginAddress">
+    <part name="getBPMLoginAddress" element="tns:getBPMLoginAddress" />
+  </message>
+  <message name="WorkflowNfService_setDocOCR">
+    <part name="setDocOCR" element="tns:setDocOCR" />
+  </message>
+  <message name="BusinessException">
+    <part name="BusinessException" element="tns:BusinessException" />
+  </message>
+  <message name="WorkflowNfService_getHierarchyTypesResponse">
+    <part name="getHierarchyTypesResponse" element="tns:getHierarchyTypesResponse" />
+  </message>
+  <message name="WorkflowNfService_getDocsForOCRResponse">
+    <part name="getDocsForOCRResponse" element="tns:getDocsForOCRResponse" />
+  </message>
+  <message name="WorkflowNfService_resetQueues">
+    <part name="resetQueues" element="tns:resetQueues" />
+  </message>
+  <message name="WorkflowNfService_saveTypeResponse">
+    <part name="saveTypeResponse" element="tns:saveTypeResponse" />
+  </message>
+  <message name="WorkflowNfService_getDocsForOCR">
+    <part name="getDocsForOCR" element="tns:getDocsForOCR" />
+  </message>
+  <message name="WorkflowNfService_updateType">
+    <part name="updateType" element="tns:updateType" />
+  </message>
+  <message name="WorkflowNfService_findDocByBatchNfIdResponse">
+    <part name="findDocByBatchNfIdResponse" element="tns:findDocByBatchNfIdResponse" />
+  </message>
+  <message name="WorkflowNfService_getObjectsInQueue">
+    <part name="getObjectsInQueue" element="tns:getObjectsInQueue" />
+  </message>
+  <message name="WorkflowNfService_getDocsByFolderId">
+    <part name="getDocsByFolderId" element="tns:getDocsByFolderId" />
+  </message>
+  <message name="WorkflowNfService_getBatchNfDetailsResponse">
+    <part name="getBatchNfDetailsResponse" element="tns:getBatchNfDetailsResponse" />
+  </message>
+  <message name="WorkflowNfService_classifyAndTypingService">
+    <part name="classifyAndTypingService" element="tns:classifyAndTypingService" />
+  </message>
+  <message name="WorkflowNfService_findAllKeyType">
+    <part name="findAllKeyType" element="tns:findAllKeyType" />
+  </message>
+  <message name="WorkflowNfService_getMediaTypeResponse">
+    <part name="getMediaTypeResponse" element="tns:getMediaTypeResponse" />
+  </message>
+  <message name="WorkflowNfService_updateFileResponse">
+    <part name="updateFileResponse" element="tns:updateFileResponse" />
+  </message>
+  <message name="WorkflowNfService_searchDocuments">
+    <part name="searchDocuments" element="tns:searchDocuments" />
+  </message>
+  <message name="WorkflowNfService_initProcess">
+    <part name="initProcess" element="tns:initProcess" />
+  </message>
+  <message name="WorkflowNfService_searchFAResponse">
+    <part name="searchFAResponse" element="tns:searchFAResponse" />
+  </message>
+  <message name="WorkflowNfService_findAllTypeResponse">
+    <part name="findAllTypeResponse" element="tns:findAllTypeResponse" />
+  </message>
+  <message name="WorkflowNfService_updateFile">
+    <part name="updateFile" element="tns:updateFile" />
+  </message>
+  <message name="WorkflowNfService_getFile">
+    <part name="getFile" element="tns:getFile" />
+  </message>
+  <message name="WorkflowNfService_stopProcess">
+    <part name="stopProcess" element="tns:stopProcess" />
+  </message>
+  <message name="WorkflowNfService_deleteBatchNf">
+    <part name="deleteBatchNf" element="tns:deleteBatchNf" />
+  </message>
+  <message name="WorkflowNfService_classifyAndTypingServiceResponse">
+    <part name="classifyAndTypingServiceResponse" element="tns:classifyAndTypingServiceResponse" />
+  </message>
+  <message name="WorkflowNfService_deleteType">
+    <part name="deleteType" element="tns:deleteType" />
+  </message>
+  <message name="WorkflowNfService_setDocsBackuped">
+    <part name="setDocsBackuped" element="tns:setDocsBackuped" />
+  </message>
+  <message name="WorkflowNfService_deleteDocNf">
+    <part name="deleteDocNf" element="tns:deleteDocNf" />
+  </message>
+  <message name="WorkflowNfService_deleteDocNfResponse">
+    <part name="deleteDocNfResponse" element="tns:deleteDocNfResponse" />
+  </message>
+  <message name="WorkflowNfService_findKeyListByKeyDefIdResponse">
+    <part name="findKeyListByKeyDefIdResponse" element="tns:findKeyListByKeyDefIdResponse" />
+  </message>
+  <message name="WorkflowNfService_uploadDocOfTemplateResponse">
+    <part name="uploadDocOfTemplateResponse" element="tns:uploadDocOfTemplateResponse" />
+  </message>
+  <message name="WorkflowNfService_getMediaType">
+    <part name="getMediaType" element="tns:getMediaType" />
+  </message>
+  <message name="WorkflowNfService_getDocForBackupResponse">
+    <part name="getMediaTypeResponse" element="tns:getDocForBackupResponse" />
+  </message>
+  <message name="WorkflowNfService_getDocForBackup">
+    <part name="getDocForBackup" element="tns:getDocForBackup" />
+  </message>
+  <message name="WorkflowNfService_initProcessResponse">
+    <part name="initProcessResponse" element="tns:initProcessResponse" />
+  </message>
+  <message name="WorkflowNfService_findDocKeyByDocNfId">
+    <part name="findDocKeyByDocNfId" element="tns:findDocKeyByDocNfId" />
+  </message>
+  <message name="WorkflowNfService_getDocsByFolderIdResponse">
+    <part name="getDocsByFolderIdResponse" element="tns:getDocsByFolderIdResponse" />
+  </message>
+  <message name="WorkflowNfService_getBoxInfoResponse">
+    <part name="getBoxInfoResponse" element="tns:getBoxInfoResponse" />
+  </message>
+  <message name="WorkflowNfService_getPreDocByKey">
+    <part name="getPreDocByKey" element="tns:getPreDocByKey" />
+  </message>
+  <message name="WorkflowNfService_startProcessResponse">
+    <part name="startProcessResponse" element="tns:startProcessResponse" />
+  </message>
+  <message name="WorkflowNfService_getBoxInfo">
+    <part name="getBoxInfo" element="tns:getBoxInfo" />
+  </message>
+  <message name="WorkflowNfService_finalizeProcessResponse">
+    <part name="finalizeProcessResponse" element="tns:finalizeProcessResponse" />
+  </message>
+  <portType name="WorkflowNfService">
+    <operation name="classifyAndTypingService" parameterOrder="classifyAndTypingService">
+      <input message="tns:WorkflowNfService_classifyAndTypingService" />
+      <output message="tns:WorkflowNfService_classifyAndTypingServiceResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="deleteBatchNf" parameterOrder="deleteBatchNf">
+      <input message="tns:WorkflowNfService_deleteBatchNf" />
+      <output message="tns:WorkflowNfService_deleteBatchNfResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="deleteDocNf" parameterOrder="deleteDocNf">
+      <input message="tns:WorkflowNfService_deleteDocNf" />
+      <output message="tns:WorkflowNfService_deleteDocNfResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="deleteType" parameterOrder="deleteType">
+      <input message="tns:WorkflowNfService_deleteType" />
+      <output message="tns:WorkflowNfService_deleteTypeResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="findAllKeyDef" parameterOrder="findAllKeyDef">
+      <input message="tns:WorkflowNfService_findAllKeyDef" />
+      <output message="tns:WorkflowNfService_findAllKeyDefResponse" />
+    </operation>
+    <operation name="findAllKeyType" parameterOrder="findAllKeyType">
+      <input message="tns:WorkflowNfService_findAllKeyType" />
+      <output message="tns:WorkflowNfService_findAllKeyTypeResponse" />
+    </operation>
+    <operation name="findAllType" parameterOrder="findAllType">
+      <input message="tns:WorkflowNfService_findAllType" />
+      <output message="tns:WorkflowNfService_findAllTypeResponse" />
+    </operation>
+    <operation name="findDocKeyByDocNfId" parameterOrder="findDocKeyByDocNfId">
+      <input message="tns:WorkflowNfService_findDocKeyByDocNfId" />
+      <output message="tns:WorkflowNfService_findDocKeyByDocNfIdResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="findKeyListByKeyDefId" parameterOrder="findKeyListByKeyDefId">
+      <input message="tns:WorkflowNfService_findKeyListByKeyDefId" />
+      <output message="tns:WorkflowNfService_findKeyListByKeyDefIdResponse" />
+    </operation>
+    <operation name="findTypeById" parameterOrder="findTypeById">
+      <input message="tns:WorkflowNfService_findTypeById" />
+      <output message="tns:WorkflowNfService_findTypeByIdResponse" />
+    </operation>
+    <operation name="getBPMLoginAddress" parameterOrder="getBPMLoginAddress">
+      <input message="tns:WorkflowNfService_getBPMLoginAddress" />
+      <output message="tns:WorkflowNfService_getBPMLoginAddressResponse" />
+    </operation>
+    <operation name="getBatchNfDetails" parameterOrder="getBatchNfDetails">
+      <input message="tns:WorkflowNfService_getBatchNfDetails" />
+      <output message="tns:WorkflowNfService_getBatchNfDetailsResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getDocsByFolderId" parameterOrder="getDocsByFolderId">
+      <input message="tns:WorkflowNfService_getDocsByFolderId" />
+      <output message="tns:WorkflowNfService_getDocsByFolderIdResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getDocsForOCR" parameterOrder="getDocsForOCR">
+      <input message="tns:WorkflowNfService_getDocsForOCR" />
+      <output message="tns:WorkflowNfService_getDocsForOCRResponse" />
+    </operation>
+    <operation name="getFile" parameterOrder="getFile">
+      <input message="tns:WorkflowNfService_getFile" />
+      <output message="tns:WorkflowNfService_getFileResponse" />
+    </operation>
+    <operation name="getHierarchyTypes" parameterOrder="getHierarchyTypes">
+      <input message="tns:WorkflowNfService_getHierarchyTypes" />
+      <output message="tns:WorkflowNfService_getHierarchyTypesResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getObjectsInQueue" parameterOrder="getObjectsInQueue">
+      <input message="tns:WorkflowNfService_getObjectsInQueue" />
+      <output message="tns:WorkflowNfService_getObjectsInQueueResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="getPreDocByKey" parameterOrder="getPreDocByKey">
+      <input message="tns:WorkflowNfService_getPreDocByKey" />
+      <output message="tns:WorkflowNfService_getPreDocByKeyResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="importFile" parameterOrder="importFile">
+      <input message="tns:WorkflowNfService_importFile" />
+      <output message="tns:WorkflowNfService_importFileResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="resetQueues" parameterOrder="resetQueues">
+      <input message="tns:WorkflowNfService_resetQueues" />
+      <output message="tns:WorkflowNfService_resetQueuesResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="savePre" parameterOrder="savePre">
+      <input message="tns:WorkflowNfService_savePre" />
+      <output message="tns:WorkflowNfService_savePreResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="saveType" parameterOrder="saveType">
+      <input message="tns:WorkflowNfService_saveType" />
+      <output message="tns:WorkflowNfService_saveTypeResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="searchDocuments" parameterOrder="searchDocuments">
+      <input message="tns:WorkflowNfService_searchDocuments" />
+      <output message="tns:WorkflowNfService_searchDocumentsResponse" />
+    </operation>
+    <operation name="setDocOCR" parameterOrder="setDocOCR">
+      <input message="tns:WorkflowNfService_setDocOCR" />
+      <output message="tns:WorkflowNfService_setDocOCRResponse" />
+    </operation>
+    <operation name="startProcess" parameterOrder="startProcess">
+      <input message="tns:WorkflowNfService_startProcess" />
+      <output message="tns:WorkflowNfService_startProcessResponse" />
+    </operation>
+    <operation name="stopProcess" parameterOrder="stopProcess">
+      <input message="tns:WorkflowNfService_stopProcess" />
+      <output message="tns:WorkflowNfService_stopProcessResponse" />
+    </operation>
+    <operation name="updateDocNf" parameterOrder="updateDocNf">
+      <input message="tns:WorkflowNfService_updateDocNf" />
+      <output message="tns:WorkflowNfService_updateDocNfResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="updateFile" parameterOrder="updateFile">
+      <input message="tns:WorkflowNfService_updateFile" />
+      <output message="tns:WorkflowNfService_updateFileResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="updateType" parameterOrder="updateType">
+      <input message="tns:WorkflowNfService_updateType" />
+      <output message="tns:WorkflowNfService_updateTypeResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="uploadDocOfTemplate" parameterOrder="uploadDocOfTemplate">
+      <input message="tns:WorkflowNfService_uploadDocOfTemplate" />
+      <output message="tns:WorkflowNfService_uploadDocOfTemplateResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getMediaType" parameterOrder="getMediaType">
+      <input message="tns:WorkflowNfService_getMediaType" />
+      <output message="tns:WorkflowNfService_getMediaTypeResponse" />
+    </operation>
+    <operation name="getDocForBackup" parameterOrder="getDocForBackup">
+      <input message="tns:WorkflowNfService_getDocForBackup" />
+      <output message="tns:WorkflowNfService_getDocForBackupResponse" />
+    </operation>
+    <operation name="setDocsBackuped" parameterOrder="setDocsBackuped">
+      <input message="tns:WorkflowNfService_setDocsBackuped" />
+      <output message="tns:WorkflowNfService_setDocsBackupedResponse" />
+    </operation>
+    <operation name="findDocNfById" parameterOrder="findDocNfById">
+      <input message="tns:WorkflowNfService_findDocNfById" />
+      <output message="tns:WorkflowNfService_findDocNfByIdResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="initProcess" parameterOrder="initProcess">
+      <input message="tns:WorkflowNfService_initProcess" />
+      <output message="tns:WorkflowNfService_initProcessResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="findDocByBatchNfId" parameterOrder="findDocByBatchNfId">
+      <input message="tns:WorkflowNfService_findDocByBatchNfId" />
+      <output message="tns:WorkflowNfService_findDocByBatchNfIdResponse" />
+    </operation>
+    <operation name="finalizeProcess" parameterOrder="finalizeProcess">
+      <input message="tns:WorkflowNfService_finalizeProcess" />
+      <output message="tns:WorkflowNfService_finalizeProcessResponse" />
+    </operation>
+    <operation name="searchFA" parameterOrder="searchFA">
+      <input message="tns:WorkflowNfService_searchFA" />
+      <output message="tns:WorkflowNfService_searchFAResponse" />
+    </operation>
+    <operation name="getDocsInBox" parameterOrder="getDocsInBox">
+      <input message="tns:WorkflowNfService_getDocsInBox" />
+      <output message="tns:WorkflowNfService_getDocsInBoxResponse" />
+    </operation>
+    <operation name="getBoxInfo" parameterOrder="getBoxInfo">
+      <input message="tns:WorkflowNfService_getBoxInfo" />
+      <output message="tns:WorkflowNfService_getBoxInfoResponse" />
+    </operation>
+  </portType>
+  <binding name="WorkflowNfServiceBinding" type="tns:WorkflowNfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="classifyAndTypingService">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deleteBatchNf">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deleteDocNf">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deleteType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="findAllKeyDef">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findAllKeyType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findAllType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findDocKeyByDocNfId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="findKeyListByKeyDefId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findTypeById">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBPMLoginAddress">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBatchNfDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getDocsByFolderId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getDocsForOCR">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getHierarchyTypes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getObjectsInQueue">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPreDocByKey">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="importFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="resetQueues">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="savePre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="saveType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchDocuments">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setDocOCR">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="startProcess">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="stopProcess">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateDocNf">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="uploadDocOfTemplate">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getMediaType">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDocForBackup">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setDocsBackuped">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findDocNfById">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="initProcess">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="findDocByBatchNfId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="finalizeProcess">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="searchFA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBoxInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getDocsInBox">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WorkflowNfWSService">
+    <port name="WorkflowNfWSPort" binding="tns:WorkflowNfServiceBinding">
+      <soap:address location="http://192.168.1.2:8080/senado2/Service/WorkflowNfService" />
+    </port>
+  </service>
+</definitions>

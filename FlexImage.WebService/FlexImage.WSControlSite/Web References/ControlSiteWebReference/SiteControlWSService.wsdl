@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SiteControlWSService" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="BusinessException" type="tns:BusinessException" />
+      <xs:element name="checkSiteControl" type="tns:checkSiteControl" />
+      <xs:element name="checkSiteControlResponse" type="tns:checkSiteControlResponse" />
+      <xs:element name="closeSiteControl" type="tns:closeSiteControl" />
+      <xs:element name="closeSiteControlResponse" type="tns:closeSiteControlResponse" />
+      <xs:element name="getSuggestedCloseDay" type="tns:getSuggestedCloseDay" />
+      <xs:element name="getSuggestedCloseDayResponse" type="tns:getSuggestedCloseDayResponse" />
+      <xs:element name="getSuggestedOpenDay" type="tns:getSuggestedOpenDay" />
+      <xs:element name="getSuggestedOpenDayResponse" type="tns:getSuggestedOpenDayResponse" />
+      <xs:element name="openSiteControl" type="tns:openSiteControl" />
+      <xs:element name="openSiteControlResponse" type="tns:openSiteControlResponse" />
+      <xs:complexType name="checkSiteControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checkSiteControlResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BusinessException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeSiteControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeSiteControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSuggestedCloseDay">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSuggestedCloseDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSuggestedOpenDay">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSuggestedOpenDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openSiteControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openSiteControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="BusinessException">
+    <part name="BusinessException" element="tns:BusinessException" />
+  </message>
+  <message name="SiteControlService_getSuggestedCloseDay">
+    <part name="getSuggestedCloseDay" element="tns:getSuggestedCloseDay" />
+  </message>
+  <message name="SiteControlService_closeSiteControlResponse">
+    <part name="closeSiteControlResponse" element="tns:closeSiteControlResponse" />
+  </message>
+  <message name="SiteControlService_checkSiteControl">
+    <part name="checkSiteControl" element="tns:checkSiteControl" />
+  </message>
+  <message name="SiteControlService_openSiteControlResponse">
+    <part name="openSiteControlResponse" element="tns:openSiteControlResponse" />
+  </message>
+  <message name="SiteControlService_getSuggestedCloseDayResponse">
+    <part name="getSuggestedCloseDayResponse" element="tns:getSuggestedCloseDayResponse" />
+  </message>
+  <message name="SiteControlService_closeSiteControl">
+    <part name="closeSiteControl" element="tns:closeSiteControl" />
+  </message>
+  <message name="SiteControlService_openSiteControl">
+    <part name="openSiteControl" element="tns:openSiteControl" />
+  </message>
+  <message name="SiteControlService_getSuggestedOpenDay">
+    <part name="getSuggestedOpenDay" element="tns:getSuggestedOpenDay" />
+  </message>
+  <message name="SiteControlService_checkSiteControlResponse">
+    <part name="checkSiteControlResponse" element="tns:checkSiteControlResponse" />
+  </message>
+  <message name="SiteControlService_getSuggestedOpenDayResponse">
+    <part name="getSuggestedOpenDayResponse" element="tns:getSuggestedOpenDayResponse" />
+  </message>
+  <portType name="SiteControlService">
+    <operation name="checkSiteControl" parameterOrder="checkSiteControl">
+      <input message="tns:SiteControlService_checkSiteControl" />
+      <output message="tns:SiteControlService_checkSiteControlResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="closeSiteControl" parameterOrder="closeSiteControl">
+      <input message="tns:SiteControlService_closeSiteControl" />
+      <output message="tns:SiteControlService_closeSiteControlResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getSuggestedCloseDay" parameterOrder="getSuggestedCloseDay">
+      <input message="tns:SiteControlService_getSuggestedCloseDay" />
+      <output message="tns:SiteControlService_getSuggestedCloseDayResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getSuggestedOpenDay" parameterOrder="getSuggestedOpenDay">
+      <input message="tns:SiteControlService_getSuggestedOpenDay" />
+      <output message="tns:SiteControlService_getSuggestedOpenDayResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="openSiteControl" parameterOrder="openSiteControl">
+      <input message="tns:SiteControlService_openSiteControl" />
+      <output message="tns:SiteControlService_openSiteControlResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+  </portType>
+  <binding name="SiteControlServiceBinding" type="tns:SiteControlService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="checkSiteControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="closeSiteControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSuggestedCloseDay">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSuggestedOpenDay">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="openSiteControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="SiteControlWSService">
+    <port name="SiteControlWSPort" binding="tns:SiteControlServiceBinding">
+      <soap:address location="http://192.168.1.2:8080/inmet/Service/SiteControlService" />
+    </port>
+  </service>
+</definitions>

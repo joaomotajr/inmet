@@ -1,0 +1,13 @@
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\FlexImage.WSMonitoring.dll.config
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\FlexImage.WSMonitoring.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\FlexImage.WSMonitoring.pdb
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\FlexImage.Core.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\Telerik.WinControls.UI.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\Telerik.WinControls.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\TelerikCommon.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\FlexImage.Core.pdb
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\Telerik.WinControls.UI.xml
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\Telerik.WinControls.xml
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\bin\x86\Debug\TelerikCommon.xml
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\obj\x86\Debug\FlexImage.WSMonitoring.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSMonitoring\obj\x86\Debug\FlexImage.WSMonitoring.pdb

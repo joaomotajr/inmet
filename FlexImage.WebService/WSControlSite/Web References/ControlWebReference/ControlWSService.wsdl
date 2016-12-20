@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ControlWSService" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="BusinessException" type="tns:BusinessException" />
+      <xs:element name="checkControl" type="tns:checkControl" />
+      <xs:element name="checkControlResponse" type="tns:checkControlResponse" />
+      <xs:element name="closeControl" type="tns:closeControl" />
+      <xs:element name="closeControlResponse" type="tns:closeControlResponse" />
+      <xs:element name="getCurrentControl" type="tns:getCurrentControl" />
+      <xs:element name="getCurrentControlResponse" type="tns:getCurrentControlResponse" />
+      <xs:element name="getSuggestedCloseDay" type="tns:getSuggestedCloseDay" />
+      <xs:element name="getSuggestedCloseDayResponse" type="tns:getSuggestedCloseDayResponse" />
+      <xs:element name="getSuggestedOpenDay" type="tns:getSuggestedOpenDay" />
+      <xs:element name="getSuggestedOpenDayResponse" type="tns:getSuggestedOpenDayResponse" />
+      <xs:element name="openControl" type="tns:openControl" />
+      <xs:element name="openControlResponse" type="tns:openControlResponse" />
+      <xs:complexType name="checkControl">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="checkControlResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="BusinessException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSuggestedCloseDay">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSuggestedCloseDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSuggestedOpenDay">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSuggestedOpenDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getCurrentControl">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getCurrentControlResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="BusinessException">
+    <part name="BusinessException" element="tns:BusinessException" />
+  </message>
+  <message name="ControlService_closeControlResponse">
+    <part name="closeControlResponse" element="tns:closeControlResponse" />
+  </message>
+  <message name="ControlService_checkControlResponse">
+    <part name="checkControlResponse" element="tns:checkControlResponse" />
+  </message>
+  <message name="ControlService_getSuggestedOpenDay">
+    <part name="getSuggestedOpenDay" element="tns:getSuggestedOpenDay" />
+  </message>
+  <message name="ControlService_checkControl">
+    <part name="checkControl" element="tns:checkControl" />
+  </message>
+  <message name="ControlService_getSuggestedCloseDayResponse">
+    <part name="getSuggestedCloseDayResponse" element="tns:getSuggestedCloseDayResponse" />
+  </message>
+  <message name="ControlService_getSuggestedOpenDayResponse">
+    <part name="getSuggestedOpenDayResponse" element="tns:getSuggestedOpenDayResponse" />
+  </message>
+  <message name="ControlService_getCurrentControl">
+    <part name="getCurrentControl" element="tns:getCurrentControl" />
+  </message>
+  <message name="ControlService_getCurrentControlResponse">
+    <part name="getCurrentControlResponse" element="tns:getCurrentControlResponse" />
+  </message>
+  <message name="ControlService_closeControl">
+    <part name="closeControl" element="tns:closeControl" />
+  </message>
+  <message name="ControlService_getSuggestedCloseDay">
+    <part name="getSuggestedCloseDay" element="tns:getSuggestedCloseDay" />
+  </message>
+  <message name="ControlService_openControlResponse">
+    <part name="openControlResponse" element="tns:openControlResponse" />
+  </message>
+  <message name="ControlService_openControl">
+    <part name="openControl" element="tns:openControl" />
+  </message>
+  <portType name="ControlService">
+    <operation name="checkControl" parameterOrder="checkControl">
+      <input message="tns:ControlService_checkControl" />
+      <output message="tns:ControlService_checkControlResponse" />
+    </operation>
+    <operation name="closeControl" parameterOrder="closeControl">
+      <input message="tns:ControlService_closeControl" />
+      <output message="tns:ControlService_closeControlResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getCurrentControl" parameterOrder="getCurrentControl">
+      <input message="tns:ControlService_getCurrentControl" />
+      <output message="tns:ControlService_getCurrentControlResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getSuggestedCloseDay" parameterOrder="getSuggestedCloseDay">
+      <input message="tns:ControlService_getSuggestedCloseDay" />
+      <output message="tns:ControlService_getSuggestedCloseDayResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+    <operation name="getSuggestedOpenDay" parameterOrder="getSuggestedOpenDay">
+      <input message="tns:ControlService_getSuggestedOpenDay" />
+      <output message="tns:ControlService_getSuggestedOpenDayResponse" />
+    </operation>
+    <operation name="openControl" parameterOrder="openControl">
+      <input message="tns:ControlService_openControl" />
+      <output message="tns:ControlService_openControlResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+    </operation>
+  </portType>
+  <binding name="ControlServiceBinding" type="tns:ControlService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="checkControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="closeControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCurrentControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSuggestedCloseDay">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSuggestedOpenDay">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="openControl">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="ControlWSService">
+    <port name="ControlWSPort" binding="tns:ControlServiceBinding">
+      <soap:address location="http://192.168.1.2:8080/inmet/Service/ControlService" />
+    </port>
+  </service>
+</definitions>

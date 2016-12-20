@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="ControlService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.124:8080/flexpsService/ControlService?wsdl=ControlService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="ControlServiceSoapBinding" type="ns1:ControlService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkSitesOpened">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="checkSitesOpened">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkSitesOpenedResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="closeControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="closeControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="closeControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findAllControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="findAllControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findAllControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getOpenedControlDate">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getOpenedControlDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOpenedControlDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSiteControlBySiteId">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getSiteControlBySiteId">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSiteControlBySiteIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="openSiteControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="openSiteControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="openSiteControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getCurrentControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getCurrentControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkSiteMov">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="checkSiteMov">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkSiteMovResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getControlSuggestedCloseDay">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getControlSuggestedCloseDay">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getControlSuggestedCloseDayResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="openControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="openControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="openControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="checkControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="checkControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSiteControlNextOpenDay">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getSiteControlNextOpenDay">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSiteControlNextOpenDayResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getControlNextOpenDay">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getControlNextOpenDay">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getControlNextOpenDayResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="closeSiteControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="closeSiteControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="closeSiteControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="findAllSiteControl">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="findAllSiteControl">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findAllSiteControlResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ControlService">
+    <wsdl:port name="ControlServiceImplPort" binding="tns:ControlServiceSoapBinding">
+      <soap:address location="http://flexps.corp.flexdoc.com.br:8080/flexpsService/ControlService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

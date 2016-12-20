@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DocumentService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="ackException" type="tns:ackException" />
+      <xs:element name="ackExceptionResponse" type="tns:ackExceptionResponse" />
+      <xs:element name="ackPending" type="tns:ackPending" />
+      <xs:element name="ackPendingResponse" type="tns:ackPendingResponse" />
+      <xs:element name="editDocument" type="tns:editDocument" />
+      <xs:element name="editDocumentResponse" type="tns:editDocumentResponse" />
+      <xs:element name="getBatchFToReceipt" type="tns:getBatchFToReceipt" />
+      <xs:element name="getBatchFToReceiptResponse" type="tns:getBatchFToReceiptResponse" />
+      <xs:element name="getDocsId" type="tns:getDocsId" />
+      <xs:element name="getDocsIdResponse" type="tns:getDocsIdResponse" />
+      <xs:element name="getDocument" type="tns:getDocument" />
+      <xs:element name="getDocumentLog" type="tns:getDocumentLog" />
+      <xs:element name="getDocumentLogResponse" type="tns:getDocumentLogResponse" />
+      <xs:element name="getDocumentResponse" type="tns:getDocumentResponse" />
+      <xs:element name="getPendingBySite" type="tns:getPendingBySite" />
+      <xs:element name="getPendingBySiteResponse" type="tns:getPendingBySiteResponse" />
+      <xs:element name="getReceiptByBatch" type="tns:getReceiptByBatch" />
+      <xs:element name="getReceiptByBatchResponse" type="tns:getReceiptByBatchResponse" />
+      <xs:element name="mountTrans" type="tns:mountTrans" />
+      <xs:element name="mountTransResponse" type="tns:mountTransResponse" />
+      <xs:element name="printReceipt" type="tns:printReceipt" />
+      <xs:element name="printReceiptResponse" type="tns:printReceiptResponse" />
+      <xs:element name="printRibbonByBatch" type="tns:printRibbonByBatch" />
+      <xs:element name="printRibbonByBatchResponse" type="tns:printRibbonByBatchResponse" />
+      <xs:element name="rePrintReceipt" type="tns:rePrintReceipt" />
+      <xs:element name="rePrintReceiptResponse" type="tns:rePrintReceiptResponse" />
+      <xs:element name="recapture" type="tns:recapture" />
+      <xs:element name="recaptureResponse" type="tns:recaptureResponse" />
+      <xs:element name="reclassify" type="tns:reclassify" />
+      <xs:element name="reclassifyResponse" type="tns:reclassifyResponse" />
+      <xs:element name="requestJpg" type="tns:requestJpg" />
+      <xs:element name="requestJpgBack" type="tns:requestJpgBack" />
+      <xs:element name="requestJpgBackDetached" type="tns:requestJpgBackDetached" />
+      <xs:element name="requestJpgBackDetachedResponse" type="tns:requestJpgBackDetachedResponse" />
+      <xs:element name="requestJpgBackResponse" type="tns:requestJpgBackResponse" />
+      <xs:element name="requestJpgDetached" type="tns:requestJpgDetached" />
+      <xs:element name="requestJpgDetachedResponse" type="tns:requestJpgDetachedResponse" />
+      <xs:element name="requestJpgResponse" type="tns:requestJpgResponse" />
+      <xs:element name="requestTifBackDetached" type="tns:requestTifBackDetached" />
+      <xs:element name="requestTifBackDetachedResponse" type="tns:requestTifBackDetachedResponse" />
+      <xs:element name="setJpgDocumentFTransmittedBack" type="tns:setJpgDocumentFTransmittedBack" />
+      <xs:element name="setJpgDocumentFTransmittedBackDetached" type="tns:setJpgDocumentFTransmittedBackDetached" />
+      <xs:element name="setJpgDocumentFTransmittedBackDetachedResponse" type="tns:setJpgDocumentFTransmittedBackDetachedResponse" />
+      <xs:element name="setJpgDocumentFTransmittedBackResponse" type="tns:setJpgDocumentFTransmittedBackResponse" />
+      <xs:element name="setJpgDocumentFTransmittedFront" type="tns:setJpgDocumentFTransmittedFront" />
+      <xs:element name="setJpgDocumentFTransmittedFrontResponse" type="tns:setJpgDocumentFTransmittedFrontResponse" />
+      <xs:element name="setJpgTransmittedFrontDetached" type="tns:setJpgTransmittedFrontDetached" />
+      <xs:element name="setJpgTransmittedFrontDetachedResponse" type="tns:setJpgTransmittedFrontDetachedResponse" />
+      <xs:element name="setTifDocumentFTransmittedBackDetached" type="tns:setTifDocumentFTransmittedBackDetached" />
+      <xs:element name="setTifDocumentFTransmittedBackDetachedResponse" type="tns:setTifDocumentFTransmittedBackDetachedResponse" />
+      <xs:element name="updateValDocument" type="tns:updateValDocument" />
+      <xs:element name="updateValDocumentResponse" type="tns:updateValDocumentResponse" />
+      <xs:complexType name="rePrintReceipt">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="rePrintReceiptResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ackPending">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="pendingId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ackPendingResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setTifDocumentFTransmittedBackDetached">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentFileSizeBack" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFileBack" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setTifDocumentFTransmittedBackDetachedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getDocsId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="cache" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestTifBackDetached">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestTifBackDetachedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getReceiptByBatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getReceiptByBatchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documentDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentCaptureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="documentCreated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="documentFileBack" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="documentFileFront" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="documentFileSizeBack" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileSizeFront" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentFileTypeFront" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFile" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFileBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXmlBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNsu" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNsuHost" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentReason" type="xs:string" />
+          <xs:element minOccurs="0" name="documentStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="documentXml" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="exceptionDtoList" nillable="true" type="tns:exceptionDto" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="pendingDtoList" nillable="true" type="tns:pendingDto" />
+          <xs:element name="receipt" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteExternalId" type="xs:int" />
+          <xs:element minOccurs="0" name="siteName" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeOperation" type="xs:int" />
+          <xs:element minOccurs="0" name="typeReceipt" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="exceptionDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="exceptionAuthType" type="xs:int" />
+          <xs:element minOccurs="0" name="exceptionId" type="xs:long" />
+          <xs:element minOccurs="0" name="exceptionName" type="xs:string" />
+          <xs:element minOccurs="0" name="exceptionOrigin" type="xs:int" />
+          <xs:element minOccurs="0" name="exceptionOsf" type="xs:string" />
+          <xs:element minOccurs="0" name="exceptionPending" type="xs:int" />
+          <xs:element minOccurs="0" name="exceptionType" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="pendingDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pendingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="pendingId" type="xs:long" />
+          <xs:element minOccurs="0" name="pendingReason" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateValDocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="newDocumentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="oldDocumentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateValDocumentResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="ackException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="exceptionId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrInternalIds" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ackExceptionResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getBatchFToReceipt">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBatchFToReceiptResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:documentDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPendingBySite">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPendingBySiteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestJpgDetached">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestJpgDetachedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="printReceipt">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="printReceiptResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestJpgBackDetached">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestJpgBackDetachedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setJpgDocumentFTransmittedFront">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentFileSizeFront" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeFront" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFile" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setJpgDocumentFTransmittedFrontResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="printRibbonByBatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="printRibbonByBatchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mountTrans">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="documentIds" type="xs:long" />
+          <xs:element minOccurs="0" name="documentCoverId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mountTransResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setJpgTransmittedFrontDetached">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentFileSizeFront" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeFront" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFile" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setJpgTransmittedFrontDetachedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setJpgDocumentFTransmittedBackDetached">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentFileSizeBack" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFile" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setJpgDocumentFTransmittedBackDetachedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setJpgDocumentFTransmittedBack">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentFileSizeBack" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFileBack" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setJpgDocumentFTransmittedBackResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="requestJpgBack">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestJpgBackResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="requestJpg">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="requestJpgResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="recapture">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="recaptureResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="reclassify">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reclassifyResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getDocumentLog">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentLogResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentLogDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documentLogDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="log" type="xs:string" />
+          <xs:element minOccurs="0" name="logDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="logStation" type="xs:string" />
+          <xs:element minOccurs="0" name="logUsr" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="editDocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="newDocumentXml" type="xs:string" />
+          <xs:element minOccurs="0" name="oldDocumentXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="editDocumentResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getDocsIdResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ackPendingResponse">
+    <wsdl:part name="parameters" element="ns1:ackPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestJpg">
+    <wsdl:part name="parameters" element="ns1:requestJpg" />
+  </wsdl:message>
+  <wsdl:message name="getDocsId">
+    <wsdl:part name="parameters" element="ns1:getDocsId" />
+  </wsdl:message>
+  <wsdl:message name="printReceipt">
+    <wsdl:part name="parameters" element="ns1:printReceipt" />
+  </wsdl:message>
+  <wsdl:message name="setJpgTransmittedFrontDetached">
+    <wsdl:part name="parameters" element="ns1:setJpgTransmittedFrontDetached" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentResponse">
+    <wsdl:part name="parameters" element="ns1:getDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgBackDetached">
+    <wsdl:part name="parameters" element="ns1:requestJpgBackDetached" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentLogResponse">
+    <wsdl:part name="parameters" element="ns1:getDocumentLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="printReceiptResponse">
+    <wsdl:part name="parameters" element="ns1:printReceiptResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestTifBackDetachedResponse">
+    <wsdl:part name="parameters" element="ns1:requestTifBackDetachedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocument">
+    <wsdl:part name="parameters" element="ns1:getDocument" />
+  </wsdl:message>
+  <wsdl:message name="setJpgDocumentFTransmittedBackResponse">
+    <wsdl:part name="parameters" element="ns1:setJpgDocumentFTransmittedBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="editDocument">
+    <wsdl:part name="parameters" element="ns1:editDocument" />
+  </wsdl:message>
+  <wsdl:message name="getBatchFToReceiptResponse">
+    <wsdl:part name="parameters" element="ns1:getBatchFToReceiptResponse" />
+  </wsdl:message>
+  <wsdl:message name="setTifDocumentFTransmittedBackDetachedResponse">
+    <wsdl:part name="parameters" element="ns1:setTifDocumentFTransmittedBackDetachedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBatchFToReceipt">
+    <wsdl:part name="parameters" element="ns1:getBatchFToReceipt" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgDetachedResponse">
+    <wsdl:part name="parameters" element="ns1:requestJpgDetachedResponse" />
+  </wsdl:message>
+  <wsdl:message name="setJpgDocumentFTransmittedFront">
+    <wsdl:part name="parameters" element="ns1:setJpgDocumentFTransmittedFront" />
+  </wsdl:message>
+  <wsdl:message name="setJpgTransmittedFrontDetachedResponse">
+    <wsdl:part name="parameters" element="ns1:setJpgTransmittedFrontDetachedResponse" />
+  </wsdl:message>
+  <wsdl:message name="setJpgDocumentFTransmittedBack">
+    <wsdl:part name="parameters" element="ns1:setJpgDocumentFTransmittedBack" />
+  </wsdl:message>
+  <wsdl:message name="rePrintReceipt">
+    <wsdl:part name="parameters" element="ns1:rePrintReceipt" />
+  </wsdl:message>
+  <wsdl:message name="requestTifBackDetached">
+    <wsdl:part name="parameters" element="ns1:requestTifBackDetached" />
+  </wsdl:message>
+  <wsdl:message name="setJpgDocumentFTransmittedBackDetached">
+    <wsdl:part name="parameters" element="ns1:setJpgDocumentFTransmittedBackDetached" />
+  </wsdl:message>
+  <wsdl:message name="getPendingBySiteResponse">
+    <wsdl:part name="parameters" element="ns1:getPendingBySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgResponse">
+    <wsdl:part name="parameters" element="ns1:requestJpgResponse" />
+  </wsdl:message>
+  <wsdl:message name="reclassify">
+    <wsdl:part name="parameters" element="ns1:reclassify" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgDetached">
+    <wsdl:part name="parameters" element="ns1:requestJpgDetached" />
+  </wsdl:message>
+  <wsdl:message name="mountTrans">
+    <wsdl:part name="parameters" element="ns1:mountTrans" />
+  </wsdl:message>
+  <wsdl:message name="rePrintReceiptResponse">
+    <wsdl:part name="parameters" element="ns1:rePrintReceiptResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgBackResponse">
+    <wsdl:part name="parameters" element="ns1:requestJpgBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="setJpgDocumentFTransmittedFrontResponse">
+    <wsdl:part name="parameters" element="ns1:setJpgDocumentFTransmittedFrontResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgBackDetachedResponse">
+    <wsdl:part name="parameters" element="ns1:requestJpgBackDetachedResponse" />
+  </wsdl:message>
+  <wsdl:message name="mountTransResponse">
+    <wsdl:part name="parameters" element="ns1:mountTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="printRibbonByBatchResponse">
+    <wsdl:part name="parameters" element="ns1:printRibbonByBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="recapture">
+    <wsdl:part name="parameters" element="ns1:recapture" />
+  </wsdl:message>
+  <wsdl:message name="reclassifyResponse">
+    <wsdl:part name="parameters" element="ns1:reclassifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="editDocumentResponse">
+    <wsdl:part name="parameters" element="ns1:editDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="printRibbonByBatch">
+    <wsdl:part name="parameters" element="ns1:printRibbonByBatch" />
+  </wsdl:message>
+  <wsdl:message name="updateValDocument">
+    <wsdl:part name="parameters" element="ns1:updateValDocument" />
+  </wsdl:message>
+  <wsdl:message name="getReceiptByBatchResponse">
+    <wsdl:part name="parameters" element="ns1:getReceiptByBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="recaptureResponse">
+    <wsdl:part name="parameters" element="ns1:recaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPendingBySite">
+    <wsdl:part name="parameters" element="ns1:getPendingBySite" />
+  </wsdl:message>
+  <wsdl:message name="updateValDocumentResponse">
+    <wsdl:part name="parameters" element="ns1:updateValDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ackExceptionResponse">
+    <wsdl:part name="parameters" element="ns1:ackExceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestJpgBack">
+    <wsdl:part name="parameters" element="ns1:requestJpgBack" />
+  </wsdl:message>
+  <wsdl:message name="setJpgDocumentFTransmittedBackDetachedResponse">
+    <wsdl:part name="parameters" element="ns1:setJpgDocumentFTransmittedBackDetachedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getReceiptByBatch">
+    <wsdl:part name="parameters" element="ns1:getReceiptByBatch" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentLog">
+    <wsdl:part name="parameters" element="ns1:getDocumentLog" />
+  </wsdl:message>
+  <wsdl:message name="ackPending">
+    <wsdl:part name="parameters" element="ns1:ackPending" />
+  </wsdl:message>
+  <wsdl:message name="setTifDocumentFTransmittedBackDetached">
+    <wsdl:part name="parameters" element="ns1:setTifDocumentFTransmittedBackDetached" />
+  </wsdl:message>
+  <wsdl:message name="ackException">
+    <wsdl:part name="parameters" element="ns1:ackException" />
+  </wsdl:message>
+  <wsdl:portType name="DocumentService">
+    <wsdl:operation name="rePrintReceipt">
+      <wsdl:input name="rePrintReceipt" message="ns1:rePrintReceipt" />
+      <wsdl:output name="rePrintReceiptResponse" message="ns1:rePrintReceiptResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="ackPending">
+      <wsdl:input name="ackPending" message="ns1:ackPending" />
+      <wsdl:output name="ackPendingResponse" message="ns1:ackPendingResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setTifDocumentFTransmittedBackDetached">
+      <wsdl:input name="setTifDocumentFTransmittedBackDetached" message="ns1:setTifDocumentFTransmittedBackDetached" />
+      <wsdl:output name="setTifDocumentFTransmittedBackDetachedResponse" message="ns1:setTifDocumentFTransmittedBackDetachedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocsId">
+      <wsdl:input name="getDocsId" message="ns1:getDocsId" />
+      <wsdl:output name="getDocsIdResponse" message="ns1:getDocsIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="requestTifBackDetached">
+      <wsdl:input name="requestTifBackDetached" message="ns1:requestTifBackDetached" />
+      <wsdl:output name="requestTifBackDetachedResponse" message="ns1:requestTifBackDetachedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getReceiptByBatch">
+      <wsdl:input name="getReceiptByBatch" message="ns1:getReceiptByBatch" />
+      <wsdl:output name="getReceiptByBatchResponse" message="ns1:getReceiptByBatchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="updateValDocument">
+      <wsdl:input name="updateValDocument" message="ns1:updateValDocument" />
+      <wsdl:output name="updateValDocumentResponse" message="ns1:updateValDocumentResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="ackException">
+      <wsdl:input name="ackException" message="ns1:ackException" />
+      <wsdl:output name="ackExceptionResponse" message="ns1:ackExceptionResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getBatchFToReceipt">
+      <wsdl:input name="getBatchFToReceipt" message="ns1:getBatchFToReceipt" />
+      <wsdl:output name="getBatchFToReceiptResponse" message="ns1:getBatchFToReceiptResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocument">
+      <wsdl:input name="getDocument" message="ns1:getDocument" />
+      <wsdl:output name="getDocumentResponse" message="ns1:getDocumentResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getPendingBySite">
+      <wsdl:input name="getPendingBySite" message="ns1:getPendingBySite" />
+      <wsdl:output name="getPendingBySiteResponse" message="ns1:getPendingBySiteResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="requestJpgDetached">
+      <wsdl:input name="requestJpgDetached" message="ns1:requestJpgDetached" />
+      <wsdl:output name="requestJpgDetachedResponse" message="ns1:requestJpgDetachedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="printReceipt">
+      <wsdl:input name="printReceipt" message="ns1:printReceipt" />
+      <wsdl:output name="printReceiptResponse" message="ns1:printReceiptResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="requestJpgBackDetached">
+      <wsdl:input name="requestJpgBackDetached" message="ns1:requestJpgBackDetached" />
+      <wsdl:output name="requestJpgBackDetachedResponse" message="ns1:requestJpgBackDetachedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setJpgDocumentFTransmittedFront">
+      <wsdl:input name="setJpgDocumentFTransmittedFront" message="ns1:setJpgDocumentFTransmittedFront" />
+      <wsdl:output name="setJpgDocumentFTransmittedFrontResponse" message="ns1:setJpgDocumentFTransmittedFrontResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="printRibbonByBatch">
+      <wsdl:input name="printRibbonByBatch" message="ns1:printRibbonByBatch" />
+      <wsdl:output name="printRibbonByBatchResponse" message="ns1:printRibbonByBatchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="mountTrans">
+      <wsdl:input name="mountTrans" message="ns1:mountTrans" />
+      <wsdl:output name="mountTransResponse" message="ns1:mountTransResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setJpgTransmittedFrontDetached">
+      <wsdl:input name="setJpgTransmittedFrontDetached" message="ns1:setJpgTransmittedFrontDetached" />
+      <wsdl:output name="setJpgTransmittedFrontDetachedResponse" message="ns1:setJpgTransmittedFrontDetachedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setJpgDocumentFTransmittedBackDetached">
+      <wsdl:input name="setJpgDocumentFTransmittedBackDetached" message="ns1:setJpgDocumentFTransmittedBackDetached" />
+      <wsdl:output name="setJpgDocumentFTransmittedBackDetachedResponse" message="ns1:setJpgDocumentFTransmittedBackDetachedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setJpgDocumentFTransmittedBack">
+      <wsdl:input name="setJpgDocumentFTransmittedBack" message="ns1:setJpgDocumentFTransmittedBack" />
+      <wsdl:output name="setJpgDocumentFTransmittedBackResponse" message="ns1:setJpgDocumentFTransmittedBackResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="requestJpgBack">
+      <wsdl:input name="requestJpgBack" message="ns1:requestJpgBack" />
+      <wsdl:output name="requestJpgBackResponse" message="ns1:requestJpgBackResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="requestJpg">
+      <wsdl:input name="requestJpg" message="ns1:requestJpg" />
+      <wsdl:output name="requestJpgResponse" message="ns1:requestJpgResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="recapture">
+      <wsdl:input name="recapture" message="ns1:recapture" />
+      <wsdl:output name="recaptureResponse" message="ns1:recaptureResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="reclassify">
+      <wsdl:input name="reclassify" message="ns1:reclassify" />
+      <wsdl:output name="reclassifyResponse" message="ns1:reclassifyResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentLog">
+      <wsdl:input name="getDocumentLog" message="ns1:getDocumentLog" />
+      <wsdl:output name="getDocumentLogResponse" message="ns1:getDocumentLogResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="editDocument">
+      <wsdl:input name="editDocument" message="ns1:editDocument" />
+      <wsdl:output name="editDocumentResponse" message="ns1:editDocumentResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

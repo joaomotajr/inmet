@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="ProcessingNfService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://flexdoc1.dyndns.org:8080/flexpsService/ProcessingNfService?wsdl=ProcessingNfService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="ProcessingNfServiceSoapBinding" type="ns1:ProcessingNfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="processOcr">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processOcr">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processOcrResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processOcrFieldCaderneta">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processOcrFieldCaderneta">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processOcrFieldCadernetaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processDoubleTypingLivro">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processDoubleTypingLivro">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processDoubleTypingLivroResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processDifferenceLivro">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processDifferenceLivro">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processDifferenceLivroResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processIndex">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processIndex">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processIndexResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="reprocessBatchNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="reprocessBatchNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="reprocessBatchNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processPreIndex">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processPreIndex">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processPreIndexResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingLivro">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingLivro">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingLivroResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processOcrWithType">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processOcrWithType">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processOcrWithTypeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProcessingNfService">
+    <wsdl:port name="ProcessingNfServiceImplPort" binding="tns:ProcessingNfServiceSoapBinding">
+      <soap:address location="http://192.168.2.5:8080/flexpsService/ProcessingNfService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

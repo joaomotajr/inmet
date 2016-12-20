@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="RepositoryService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.2:8180/flexpsService/RepositoryService?wsdl=RepositoryService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="RepositoryServiceSoapBinding" type="ns1:RepositoryService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getFileGeneric">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getFileGeneric">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getFileGenericResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getFileWithExtension">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getFileWithExtension">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getFileWithExtensionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="uploadGeneric">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="uploadGeneric">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="uploadGenericResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="upload">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="upload">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="uploadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="dirList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="dirList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dirListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGeneric">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="deleteGeneric">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteGenericResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="delete">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="recoverInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="recoverInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="recoverInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPdfPages">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getPdfPages">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPdfPagesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RepositoryService">
+    <wsdl:port name="RepositoryServiceImplPort" binding="tns:RepositoryServiceSoapBinding">
+      <soap:address location="http://192.168.1.2:8180/flexpsService/RepositoryService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

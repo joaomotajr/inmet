@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FlexImage.WebService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FlexImage_WSMonitoring_MonitoringWebReference_MonitoringService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.2:8180/flexpsService/MonitoringService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProcessingFService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="approveForm" type="tns:approveForm" />
+      <xs:element name="approveFormResponse" type="tns:approveFormResponse" />
+      <xs:element name="approveTransInApprove1" type="tns:approveTransInApprove1" />
+      <xs:element name="approveTransInApprove1Response" type="tns:approveTransInApprove1Response" />
+      <xs:element name="approveTransInApprove2" type="tns:approveTransInApprove2" />
+      <xs:element name="approveTransInApprove2Response" type="tns:approveTransInApprove2Response" />
+      <xs:element name="approveTransInApprove3" type="tns:approveTransInApprove3" />
+      <xs:element name="approveTransInApprove3Response" type="tns:approveTransInApprove3Response" />
+      <xs:element name="approveTransInApprove4" type="tns:approveTransInApprove4" />
+      <xs:element name="approveTransInApprove4Response" type="tns:approveTransInApprove4Response" />
+      <xs:element name="approveTransInDiff1" type="tns:approveTransInDiff1" />
+      <xs:element name="approveTransInDiff1Response" type="tns:approveTransInDiff1Response" />
+      <xs:element name="approveTransInDiff2" type="tns:approveTransInDiff2" />
+      <xs:element name="approveTransInDiff2Response" type="tns:approveTransInDiff2Response" />
+      <xs:element name="approveTransInDiff3" type="tns:approveTransInDiff3" />
+      <xs:element name="approveTransInDiff3Response" type="tns:approveTransInDiff3Response" />
+      <xs:element name="approveValSignAuto" type="tns:approveValSignAuto" />
+      <xs:element name="approveValSignAutoResponse" type="tns:approveValSignAutoResponse" />
+      <xs:element name="approveValSignManual" type="tns:approveValSignManual" />
+      <xs:element name="approveValSignManualResponse" type="tns:approveValSignManualResponse" />
+      <xs:element name="markForm" type="tns:markForm" />
+      <xs:element name="markFormResponse" type="tns:markFormResponse" />
+      <xs:element name="markTransInApprove1" type="tns:markTransInApprove1" />
+      <xs:element name="markTransInApprove1Response" type="tns:markTransInApprove1Response" />
+      <xs:element name="markTransInApprove3" type="tns:markTransInApprove3" />
+      <xs:element name="markTransInApprove3Response" type="tns:markTransInApprove3Response" />
+      <xs:element name="markTransInDiff1" type="tns:markTransInDiff1" />
+      <xs:element name="markTransInDiff1Response" type="tns:markTransInDiff1Response" />
+      <xs:element name="markTransInDiff2" type="tns:markTransInDiff2" />
+      <xs:element name="markTransInDiff2Response" type="tns:markTransInDiff2Response" />
+      <xs:element name="markValSignAuto" type="tns:markValSignAuto" />
+      <xs:element name="markValSignAutoResponse" type="tns:markValSignAutoResponse" />
+      <xs:element name="markValSignManual" type="tns:markValSignManual" />
+      <xs:element name="markValSignManualResponse" type="tns:markValSignManualResponse" />
+      <xs:element name="processClassify" type="tns:processClassify" />
+      <xs:element name="processClassifyResponse" type="tns:processClassifyResponse" />
+      <xs:element name="processDoubleTypingDataBoaCtd" type="tns:processDoubleTypingDataBoaCtd" />
+      <xs:element name="processDoubleTypingDataBoaCtdResponse" type="tns:processDoubleTypingDataBoaCtdResponse" />
+      <xs:element name="processDoubleTypingValCtd" type="tns:processDoubleTypingValCtd" />
+      <xs:element name="processDoubleTypingValCtdResponse" type="tns:processDoubleTypingValCtdResponse" />
+      <xs:element name="processIcr" type="tns:processIcr" />
+      <xs:element name="processIcrResponse" type="tns:processIcrResponse" />
+      <xs:element name="processOcrA" type="tns:processOcrA" />
+      <xs:element name="processOcrAResponse" type="tns:processOcrAResponse" />
+      <xs:element name="processTyping" type="tns:processTyping" />
+      <xs:element name="processTypingBorderoCtd" type="tns:processTypingBorderoCtd" />
+      <xs:element name="processTypingBorderoCtdResponse" type="tns:processTypingBorderoCtdResponse" />
+      <xs:element name="processTypingBorderoTrunc" type="tns:processTypingBorderoTrunc" />
+      <xs:element name="processTypingBorderoTruncResponse" type="tns:processTypingBorderoTruncResponse" />
+      <xs:element name="processTypingCmc7Ctd" type="tns:processTypingCmc7Ctd" />
+      <xs:element name="processTypingCmc7CtdResponse" type="tns:processTypingCmc7CtdResponse" />
+      <xs:element name="processTypingCmc7Trunc" type="tns:processTypingCmc7Trunc" />
+      <xs:element name="processTypingCmc7TruncResponse" type="tns:processTypingCmc7TruncResponse" />
+      <xs:element name="processTypingCpfCnpjCtd" type="tns:processTypingCpfCnpjCtd" />
+      <xs:element name="processTypingCpfCnpjCtdResponse" type="tns:processTypingCpfCnpjCtdResponse" />
+      <xs:element name="processTypingDataBoaCtd" type="tns:processTypingDataBoaCtd" />
+      <xs:element name="processTypingDataBoaCtdResponse" type="tns:processTypingDataBoaCtdResponse" />
+      <xs:element name="processTypingResponse" type="tns:processTypingResponse" />
+      <xs:element name="processTypingValCtd" type="tns:processTypingValCtd" />
+      <xs:element name="processTypingValCtdResponse" type="tns:processTypingValCtdResponse" />
+      <xs:element name="processTypingValTrunc" type="tns:processTypingValTrunc" />
+      <xs:element name="processTypingValTruncResponse" type="tns:processTypingValTruncResponse" />
+      <xs:complexType name="processTypingCmc7Ctd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingCmc7CtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processIcr">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processIcrResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markValSignAuto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markValSignAutoResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingDataBoaCtd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingDataBoaCtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processOcrA">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processOcrAResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInDiff3">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInDiff3Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove1">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove1Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingValCtd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingValCtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingCmc7Trunc">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingCmc7TruncResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove4">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove4Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markValSignManual">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markValSignManualResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markTransInDiff2">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markTransInDiff2Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingBorderoTrunc">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingBorderoTruncResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processClassify">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentXml" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processClassifyResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processDoubleTypingValCtd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processDoubleTypingValCtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingBorderoCtd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingBorderoCtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInDiff1">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInDiff1Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processDoubleTypingDataBoaCtd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processDoubleTypingDataBoaCtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markTransInDiff1">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markTransInDiff1Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingValTrunc">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingValTruncResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveValSignManual">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveValSignManualResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveForm">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveFormResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markForm">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markFormResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveValSignAuto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveValSignAutoResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingCpfCnpjCtd">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingCpfCnpjCtdResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markTransInApprove3">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markTransInApprove3Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove3">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove3Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove2">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInApprove2Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="approveTransInDiff2">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="approveTransInDiff2Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTyping">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="typingTime" type="xs:int" />
+          <xs:element minOccurs="0" name="keystroke" type="xs:int" />
+          <xs:element minOccurs="0" name="descTypingLog" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="markTransInApprove1">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="markTransInApprove1Response">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="approveValSignAutoResponse">
+    <wsdl:part name="parameters" element="ns1:approveValSignAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveValSignManual">
+    <wsdl:part name="parameters" element="ns1:approveValSignManual" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInDiff3Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInDiff3Response" />
+  </wsdl:message>
+  <wsdl:message name="markTransInApprove1Response">
+    <wsdl:part name="parameters" element="ns1:markTransInApprove1Response" />
+  </wsdl:message>
+  <wsdl:message name="processClassifyResponse">
+    <wsdl:part name="parameters" element="ns1:processClassifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="processDoubleTypingDataBoaCtdResponse">
+    <wsdl:part name="parameters" element="ns1:processDoubleTypingDataBoaCtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove2Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove2Response" />
+  </wsdl:message>
+  <wsdl:message name="processIcr">
+    <wsdl:part name="parameters" element="ns1:processIcr" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove4Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove4Response" />
+  </wsdl:message>
+  <wsdl:message name="processTypingCmc7Ctd">
+    <wsdl:part name="parameters" element="ns1:processTypingCmc7Ctd" />
+  </wsdl:message>
+  <wsdl:message name="processTypingResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingResponse" />
+  </wsdl:message>
+  <wsdl:message name="processDoubleTypingValCtdResponse">
+    <wsdl:part name="parameters" element="ns1:processDoubleTypingValCtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="processTypingCmc7CtdResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingCmc7CtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="processClassify">
+    <wsdl:part name="parameters" element="ns1:processClassify" />
+  </wsdl:message>
+  <wsdl:message name="processTyping">
+    <wsdl:part name="parameters" element="ns1:processTyping" />
+  </wsdl:message>
+  <wsdl:message name="markValSignAutoResponse">
+    <wsdl:part name="parameters" element="ns1:markValSignAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInDiff1Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInDiff1Response" />
+  </wsdl:message>
+  <wsdl:message name="processTypingBorderoCtd">
+    <wsdl:part name="parameters" element="ns1:processTypingBorderoCtd" />
+  </wsdl:message>
+  <wsdl:message name="processTypingBorderoCtdResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingBorderoCtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="markTransInDiff1Response">
+    <wsdl:part name="parameters" element="ns1:markTransInDiff1Response" />
+  </wsdl:message>
+  <wsdl:message name="processTypingValTrunc">
+    <wsdl:part name="parameters" element="ns1:processTypingValTrunc" />
+  </wsdl:message>
+  <wsdl:message name="processOcrAResponse">
+    <wsdl:part name="parameters" element="ns1:processOcrAResponse" />
+  </wsdl:message>
+  <wsdl:message name="markValSignManual">
+    <wsdl:part name="parameters" element="ns1:markValSignManual" />
+  </wsdl:message>
+  <wsdl:message name="processTypingValCtdResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingValCtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="markValSignManualResponse">
+    <wsdl:part name="parameters" element="ns1:markValSignManualResponse" />
+  </wsdl:message>
+  <wsdl:message name="processTypingValTruncResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingValTruncResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveFormResponse">
+    <wsdl:part name="parameters" element="ns1:approveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="processOcrA">
+    <wsdl:part name="parameters" element="ns1:processOcrA" />
+  </wsdl:message>
+  <wsdl:message name="approveValSignAuto">
+    <wsdl:part name="parameters" element="ns1:approveValSignAuto" />
+  </wsdl:message>
+  <wsdl:message name="approveForm">
+    <wsdl:part name="parameters" element="ns1:approveForm" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInDiff2Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInDiff2Response" />
+  </wsdl:message>
+  <wsdl:message name="processIcrResponse">
+    <wsdl:part name="parameters" element="ns1:processIcrResponse" />
+  </wsdl:message>
+  <wsdl:message name="markForm">
+    <wsdl:part name="parameters" element="ns1:markForm" />
+  </wsdl:message>
+  <wsdl:message name="markFormResponse">
+    <wsdl:part name="parameters" element="ns1:markFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="markTransInApprove1">
+    <wsdl:part name="parameters" element="ns1:markTransInApprove1" />
+  </wsdl:message>
+  <wsdl:message name="processTypingCmc7TruncResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingCmc7TruncResponse" />
+  </wsdl:message>
+  <wsdl:message name="approveValSignManualResponse">
+    <wsdl:part name="parameters" element="ns1:approveValSignManualResponse" />
+  </wsdl:message>
+  <wsdl:message name="processTypingCpfCnpjCtdResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingCpfCnpjCtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="markTransInApprove3">
+    <wsdl:part name="parameters" element="ns1:markTransInApprove3" />
+  </wsdl:message>
+  <wsdl:message name="processTypingBorderoTrunc">
+    <wsdl:part name="parameters" element="ns1:processTypingBorderoTrunc" />
+  </wsdl:message>
+  <wsdl:message name="processDoubleTypingValCtd">
+    <wsdl:part name="parameters" element="ns1:processDoubleTypingValCtd" />
+  </wsdl:message>
+  <wsdl:message name="processTypingBorderoTruncResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingBorderoTruncResponse" />
+  </wsdl:message>
+  <wsdl:message name="markTransInDiff2Response">
+    <wsdl:part name="parameters" element="ns1:markTransInDiff2Response" />
+  </wsdl:message>
+  <wsdl:message name="processTypingDataBoaCtd">
+    <wsdl:part name="parameters" element="ns1:processTypingDataBoaCtd" />
+  </wsdl:message>
+  <wsdl:message name="processDoubleTypingDataBoaCtd">
+    <wsdl:part name="parameters" element="ns1:processDoubleTypingDataBoaCtd" />
+  </wsdl:message>
+  <wsdl:message name="processTypingCmc7Trunc">
+    <wsdl:part name="parameters" element="ns1:processTypingCmc7Trunc" />
+  </wsdl:message>
+  <wsdl:message name="processTypingDataBoaCtdResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingDataBoaCtdResponse" />
+  </wsdl:message>
+  <wsdl:message name="markTransInDiff1">
+    <wsdl:part name="parameters" element="ns1:markTransInDiff1" />
+  </wsdl:message>
+  <wsdl:message name="markTransInDiff2">
+    <wsdl:part name="parameters" element="ns1:markTransInDiff2" />
+  </wsdl:message>
+  <wsdl:message name="markValSignAuto">
+    <wsdl:part name="parameters" element="ns1:markValSignAuto" />
+  </wsdl:message>
+  <wsdl:message name="processTypingCpfCnpjCtd">
+    <wsdl:part name="parameters" element="ns1:processTypingCpfCnpjCtd" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove1">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove1" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove2">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove2" />
+  </wsdl:message>
+  <wsdl:message name="processTypingValCtd">
+    <wsdl:part name="parameters" element="ns1:processTypingValCtd" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove3">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove3" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove4">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove4" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInDiff1">
+    <wsdl:part name="parameters" element="ns1:approveTransInDiff1" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInDiff2">
+    <wsdl:part name="parameters" element="ns1:approveTransInDiff2" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInDiff3">
+    <wsdl:part name="parameters" element="ns1:approveTransInDiff3" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove3Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove3Response" />
+  </wsdl:message>
+  <wsdl:message name="markTransInApprove3Response">
+    <wsdl:part name="parameters" element="ns1:markTransInApprove3Response" />
+  </wsdl:message>
+  <wsdl:message name="approveTransInApprove1Response">
+    <wsdl:part name="parameters" element="ns1:approveTransInApprove1Response" />
+  </wsdl:message>
+  <wsdl:portType name="ProcessingFService">
+    <wsdl:operation name="processTypingCmc7Ctd">
+      <wsdl:input name="processTypingCmc7Ctd" message="ns1:processTypingCmc7Ctd" />
+      <wsdl:output name="processTypingCmc7CtdResponse" message="ns1:processTypingCmc7CtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processIcr">
+      <wsdl:input name="processIcr" message="ns1:processIcr" />
+      <wsdl:output name="processIcrResponse" message="ns1:processIcrResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markValSignAuto">
+      <wsdl:input name="markValSignAuto" message="ns1:markValSignAuto" />
+      <wsdl:output name="markValSignAutoResponse" message="ns1:markValSignAutoResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingDataBoaCtd">
+      <wsdl:input name="processTypingDataBoaCtd" message="ns1:processTypingDataBoaCtd" />
+      <wsdl:output name="processTypingDataBoaCtdResponse" message="ns1:processTypingDataBoaCtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processOcrA">
+      <wsdl:input name="processOcrA" message="ns1:processOcrA" />
+      <wsdl:output name="processOcrAResponse" message="ns1:processOcrAResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInDiff3">
+      <wsdl:input name="approveTransInDiff3" message="ns1:approveTransInDiff3" />
+      <wsdl:output name="approveTransInDiff3Response" message="ns1:approveTransInDiff3Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove1">
+      <wsdl:input name="approveTransInApprove1" message="ns1:approveTransInApprove1" />
+      <wsdl:output name="approveTransInApprove1Response" message="ns1:approveTransInApprove1Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingValCtd">
+      <wsdl:input name="processTypingValCtd" message="ns1:processTypingValCtd" />
+      <wsdl:output name="processTypingValCtdResponse" message="ns1:processTypingValCtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingCmc7Trunc">
+      <wsdl:input name="processTypingCmc7Trunc" message="ns1:processTypingCmc7Trunc" />
+      <wsdl:output name="processTypingCmc7TruncResponse" message="ns1:processTypingCmc7TruncResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove4">
+      <wsdl:input name="approveTransInApprove4" message="ns1:approveTransInApprove4" />
+      <wsdl:output name="approveTransInApprove4Response" message="ns1:approveTransInApprove4Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markValSignManual">
+      <wsdl:input name="markValSignManual" message="ns1:markValSignManual" />
+      <wsdl:output name="markValSignManualResponse" message="ns1:markValSignManualResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markTransInDiff2">
+      <wsdl:input name="markTransInDiff2" message="ns1:markTransInDiff2" />
+      <wsdl:output name="markTransInDiff2Response" message="ns1:markTransInDiff2Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingBorderoTrunc">
+      <wsdl:input name="processTypingBorderoTrunc" message="ns1:processTypingBorderoTrunc" />
+      <wsdl:output name="processTypingBorderoTruncResponse" message="ns1:processTypingBorderoTruncResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processClassify">
+      <wsdl:input name="processClassify" message="ns1:processClassify" />
+      <wsdl:output name="processClassifyResponse" message="ns1:processClassifyResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processDoubleTypingValCtd">
+      <wsdl:input name="processDoubleTypingValCtd" message="ns1:processDoubleTypingValCtd" />
+      <wsdl:output name="processDoubleTypingValCtdResponse" message="ns1:processDoubleTypingValCtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingBorderoCtd">
+      <wsdl:input name="processTypingBorderoCtd" message="ns1:processTypingBorderoCtd" />
+      <wsdl:output name="processTypingBorderoCtdResponse" message="ns1:processTypingBorderoCtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInDiff1">
+      <wsdl:input name="approveTransInDiff1" message="ns1:approveTransInDiff1" />
+      <wsdl:output name="approveTransInDiff1Response" message="ns1:approveTransInDiff1Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processDoubleTypingDataBoaCtd">
+      <wsdl:input name="processDoubleTypingDataBoaCtd" message="ns1:processDoubleTypingDataBoaCtd" />
+      <wsdl:output name="processDoubleTypingDataBoaCtdResponse" message="ns1:processDoubleTypingDataBoaCtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markTransInDiff1">
+      <wsdl:input name="markTransInDiff1" message="ns1:markTransInDiff1" />
+      <wsdl:output name="markTransInDiff1Response" message="ns1:markTransInDiff1Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingValTrunc">
+      <wsdl:input name="processTypingValTrunc" message="ns1:processTypingValTrunc" />
+      <wsdl:output name="processTypingValTruncResponse" message="ns1:processTypingValTruncResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveValSignManual">
+      <wsdl:input name="approveValSignManual" message="ns1:approveValSignManual" />
+      <wsdl:output name="approveValSignManualResponse" message="ns1:approveValSignManualResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveForm">
+      <wsdl:input name="approveForm" message="ns1:approveForm" />
+      <wsdl:output name="approveFormResponse" message="ns1:approveFormResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markForm">
+      <wsdl:input name="markForm" message="ns1:markForm" />
+      <wsdl:output name="markFormResponse" message="ns1:markFormResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveValSignAuto">
+      <wsdl:input name="approveValSignAuto" message="ns1:approveValSignAuto" />
+      <wsdl:output name="approveValSignAutoResponse" message="ns1:approveValSignAutoResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingCpfCnpjCtd">
+      <wsdl:input name="processTypingCpfCnpjCtd" message="ns1:processTypingCpfCnpjCtd" />
+      <wsdl:output name="processTypingCpfCnpjCtdResponse" message="ns1:processTypingCpfCnpjCtdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markTransInApprove3">
+      <wsdl:input name="markTransInApprove3" message="ns1:markTransInApprove3" />
+      <wsdl:output name="markTransInApprove3Response" message="ns1:markTransInApprove3Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove3">
+      <wsdl:input name="approveTransInApprove3" message="ns1:approveTransInApprove3" />
+      <wsdl:output name="approveTransInApprove3Response" message="ns1:approveTransInApprove3Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove2">
+      <wsdl:input name="approveTransInApprove2" message="ns1:approveTransInApprove2" />
+      <wsdl:output name="approveTransInApprove2Response" message="ns1:approveTransInApprove2Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInDiff2">
+      <wsdl:input name="approveTransInDiff2" message="ns1:approveTransInDiff2" />
+      <wsdl:output name="approveTransInDiff2Response" message="ns1:approveTransInDiff2Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTyping">
+      <wsdl:input name="processTyping" message="ns1:processTyping" />
+      <wsdl:output name="processTypingResponse" message="ns1:processTypingResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="markTransInApprove1">
+      <wsdl:input name="markTransInApprove1" message="ns1:markTransInApprove1" />
+      <wsdl:output name="markTransInApprove1Response" message="ns1:markTransInApprove1Response" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

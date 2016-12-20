@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="QueueNfService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.124:8080/flexpsService/QueueNfService?wsdl=QueueNfService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="QueueNfServiceSoapBinding" type="ns1:QueueNfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getDocsNfInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocsNfInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocsNfInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QueueNfService">
+    <wsdl:port name="QueueNfServiceImplPort" binding="tns:QueueNfServiceSoapBinding">
+      <soap:address location="http://flexps.corp.flexdoc.com.br:8080/flexpsService/QueueNfService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

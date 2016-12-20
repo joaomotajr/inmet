@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WorkflowMonitorWSService" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="findBatchNfMonitorBySiteId" type="tns:findBatchNfMonitorBySiteId" />
+      <xs:element name="findBatchNfMonitorBySiteIdResponse" type="tns:findBatchNfMonitorBySiteIdResponse" />
+      <xs:element name="findPhaseByWorkflowId" type="tns:findPhaseByWorkflowId" />
+      <xs:element name="findPhaseByWorkflowIdResponse" type="tns:findPhaseByWorkflowIdResponse" />
+      <xs:element name="getMonitorByWorkflowId" type="tns:getMonitorByWorkflowId" />
+      <xs:element name="getMonitorByWorkflowIdResponse" type="tns:getMonitorByWorkflowIdResponse" />
+      <xs:element name="getWorkflowsMonitor" type="tns:getWorkflowsMonitor" />
+      <xs:element name="getWorkflowsMonitorResponse" type="tns:getWorkflowsMonitorResponse" />
+      <xs:complexType name="getMonitorByWorkflowId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getMonitorByWorkflowIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:workflowMonitorDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workflowMonitorDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="phasesMonitor" nillable="true" type="tns:phaseMonitorDTO" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="phaseMonitorDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="phaseId" type="xs:long" />
+          <xs:element minOccurs="0" name="phaseName" type="xs:string" />
+          <xs:element minOccurs="0" name="phaseOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="totalDocs" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getWorkflowsMonitor">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getWorkflowsMonitorResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:workflowMonitorDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findPhaseByWorkflowId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findPhaseByWorkflowIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:phaseDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="phaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="phaseAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="phaseId" type="xs:long" />
+          <xs:element minOccurs="0" name="phaseName" type="xs:string" />
+          <xs:element minOccurs="0" name="phaseOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="phaseVisible" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findBatchNfMonitorBySiteId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findBatchNfMonitorBySiteIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:batchNfMonitorDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="batchNfMonitorDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="WorkflowMonitorService_findBatchNfMonitorBySiteIdResponse">
+    <part name="findBatchNfMonitorBySiteIdResponse" element="tns:findBatchNfMonitorBySiteIdResponse" />
+  </message>
+  <message name="WorkflowMonitorService_findBatchNfMonitorBySiteId">
+    <part name="findBatchNfMonitorBySiteId" element="tns:findBatchNfMonitorBySiteId" />
+  </message>
+  <message name="WorkflowMonitorService_getWorkflowsMonitorResponse">
+    <part name="getWorkflowsMonitorResponse" element="tns:getWorkflowsMonitorResponse" />
+  </message>
+  <message name="WorkflowMonitorService_getMonitorByWorkflowIdResponse">
+    <part name="getMonitorByWorkflowIdResponse" element="tns:getMonitorByWorkflowIdResponse" />
+  </message>
+  <message name="WorkflowMonitorService_findPhaseByWorkflowId">
+    <part name="findPhaseByWorkflowId" element="tns:findPhaseByWorkflowId" />
+  </message>
+  <message name="WorkflowMonitorService_getWorkflowsMonitor">
+    <part name="getWorkflowsMonitor" element="tns:getWorkflowsMonitor" />
+  </message>
+  <message name="WorkflowMonitorService_findPhaseByWorkflowIdResponse">
+    <part name="findPhaseByWorkflowIdResponse" element="tns:findPhaseByWorkflowIdResponse" />
+  </message>
+  <message name="WorkflowMonitorService_getMonitorByWorkflowId">
+    <part name="getMonitorByWorkflowId" element="tns:getMonitorByWorkflowId" />
+  </message>
+  <portType name="WorkflowMonitorService">
+    <operation name="findBatchNfMonitorBySiteId" parameterOrder="findBatchNfMonitorBySiteId">
+      <input message="tns:WorkflowMonitorService_findBatchNfMonitorBySiteId" />
+      <output message="tns:WorkflowMonitorService_findBatchNfMonitorBySiteIdResponse" />
+    </operation>
+    <operation name="findPhaseByWorkflowId" parameterOrder="findPhaseByWorkflowId">
+      <input message="tns:WorkflowMonitorService_findPhaseByWorkflowId" />
+      <output message="tns:WorkflowMonitorService_findPhaseByWorkflowIdResponse" />
+    </operation>
+    <operation name="getMonitorByWorkflowId" parameterOrder="getMonitorByWorkflowId">
+      <input message="tns:WorkflowMonitorService_getMonitorByWorkflowId" />
+      <output message="tns:WorkflowMonitorService_getMonitorByWorkflowIdResponse" />
+    </operation>
+    <operation name="getWorkflowsMonitor" parameterOrder="getWorkflowsMonitor">
+      <input message="tns:WorkflowMonitorService_getWorkflowsMonitor" />
+      <output message="tns:WorkflowMonitorService_getWorkflowsMonitorResponse" />
+    </operation>
+  </portType>
+  <binding name="WorkflowMonitorServiceBinding" type="tns:WorkflowMonitorService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="findBatchNfMonitorBySiteId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findPhaseByWorkflowId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getMonitorByWorkflowId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getWorkflowsMonitor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WorkflowMonitorWSService">
+    <port name="WorkflowMonitorWSPort" binding="tns:WorkflowMonitorServiceBinding">
+      <soap:address location="http://192.168.1.2:8080/inmet/Service/WorkflowMonitorService" />
+    </port>
+  </service>
+</definitions>

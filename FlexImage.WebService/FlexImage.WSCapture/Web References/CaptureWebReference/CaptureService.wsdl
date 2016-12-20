@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="CaptureService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.124:8080/flexpsService/CaptureService?wsdl=CaptureService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="CaptureServiceSoapBinding" type="ns1:CaptureService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="setDocFRecapture">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setDocFRecapture">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setDocFRecaptureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="closeBatchF">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="closeBatchF">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="closeBatchFResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentFToRecapture">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocumentFToRecapture">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocumentFToRecaptureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertDocument">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="insertDocument">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="insertDocumentResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="openBatchF">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="openBatchF">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="openBatchFResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBatchFToRecapture">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBatchFToRecapture">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBatchFToRecaptureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setBatchFTransmitted">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setBatchFTransmitted">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setBatchFTransmittedResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CaptureService">
+    <wsdl:port name="CaptureServiceImplPort" binding="tns:CaptureServiceSoapBinding">
+      <soap:address location="http://flexps.corp.flexdoc.com.br:8080/flexpsService/CaptureService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

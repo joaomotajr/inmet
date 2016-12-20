@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CancelNfService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="cancelBatchNf" type="tns:cancelBatchNf" />
+      <xs:element name="cancelBatchNfResponse" type="tns:cancelBatchNfResponse" />
+      <xs:element name="cancelDocumentNf" type="tns:cancelDocumentNf" />
+      <xs:element name="cancelDocumentNfResponse" type="tns:cancelDocumentNfResponse" />
+      <xs:complexType name="cancelBatchNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancelBatchNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="cancelDocumentNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancelDocumentNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="cancelBatchNfResponse">
+    <wsdl:part name="parameters" element="ns1:cancelBatchNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelDocumentNfResponse">
+    <wsdl:part name="parameters" element="ns1:cancelDocumentNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelBatchNf">
+    <wsdl:part name="parameters" element="ns1:cancelBatchNf" />
+  </wsdl:message>
+  <wsdl:message name="cancelDocumentNf">
+    <wsdl:part name="parameters" element="ns1:cancelDocumentNf" />
+  </wsdl:message>
+  <wsdl:portType name="CancelNfService">
+    <wsdl:operation name="cancelBatchNf">
+      <wsdl:input name="cancelBatchNf" message="ns1:cancelBatchNf" />
+      <wsdl:output name="cancelBatchNfResponse" message="ns1:cancelBatchNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelDocumentNf">
+      <wsdl:input name="cancelDocumentNf" message="ns1:cancelDocumentNf" />
+      <wsdl:output name="cancelDocumentNfResponse" message="ns1:cancelDocumentNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

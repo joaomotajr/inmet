@@ -1,0 +1,6 @@
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSRepository\bin\x86\Debug\FlexImage.WSRepository.dll.config
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSRepository\bin\x86\Debug\FlexImage.WSRepository.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSRepository\bin\x86\Debug\FlexImage.WSRepository.pdb
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSRepository\obj\x86\Debug\FlexImage.WSRepository.csprojResolveAssemblyReference.cache
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSRepository\obj\x86\Debug\FlexImage.WSRepository.dll
+C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSRepository\obj\x86\Debug\FlexImage.WSRepository.pdb

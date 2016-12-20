@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="CaptureNfService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.2:8180/flexpsService/CaptureNfService?wsdl=CaptureNfService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="CaptureNfServiceSoapBinding" type="ns1:CaptureNfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getDocumentNfToRecapture">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocumentNfToRecapture">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocumentNfToRecaptureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="closeBatchNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="closeBatchNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="closeBatchNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertDocumentNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="insertDocumentNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="insertDocumentNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setDocNfRecapture">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setDocNfRecapture">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setDocNfRecaptureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="openBatchNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="openBatchNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="openBatchNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setBatchNfTransmitted">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setBatchNfTransmitted">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setBatchNfTransmittedResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBatchNfToRecapture">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBatchNfToRecapture">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBatchNfToRecaptureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CaptureNfService">
+    <wsdl:port name="CaptureNfServiceImplPort" binding="tns:CaptureNfServiceSoapBinding">
+      <soap:address location="http://192.168.1.2:8180/flexpsService/CaptureNfService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://flexdoc1.dyndns.org:8080/flexpsService/DocumentNfService?wsdl" filename="DocumentNfService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://flexdoc1.dyndns.org:8080/flexpsService/DocumentNfService?wsdl=DocumentNfService.wsdl" filename="DocumentNfService0.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

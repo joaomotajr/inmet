@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="DocumentNfService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://flexdoc1.dyndns.org:8080/flexpsService/DocumentNfService?wsdl=DocumentNfService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="DocumentNfServiceSoapBinding" type="ns1:DocumentNfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getListDocsForBkp">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getListDocsForBkp">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getListDocsForBkpResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocumentNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocumentNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="closeBackups">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="closeBackups">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="closeBackupsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListDocsForBkpByType">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getListDocsForBkpByType">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getListDocsForBkpByTypeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertDocumentNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="insertDocumentNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="insertDocumentNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getListDocsForBkpByDate">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getListDocsForBkpByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getListDocsForBkpByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getOpenBackup">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getOpenBackup">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOpenBackupResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="insertPredocument">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="insertPredocument">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="insertPredocumentResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocsNfByBatchNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocsNfByBatchNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocsNfByBatchNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="indexDocumentNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="indexDocumentNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="indexDocumentNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setDocumentBackuped">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setDocumentBackuped">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setDocumentBackupedResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isCapa">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="isCapa">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isCapaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPendingSignature">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getPendingSignature">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPendingSignatureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateFileInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="updateFileInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateFileInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocKeyByDocNfId">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocKeyByDocNfId">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocKeyByDocNfIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPreDocKeyByPreDocumentId">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getPreDocKeyByPreDocumentId">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPreDocKeyByPreDocumentIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="openBackups">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="openBackups">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="openBackupsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="reBackup">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="reBackup">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="reBackupResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocsNfId">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocsNfId">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocsNfIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDocumentNf">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="deleteDocumentNf">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteDocumentNfResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DocumentNfService">
+    <wsdl:port name="DocumentNfServiceImplPort" binding="tns:DocumentNfServiceSoapBinding">
+      <soap:address location="http://192.168.2.5:8080/flexpsService/DocumentNfService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

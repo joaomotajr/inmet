@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="BasicTableService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.2:8180/flexpsService/BasicTableService?wsdl=BasicTableService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="BasicTableServiceSoapBinding" type="ns1:BasicTableService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSiteById">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getSiteById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSiteByIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissions">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getPermissions">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getPermissionsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTypesByWorkflowId">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTypesByWorkflowId">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTypesByWorkflowIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="createParam">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="createParam">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createParamResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getCheckList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getCheckList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getCheckListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getHwScan">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getHwScan">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getHwScanResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getOrganizationLogo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getOrganizationLogo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOrganizationLogoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllParam">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getAllParam">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAllParamResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowById">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getWorkflowById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getWorkflowByIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getMediaType">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getMediaType">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMediaTypeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowByAlias">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getWorkflowByAlias">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getWorkflowByAliasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getClearingList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getClearingList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getClearingListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllTypes">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getAllTypes">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAllTypesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getQueuesByUsrGroupsId">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getQueuesByUsrGroupsId">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getQueuesByUsrGroupsIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTypeByAlias">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTypeByAlias">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTypeByAliasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isValidBranch">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="isValidBranch">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isValidBranchResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setParam">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setParam">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setParamResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTypeById">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTypeById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTypeByIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowByUsrGroups">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getWorkflowByUsrGroups">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getWorkflowByUsrGroupsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBankList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBankList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBankListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getOcrTemplateList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getOcrTemplateList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOcrTemplateListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getParamByAlias">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getParamByAlias">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getParamByAliasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getReasonsByReasonGroupAlias">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getReasonsByReasonGroupAlias">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getReasonsByReasonGroupAliasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getStationIdByName">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getStationIdByName">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getStationIdByNameResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BasicTableService">
+    <wsdl:port name="BasicTableServiceImplPort" binding="tns:BasicTableServiceSoapBinding">
+      <soap:address location="http://192.168.1.2:8180/flexpsService/BasicTableService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

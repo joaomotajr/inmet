@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CancelService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="cancelBatch" type="tns:cancelBatch" />
+      <xs:element name="cancelBatchResponse" type="tns:cancelBatchResponse" />
+      <xs:element name="cancelDocByCapSeq" type="tns:cancelDocByCapSeq" />
+      <xs:element name="cancelDocByCapSeqResponse" type="tns:cancelDocByCapSeqResponse" />
+      <xs:element name="cancelDocument" type="tns:cancelDocument" />
+      <xs:element name="cancelDocumentResponse" type="tns:cancelDocumentResponse" />
+      <xs:element name="cancelTransaction" type="tns:cancelTransaction" />
+      <xs:element name="cancelTransactionResponse" type="tns:cancelTransactionResponse" />
+      <xs:complexType name="cancelTransaction">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="transactionId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancelTransactionResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="cancelDocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancelDocumentResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="cancelDocByCapSeq">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="captureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancelDocByCapSeqResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="cancelBatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="reason" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cancelBatchResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="cancelBatchResponse">
+    <wsdl:part name="parameters" element="ns1:cancelBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelBatch">
+    <wsdl:part name="parameters" element="ns1:cancelBatch" />
+  </wsdl:message>
+  <wsdl:message name="cancelDocByCapSeqResponse">
+    <wsdl:part name="parameters" element="ns1:cancelDocByCapSeqResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelTransaction">
+    <wsdl:part name="parameters" element="ns1:cancelTransaction" />
+  </wsdl:message>
+  <wsdl:message name="cancelDocByCapSeq">
+    <wsdl:part name="parameters" element="ns1:cancelDocByCapSeq" />
+  </wsdl:message>
+  <wsdl:message name="cancelTransactionResponse">
+    <wsdl:part name="parameters" element="ns1:cancelTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelDocumentResponse">
+    <wsdl:part name="parameters" element="ns1:cancelDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelDocument">
+    <wsdl:part name="parameters" element="ns1:cancelDocument" />
+  </wsdl:message>
+  <wsdl:portType name="CancelService">
+    <wsdl:operation name="cancelTransaction">
+      <wsdl:input name="cancelTransaction" message="ns1:cancelTransaction" />
+      <wsdl:output name="cancelTransactionResponse" message="ns1:cancelTransactionResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelDocument">
+      <wsdl:input name="cancelDocument" message="ns1:cancelDocument" />
+      <wsdl:output name="cancelDocumentResponse" message="ns1:cancelDocumentResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelDocByCapSeq">
+      <wsdl:input name="cancelDocByCapSeq" message="ns1:cancelDocByCapSeq" />
+      <wsdl:output name="cancelDocByCapSeqResponse" message="ns1:cancelDocByCapSeqResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelBatch">
+      <wsdl:input name="cancelBatch" message="ns1:cancelBatch" />
+      <wsdl:output name="cancelBatchResponse" message="ns1:cancelBatchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

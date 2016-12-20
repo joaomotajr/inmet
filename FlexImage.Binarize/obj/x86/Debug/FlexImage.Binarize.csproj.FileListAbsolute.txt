@@ -1,0 +1,7 @@
+C:\CSHARP\INMET\FlexImage.Binarize\bin\x86\Debug\FlexImage.Binarize.dll
+C:\CSHARP\INMET\FlexImage.Binarize\bin\x86\Debug\FlexImage.Binarize.pdb
+C:\CSHARP\INMET\FlexImage.Binarize\bin\x86\Debug\FlexImage.WSBasicTable.dll
+C:\CSHARP\INMET\FlexImage.Binarize\bin\x86\Debug\FlexImage.WSBasicTable.pdb
+C:\CSHARP\INMET\FlexImage.Binarize\obj\x86\Debug\FlexImage.Binarize.csprojResolveAssemblyReference.cache
+C:\CSHARP\INMET\FlexImage.Binarize\obj\x86\Debug\FlexImage.Binarize.dll
+C:\CSHARP\INMET\FlexImage.Binarize\obj\x86\Debug\FlexImage.Binarize.pdb

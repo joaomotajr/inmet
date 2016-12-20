@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BasicTableService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="createParam" type="tns:createParam" />
+      <xs:element name="createParamResponse" type="tns:createParamResponse" />
+      <xs:element name="getAllParam" type="tns:getAllParam" />
+      <xs:element name="getAllParamResponse" type="tns:getAllParamResponse" />
+      <xs:element name="getAllTypes" type="tns:getAllTypes" />
+      <xs:element name="getAllTypesResponse" type="tns:getAllTypesResponse" />
+      <xs:element name="getBankList" type="tns:getBankList" />
+      <xs:element name="getBankListResponse" type="tns:getBankListResponse" />
+      <xs:element name="getCheckList" type="tns:getCheckList" />
+      <xs:element name="getCheckListResponse" type="tns:getCheckListResponse" />
+      <xs:element name="getClearingList" type="tns:getClearingList" />
+      <xs:element name="getClearingListResponse" type="tns:getClearingListResponse" />
+      <xs:element name="getHwScan" type="tns:getHwScan" />
+      <xs:element name="getHwScanResponse" type="tns:getHwScanResponse" />
+      <xs:element name="getMediaType" type="tns:getMediaType" />
+      <xs:element name="getMediaTypeResponse" type="tns:getMediaTypeResponse" />
+      <xs:element name="getOcrTemplateList" type="tns:getOcrTemplateList" />
+      <xs:element name="getOcrTemplateListResponse" type="tns:getOcrTemplateListResponse" />
+      <xs:element name="getOrganizationLogo" type="tns:getOrganizationLogo" />
+      <xs:element name="getOrganizationLogoResponse" type="tns:getOrganizationLogoResponse" />
+      <xs:element name="getParamByAlias" type="tns:getParamByAlias" />
+      <xs:element name="getParamByAliasResponse" type="tns:getParamByAliasResponse" />
+      <xs:element name="getPermissions" type="tns:getPermissions" />
+      <xs:element name="getPermissionsResponse" type="tns:getPermissionsResponse" />
+      <xs:element name="getQueuesByUsrGroupsId" type="tns:getQueuesByUsrGroupsId" />
+      <xs:element name="getQueuesByUsrGroupsIdResponse" type="tns:getQueuesByUsrGroupsIdResponse" />
+      <xs:element name="getReasonsByReasonGroupAlias" type="tns:getReasonsByReasonGroupAlias" />
+      <xs:element name="getReasonsByReasonGroupAliasResponse" type="tns:getReasonsByReasonGroupAliasResponse" />
+      <xs:element name="getSiteById" type="tns:getSiteById" />
+      <xs:element name="getSiteByIdResponse" type="tns:getSiteByIdResponse" />
+      <xs:element name="getStationIdByName" type="tns:getStationIdByName" />
+      <xs:element name="getStationIdByNameResponse" type="tns:getStationIdByNameResponse" />
+      <xs:element name="getTypeByAlias" type="tns:getTypeByAlias" />
+      <xs:element name="getTypeByAliasResponse" type="tns:getTypeByAliasResponse" />
+      <xs:element name="getTypeById" type="tns:getTypeById" />
+      <xs:element name="getTypeByIdResponse" type="tns:getTypeByIdResponse" />
+      <xs:element name="getTypesByWorkflowId" type="tns:getTypesByWorkflowId" />
+      <xs:element name="getTypesByWorkflowIdResponse" type="tns:getTypesByWorkflowIdResponse" />
+      <xs:element name="getWorkflowByAlias" type="tns:getWorkflowByAlias" />
+      <xs:element name="getWorkflowByAliasResponse" type="tns:getWorkflowByAliasResponse" />
+      <xs:element name="getWorkflowById" type="tns:getWorkflowById" />
+      <xs:element name="getWorkflowByIdResponse" type="tns:getWorkflowByIdResponse" />
+      <xs:element name="getWorkflowByUsrGroups" type="tns:getWorkflowByUsrGroups" />
+      <xs:element name="getWorkflowByUsrGroupsResponse" type="tns:getWorkflowByUsrGroupsResponse" />
+      <xs:element name="isValidBranch" type="tns:isValidBranch" />
+      <xs:element name="isValidBranchResponse" type="tns:isValidBranchResponse" />
+      <xs:element name="setParam" type="tns:setParam" />
+      <xs:element name="setParamResponse" type="tns:setParamResponse" />
+      <xs:complexType name="getSiteById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSiteByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:siteDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="siteDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="siteActive" type="xs:int" />
+          <xs:element minOccurs="0" name="siteAddress" type="xs:string" />
+          <xs:element minOccurs="0" name="siteBandWidth" type="xs:int" />
+          <xs:element minOccurs="0" name="siteCloseTime" type="xs:string" />
+          <xs:element minOccurs="0" name="siteControl" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteCoordX" type="xs:int" />
+          <xs:element minOccurs="0" name="siteCoordY" type="xs:int" />
+          <xs:element minOccurs="0" name="siteEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteExternalId" type="xs:int" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteInitDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteInternalNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="siteLastCaptureTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteManager" type="xs:string" />
+          <xs:element minOccurs="0" name="siteMaxCaptureTime" type="xs:string" />
+          <xs:element minOccurs="0" name="siteName" type="xs:string" />
+          <xs:element minOccurs="0" name="siteOpenTime" type="xs:string" />
+          <xs:element minOccurs="0" name="sitePhone" type="xs:string" />
+          <xs:element minOccurs="0" name="sitePriority" type="xs:int" />
+          <xs:element minOccurs="0" name="siteProcessGroup" type="xs:int" />
+          <xs:element minOccurs="0" name="siteStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="siteType" type="xs:int" />
+          <xs:element minOccurs="0" name="siteXml" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPermissions">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupIds" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPermissionsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:permissionDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="permissionDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="permissionAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="permissionEndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="permissionId" type="xs:long" />
+          <xs:element minOccurs="0" name="permissionName" type="xs:string" />
+          <xs:element minOccurs="0" name="permissionStartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTypesByWorkflowId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTypesByWorkflowIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:typeDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="typeDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="keyDefDtoList" nillable="true" type="tns:keyDefDto" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyDefDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefMandatory" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="createParam">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="paramGroupAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="paramGroupName" type="xs:string" />
+          <xs:element minOccurs="0" name="paramAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="paramDesc" type="xs:string" />
+          <xs:element minOccurs="0" name="paramLogin" type="xs:int" />
+          <xs:element minOccurs="0" name="paramValue" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="createParamResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getHwScan">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="hwScanId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getHwScanResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:hwScanDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="hwScanDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="hwScanBrightness" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanColorFormat" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanCompression" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanContrast" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanDriver" type="xs:string" />
+          <xs:element minOccurs="0" name="hwScanDriverType" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanGamma" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanId" type="xs:long" />
+          <xs:element minOccurs="0" name="hwScanMaintenance1" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanMaintenance2" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanName" type="xs:string" />
+          <xs:element minOccurs="0" name="hwScanOutputType" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanSchema" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanXml" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCheckList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCheckListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:checkListDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checkListDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="checkListId" type="xs:long" />
+          <xs:element minOccurs="0" name="checkListMandatory" type="xs:int" />
+          <xs:element minOccurs="0" name="checkListObs" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getOrganizationLogo">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getOrganizationLogoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAllParam">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getAllParamResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="paramDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="paramAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="paramValue" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getWorkflowById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getWorkflowByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:workflowDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workflowDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowDaily" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowName" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowXml" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getMediaType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getMediaTypeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mediaTypeDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mediaTypeDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mediaTypeCapacity" type="xs:int" />
+          <xs:element minOccurs="0" name="mediaTypeId" type="xs:long" />
+          <xs:element minOccurs="0" name="mediaTypeName" type="xs:string" />
+          <xs:element minOccurs="0" name="mediaTypeValidity" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getWorkflowByAlias">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="alias" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getWorkflowByAliasResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:workflowDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getClearingList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getClearingListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:clearingDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="clearingDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="clearingId" type="xs:long" />
+          <xs:element minOccurs="0" name="clearingLastUpdate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="clearingName" type="xs:string" />
+          <xs:element minOccurs="0" name="clearingStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="clearingType" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAllTypes">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAllTypesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:typeDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getQueuesByUsrGroupsId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupIds" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getQueuesByUsrGroupsIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:queueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queueDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="countObjs" type="xs:int" />
+          <xs:element minOccurs="0" name="countUsers" type="xs:int" />
+          <xs:element minOccurs="0" name="forecast" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="queueActive" type="xs:int" />
+          <xs:element minOccurs="0" name="queueAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="queueAvgTime" type="xs:int" />
+          <xs:element minOccurs="0" name="queueCache" type="xs:int" />
+          <xs:element minOccurs="0" name="queueFunction" type="xs:string" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueLoad" type="xs:int" />
+          <xs:element minOccurs="0" name="queueMaster" type="xs:int" />
+          <xs:element minOccurs="0" name="queueModule" type="xs:string" />
+          <xs:element minOccurs="0" name="queueName" type="xs:string" />
+          <xs:element minOccurs="0" name="queueParam" type="xs:string" />
+          <xs:element minOccurs="0" name="queuePriority" type="xs:int" />
+          <xs:element minOccurs="0" name="queueRule" type="xs:string" />
+          <xs:element minOccurs="0" name="queueSwap" type="xs:int" />
+          <xs:element minOccurs="0" name="queueTimeControl" type="xs:int" />
+          <xs:element minOccurs="0" name="queueXml" type="xs:string" />
+          <xs:element minOccurs="0" name="timeTotal" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTypeByAlias">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTypeByAliasResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:typeDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="isValidBranch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="bankId" type="xs:long" />
+          <xs:element minOccurs="0" name="branchId" type="xs:long" />
+          <xs:element minOccurs="0" name="clearingId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="isValidBranchResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setParam">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="paramAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setParamResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getWorkflowByUsrGroups">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupIds" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getWorkflowByUsrGroupsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:workflowDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTypeById">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTypeByIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:typeDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBankList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBankListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bankDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="bankDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bankId" type="xs:long" />
+          <xs:element minOccurs="0" name="bankLastUpdate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="bankName" type="xs:string" />
+          <xs:element minOccurs="0" name="bankStatus" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getOcrTemplateList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getOcrTemplateListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getParamByAlias">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="paramAlias" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getParamByAliasResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:paramDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getStationIdByName">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getStationIdByNameResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getReasonsByReasonGroupAlias">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="reasonGroupAlias" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getReasonsByReasonGroupAliasResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reasonDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reasonDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="reasonId" type="xs:long" />
+          <xs:element minOccurs="0" name="reasonName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getReasonsByReasonGroupAlias">
+    <wsdl:part name="parameters" element="ns1:getReasonsByReasonGroupAlias" />
+  </wsdl:message>
+  <wsdl:message name="getPermissions">
+    <wsdl:part name="parameters" element="ns1:getPermissions" />
+  </wsdl:message>
+  <wsdl:message name="getHwScan">
+    <wsdl:part name="parameters" element="ns1:getHwScan" />
+  </wsdl:message>
+  <wsdl:message name="getOcrTemplateListResponse">
+    <wsdl:part name="parameters" element="ns1:getOcrTemplateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBankList">
+    <wsdl:part name="parameters" element="ns1:getBankList" />
+  </wsdl:message>
+  <wsdl:message name="getWorkflowByUsrGroupsResponse">
+    <wsdl:part name="parameters" element="ns1:getWorkflowByUsrGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCheckList">
+    <wsdl:part name="parameters" element="ns1:getCheckList" />
+  </wsdl:message>
+  <wsdl:message name="getQueuesByUsrGroupsIdResponse">
+    <wsdl:part name="parameters" element="ns1:getQueuesByUsrGroupsIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getStationIdByName">
+    <wsdl:part name="parameters" element="ns1:getStationIdByName" />
+  </wsdl:message>
+  <wsdl:message name="getTypeByAliasResponse">
+    <wsdl:part name="parameters" element="ns1:getTypeByAliasResponse" />
+  </wsdl:message>
+  <wsdl:message name="getQueuesByUsrGroupsId">
+    <wsdl:part name="parameters" element="ns1:getQueuesByUsrGroupsId" />
+  </wsdl:message>
+  <wsdl:message name="createParamResponse">
+    <wsdl:part name="parameters" element="ns1:createParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWorkflowByAlias">
+    <wsdl:part name="parameters" element="ns1:getWorkflowByAlias" />
+  </wsdl:message>
+  <wsdl:message name="getWorkflowByIdResponse">
+    <wsdl:part name="parameters" element="ns1:getWorkflowByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSiteByIdResponse">
+    <wsdl:part name="parameters" element="ns1:getSiteByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPermissionsResponse">
+    <wsdl:part name="parameters" element="ns1:getPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTypeById">
+    <wsdl:part name="parameters" element="ns1:getTypeById" />
+  </wsdl:message>
+  <wsdl:message name="getSiteById">
+    <wsdl:part name="parameters" element="ns1:getSiteById" />
+  </wsdl:message>
+  <wsdl:message name="getHwScanResponse">
+    <wsdl:part name="parameters" element="ns1:getHwScanResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTypesByWorkflowId">
+    <wsdl:part name="parameters" element="ns1:getTypesByWorkflowId" />
+  </wsdl:message>
+  <wsdl:message name="getStationIdByNameResponse">
+    <wsdl:part name="parameters" element="ns1:getStationIdByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTypeByIdResponse">
+    <wsdl:part name="parameters" element="ns1:getTypeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="isValidBranchResponse">
+    <wsdl:part name="parameters" element="ns1:isValidBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="getParamByAliasResponse">
+    <wsdl:part name="parameters" element="ns1:getParamByAliasResponse" />
+  </wsdl:message>
+  <wsdl:message name="setParamResponse">
+    <wsdl:part name="parameters" element="ns1:setParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBankListResponse">
+    <wsdl:part name="parameters" element="ns1:getBankListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCheckListResponse">
+    <wsdl:part name="parameters" element="ns1:getCheckListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllParam">
+    <wsdl:part name="parameters" element="ns1:getAllParam" />
+  </wsdl:message>
+  <wsdl:message name="createParam">
+    <wsdl:part name="parameters" element="ns1:createParam" />
+  </wsdl:message>
+  <wsdl:message name="getWorkflowByUsrGroups">
+    <wsdl:part name="parameters" element="ns1:getWorkflowByUsrGroups" />
+  </wsdl:message>
+  <wsdl:message name="getMediaTypeResponse">
+    <wsdl:part name="parameters" element="ns1:getMediaTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllParamResponse">
+    <wsdl:part name="parameters" element="ns1:getAllParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="getParamByAlias">
+    <wsdl:part name="parameters" element="ns1:getParamByAlias" />
+  </wsdl:message>
+  <wsdl:message name="getReasonsByReasonGroupAliasResponse">
+    <wsdl:part name="parameters" element="ns1:getReasonsByReasonGroupAliasResponse" />
+  </wsdl:message>
+  <wsdl:message name="getClearingList">
+    <wsdl:part name="parameters" element="ns1:getClearingList" />
+  </wsdl:message>
+  <wsdl:message name="getMediaType">
+    <wsdl:part name="parameters" element="ns1:getMediaType" />
+  </wsdl:message>
+  <wsdl:message name="getOrganizationLogo">
+    <wsdl:part name="parameters" element="ns1:getOrganizationLogo" />
+  </wsdl:message>
+  <wsdl:message name="setParam">
+    <wsdl:part name="parameters" element="ns1:setParam" />
+  </wsdl:message>
+  <wsdl:message name="getWorkflowByAliasResponse">
+    <wsdl:part name="parameters" element="ns1:getWorkflowByAliasResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOcrTemplateList">
+    <wsdl:part name="parameters" element="ns1:getOcrTemplateList" />
+  </wsdl:message>
+  <wsdl:message name="getWorkflowById">
+    <wsdl:part name="parameters" element="ns1:getWorkflowById" />
+  </wsdl:message>
+  <wsdl:message name="getAllTypesResponse">
+    <wsdl:part name="parameters" element="ns1:getAllTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getClearingListResponse">
+    <wsdl:part name="parameters" element="ns1:getClearingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTypeByAlias">
+    <wsdl:part name="parameters" element="ns1:getTypeByAlias" />
+  </wsdl:message>
+  <wsdl:message name="getTypesByWorkflowIdResponse">
+    <wsdl:part name="parameters" element="ns1:getTypesByWorkflowIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="isValidBranch">
+    <wsdl:part name="parameters" element="ns1:isValidBranch" />
+  </wsdl:message>
+  <wsdl:message name="getAllTypes">
+    <wsdl:part name="parameters" element="ns1:getAllTypes" />
+  </wsdl:message>
+  <wsdl:message name="getOrganizationLogoResponse">
+    <wsdl:part name="parameters" element="ns1:getOrganizationLogoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BasicTableService">
+    <wsdl:operation name="getSiteById">
+      <wsdl:input name="getSiteById" message="ns1:getSiteById" />
+      <wsdl:output name="getSiteByIdResponse" message="ns1:getSiteByIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getPermissions">
+      <wsdl:input name="getPermissions" message="ns1:getPermissions" />
+      <wsdl:output name="getPermissionsResponse" message="ns1:getPermissionsResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getTypesByWorkflowId">
+      <wsdl:input name="getTypesByWorkflowId" message="ns1:getTypesByWorkflowId" />
+      <wsdl:output name="getTypesByWorkflowIdResponse" message="ns1:getTypesByWorkflowIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="createParam">
+      <wsdl:input name="createParam" message="ns1:createParam" />
+      <wsdl:output name="createParamResponse" message="ns1:createParamResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getHwScan">
+      <wsdl:input name="getHwScan" message="ns1:getHwScan" />
+      <wsdl:output name="getHwScanResponse" message="ns1:getHwScanResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getCheckList">
+      <wsdl:input name="getCheckList" message="ns1:getCheckList" />
+      <wsdl:output name="getCheckListResponse" message="ns1:getCheckListResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrganizationLogo">
+      <wsdl:input name="getOrganizationLogo" message="ns1:getOrganizationLogo" />
+      <wsdl:output name="getOrganizationLogoResponse" message="ns1:getOrganizationLogoResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllParam">
+      <wsdl:input name="getAllParam" message="ns1:getAllParam" />
+      <wsdl:output name="getAllParamResponse" message="ns1:getAllParamResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowById">
+      <wsdl:input name="getWorkflowById" message="ns1:getWorkflowById" />
+      <wsdl:output name="getWorkflowByIdResponse" message="ns1:getWorkflowByIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getMediaType">
+      <wsdl:input name="getMediaType" message="ns1:getMediaType" />
+      <wsdl:output name="getMediaTypeResponse" message="ns1:getMediaTypeResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowByAlias">
+      <wsdl:input name="getWorkflowByAlias" message="ns1:getWorkflowByAlias" />
+      <wsdl:output name="getWorkflowByAliasResponse" message="ns1:getWorkflowByAliasResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getClearingList">
+      <wsdl:input name="getClearingList" message="ns1:getClearingList" />
+      <wsdl:output name="getClearingListResponse" message="ns1:getClearingListResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllTypes">
+      <wsdl:input name="getAllTypes" message="ns1:getAllTypes" />
+      <wsdl:output name="getAllTypesResponse" message="ns1:getAllTypesResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getQueuesByUsrGroupsId">
+      <wsdl:input name="getQueuesByUsrGroupsId" message="ns1:getQueuesByUsrGroupsId" />
+      <wsdl:output name="getQueuesByUsrGroupsIdResponse" message="ns1:getQueuesByUsrGroupsIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getTypeByAlias">
+      <wsdl:input name="getTypeByAlias" message="ns1:getTypeByAlias" />
+      <wsdl:output name="getTypeByAliasResponse" message="ns1:getTypeByAliasResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="isValidBranch">
+      <wsdl:input name="isValidBranch" message="ns1:isValidBranch" />
+      <wsdl:output name="isValidBranchResponse" message="ns1:isValidBranchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setParam">
+      <wsdl:input name="setParam" message="ns1:setParam" />
+      <wsdl:output name="setParamResponse" message="ns1:setParamResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowByUsrGroups">
+      <wsdl:input name="getWorkflowByUsrGroups" message="ns1:getWorkflowByUsrGroups" />
+      <wsdl:output name="getWorkflowByUsrGroupsResponse" message="ns1:getWorkflowByUsrGroupsResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getTypeById">
+      <wsdl:input name="getTypeById" message="ns1:getTypeById" />
+      <wsdl:output name="getTypeByIdResponse" message="ns1:getTypeByIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getBankList">
+      <wsdl:input name="getBankList" message="ns1:getBankList" />
+      <wsdl:output name="getBankListResponse" message="ns1:getBankListResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getOcrTemplateList">
+      <wsdl:input name="getOcrTemplateList" message="ns1:getOcrTemplateList" />
+      <wsdl:output name="getOcrTemplateListResponse" message="ns1:getOcrTemplateListResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getParamByAlias">
+      <wsdl:input name="getParamByAlias" message="ns1:getParamByAlias" />
+      <wsdl:output name="getParamByAliasResponse" message="ns1:getParamByAliasResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getStationIdByName">
+      <wsdl:input name="getStationIdByName" message="ns1:getStationIdByName" />
+      <wsdl:output name="getStationIdByNameResponse" message="ns1:getStationIdByNameResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getReasonsByReasonGroupAlias">
+      <wsdl:input name="getReasonsByReasonGroupAlias" message="ns1:getReasonsByReasonGroupAlias" />
+      <wsdl:output name="getReasonsByReasonGroupAliasResponse" message="ns1:getReasonsByReasonGroupAliasResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

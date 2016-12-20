@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SearchService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="advancedSearch" type="tns:advancedSearch" />
+      <xs:element name="advancedSearchResponse" type="tns:advancedSearchResponse" />
+      <xs:element name="simpleSearch" type="tns:simpleSearch" />
+      <xs:element name="simpleSearchResponse" type="tns:simpleSearchResponse" />
+      <xs:complexType name="simpleSearch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="text" type="xs:string" />
+          <xs:element minOccurs="0" name="searchType" type="xs:int" />
+          <xs:element minOccurs="0" name="startRec" type="xs:int" />
+          <xs:element minOccurs="0" name="qtdeRows" type="xs:int" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="simpleSearchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:genericSearchDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="genericSearchDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="queryTime" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="results" nillable="true" type="tns:genericResultSearchDto" />
+          <xs:element minOccurs="0" name="rows" type="xs:int" />
+          <xs:element minOccurs="0" name="start" type="xs:int" />
+          <xs:element minOccurs="0" name="totalResult" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="genericResultSearchDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="result" type="xs:string" />
+          <xs:element minOccurs="0" name="segment" type="xs:string" />
+          <xs:element minOccurs="0" name="typeDto" type="tns:typeDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="typeDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="keyDefDtoList" nillable="true" type="tns:keyDefDto" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyDefDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefMandatory" type="xs:int" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="advancedSearch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="docId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="keysDto" type="tns:keyDto" />
+          <xs:element minOccurs="0" name="searchType" type="xs:int" />
+          <xs:element minOccurs="0" name="start" type="xs:int" />
+          <xs:element minOccurs="0" name="rows" type="xs:int" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="keyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+          <xs:element minOccurs="0" name="keyValue" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="advancedSearchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:genericSearchDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="advancedSearch">
+    <wsdl:part name="parameters" element="ns1:advancedSearch" />
+  </wsdl:message>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="simpleSearchResponse">
+    <wsdl:part name="parameters" element="ns1:simpleSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="simpleSearch">
+    <wsdl:part name="parameters" element="ns1:simpleSearch" />
+  </wsdl:message>
+  <wsdl:message name="advancedSearchResponse">
+    <wsdl:part name="parameters" element="ns1:advancedSearchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SearchService">
+    <wsdl:operation name="simpleSearch">
+      <wsdl:input name="simpleSearch" message="ns1:simpleSearch" />
+      <wsdl:output name="simpleSearchResponse" message="ns1:simpleSearchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="advancedSearch">
+      <wsdl:input name="advancedSearch" message="ns1:advancedSearch" />
+      <wsdl:output name="advancedSearchResponse" message="ns1:advancedSearchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

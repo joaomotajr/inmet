@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="QueueNfService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getDocsNfInQueue" type="tns:getDocsNfInQueue" />
+      <xs:element name="getDocsNfInQueueResponse" type="tns:getDocsNfInQueueResponse" />
+      <xs:complexType name="getDocsNfInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="numObjs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsNfInQueueResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docNfQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docNfQueueDto">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:genericQueueDto">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+              <xs:element minOccurs="0" name="batchNfPriority" type="xs:int" />
+              <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+              <xs:element minOccurs="0" name="documentNfCaptureSeq" type="xs:int" />
+              <xs:element minOccurs="0" name="documentNfFileType" type="xs:string" />
+              <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+              <xs:element minOccurs="0" name="siteId" type="xs:long" />
+              <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+              <xs:element minOccurs="0" name="typeId" type="xs:long" />
+              <xs:element minOccurs="0" name="usrIndexId" type="xs:long" />
+              <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="genericQueueDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dateAddInQueue" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getDocsNfInQueue">
+    <wsdl:part name="parameters" element="ns1:getDocsNfInQueue" />
+  </wsdl:message>
+  <wsdl:message name="getDocsNfInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsNfInQueueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="QueueNfService">
+    <wsdl:operation name="getDocsNfInQueue">
+      <wsdl:input name="getDocsNfInQueue" message="ns1:getDocsNfInQueue" />
+      <wsdl:output name="getDocsNfInQueueResponse" message="ns1:getDocsNfInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

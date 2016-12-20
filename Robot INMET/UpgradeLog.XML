@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ROBOT">
+</Property><Property Name="Solution File" Value="C:\Users\junior\Downloads\INMET\INMET\Robot INMET\ROBOT.sln">
+</Property><Property Name="Date" Value="segunda-feira, 25 de janeiro de 2016">
+</Property><Property Name="Time" Value="13:34">
+</Property></Properties><Event ErrorLevel="0" Project="FlexImage.Core" Source="..\FlexImage.Core\FlexImage.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.Core" Source="..\FlexImage.Core\FlexImage.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="FlexImage.PDFView" Source="..\FlexImage.PDFView\FlexImage.PDFView.vbproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="FlexImage.PDFView" Source="..\FlexImage.PDFView\FlexImage.PDFView.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.PDFView" Source="..\FlexImage.PDFView\FlexImage.PDFView.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.SingleInstance" Source="..\FlexImage.SingleInstance\FlexImage.SingleInstance.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.SingleInstance" Source="..\FlexImage.SingleInstance\FlexImage.SingleInstance.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSBasicTable" Source="..\FlexImage.WebService\FlexImage.WSBasicTable\FlexImage.WSBasicTable.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSBasicTable" Source="..\FlexImage.WebService\FlexImage.WSBasicTable\FlexImage.WSBasicTable.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSRepository" Source="..\FlexImage.WebService\FlexImage.WSRepository\FlexImage.WSRepository.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSRepository" Source="..\FlexImage.WebService\FlexImage.WSRepository\FlexImage.WSRepository.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSSecurity" Source="..\FlexImage.WebService\FlexImage.WSSecurity\FlexImage.WSSecurity.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSSecurity" Source="..\FlexImage.WebService\FlexImage.WSSecurity\FlexImage.WSSecurity.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSManager" Source="..\FlexImage.WebService\FlexImage.WSManager\FlexImage.WSManager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSManager" Source="..\FlexImage.WebService\FlexImage.WSManager\FlexImage.WSManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSDocumentNF" Source="..\FlexImage.WebService\FlexImage.WSDocumentNF\FlexImage.WSDocumentNF.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSDocumentNF" Source="..\FlexImage.WebService\FlexImage.WSDocumentNF\FlexImage.WSDocumentNF.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSCaptureNF" Source="..\FlexImage.WebService\FlexImage.WSCaptureNF\FlexImage.WSCaptureNF.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSCaptureNF" Source="..\FlexImage.WebService\FlexImage.WSCaptureNF\FlexImage.WSCaptureNF.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSProcessingNF" Source="..\FlexImage.WebService\FlexImage.WSProcessingNF\FlexImage.WSProcessingNF.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSProcessingNF" Source="..\FlexImage.WebService\FlexImage.WSProcessingNF\FlexImage.WSProcessingNF.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSQueueNF" Source="..\FlexImage.WebService\FlexImage.WSQueueNF\FlexImage.WSQueueNF.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSQueueNF" Source="..\FlexImage.WebService\FlexImage.WSQueueNF\FlexImage.WSQueueNF.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Robot INMET" Source="Robot INMET.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Robot INMET" Source="Robot INMET.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.Binarize" Source="..\FlexImage.Binarize\FlexImage.Binarize.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.Binarize" Source="..\FlexImage.Binarize\FlexImage.Binarize.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSMonitoring" Source="..\FlexImage.WebService\FlexImage.WSMonitoring\FlexImage.WSMonitoring.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.WSMonitoring" Source="..\FlexImage.WebService\FlexImage.WSMonitoring\FlexImage.WSMonitoring.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.Viewer" Source="..\FlexImage.Viewer\FlexImage.Viewer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlexImage.Viewer" Source="..\FlexImage.Viewer\FlexImage.Viewer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ROBOT.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ROBOT.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSBasicTable" Source="..\FlexImage.WebService\FlexImage.WSBasicTable\FlexImage.WSBasicTable.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSRepository" Source="..\FlexImage.WebService\FlexImage.WSRepository\FlexImage.WSRepository.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSSecurity" Source="..\FlexImage.WebService\FlexImage.WSSecurity\FlexImage.WSSecurity.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSManager" Source="..\FlexImage.WebService\FlexImage.WSManager\FlexImage.WSManager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSDocumentNF" Source="..\FlexImage.WebService\FlexImage.WSDocumentNF\FlexImage.WSDocumentNF.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSCaptureNF" Source="..\FlexImage.WebService\FlexImage.WSCaptureNF\FlexImage.WSCaptureNF.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSProcessingNF" Source="..\FlexImage.WebService\FlexImage.WSProcessingNF\FlexImage.WSProcessingNF.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSQueueNF" Source="..\FlexImage.WebService\FlexImage.WSQueueNF\FlexImage.WSQueueNF.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.WSMonitoring" Source="..\FlexImage.WebService\FlexImage.WSMonitoring\FlexImage.WSMonitoring.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.PDFView" Source="..\FlexImage.PDFView\FlexImage.PDFView.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.Viewer" Source="..\FlexImage.Viewer\FlexImage.Viewer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.Core" Source="..\FlexImage.Core\FlexImage.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.SingleInstance" Source="..\FlexImage.SingleInstance\FlexImage.SingleInstance.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Robot INMET" Source="Robot INMET.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlexImage.Binarize" Source="..\FlexImage.Binarize\FlexImage.Binarize.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

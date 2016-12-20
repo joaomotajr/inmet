@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WSService" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservice.service.ws.mdi.flexdoc.com.br/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="BusinessException" type="tns:BusinessException" />
+      <xs:element name="DocumentException" type="tns:DocumentException" />
+      <xs:element name="Exception" type="tns:Exception" />
+      <xs:element name="ServiceException" type="tns:ServiceException" />
+      <xs:element name="closeBatch" type="tns:closeBatch" />
+      <xs:element name="closeBatchResponse" type="tns:closeBatchResponse" />
+      <xs:element name="confirmRecapture" type="tns:confirmRecapture" />
+      <xs:element name="confirmRecaptureResponse" type="tns:confirmRecaptureResponse" />
+      <xs:element name="doDownload" type="tns:doDownload" />
+      <xs:element name="doDownloadResponse" type="tns:doDownloadResponse" />
+      <xs:element name="doUpload" type="tns:doUpload" />
+      <xs:element name="doUploadResponse" type="tns:doUploadResponse" />
+      <xs:element name="findChecklistByWorkflowId" type="tns:findChecklistByWorkflowId" />
+      <xs:element name="findChecklistByWorkflowIdResponse" type="tns:findChecklistByWorkflowIdResponse" />
+      <xs:element name="findQueueTransmission" type="tns:findQueueTransmission" />
+      <xs:element name="findQueueTransmissionResponse" type="tns:findQueueTransmissionResponse" />
+      <xs:element name="getDocsNumber" type="tns:getDocsNumber" />
+      <xs:element name="getDocsNumberResponse" type="tns:getDocsNumberResponse" />
+      <xs:element name="getFile" type="tns:getFile" />
+      <xs:element name="getFileResponse" type="tns:getFileResponse" />
+      <xs:element name="getImage" type="tns:getImage" />
+      <xs:element name="getImageResponse" type="tns:getImageResponse" />
+      <xs:element name="getParams" type="tns:getParams" />
+      <xs:element name="getParamsResponse" type="tns:getParamsResponse" />
+      <xs:element name="getReports" type="tns:getReports" />
+      <xs:element name="getReportsResponse" type="tns:getReportsResponse" />
+      <xs:element name="openBatch" type="tns:openBatch" />
+      <xs:element name="openBatchResponse" type="tns:openBatchResponse" />
+      <xs:element name="ping" type="tns:ping" />
+      <xs:element name="pingResponse" type="tns:pingResponse" />
+      <xs:element name="roundTrip" type="tns:roundTrip" />
+      <xs:element name="roundTripResponse" type="tns:roundTripResponse" />
+      <xs:element name="setBatchTransmitted" type="tns:setBatchTransmitted" />
+      <xs:element name="setBatchTransmittedResponse" type="tns:setBatchTransmittedResponse" />
+      <xs:element name="setDocumentSent" type="tns:setDocumentSent" />
+      <xs:element name="setDocumentSentResponse" type="tns:setDocumentSentResponse" />
+      <xs:element name="txDocF" type="tns:txDocF" />
+      <xs:element name="txDocFResponse" type="tns:txDocFResponse" />
+      <xs:element name="usrLog" type="tns:usrLog" />
+      <xs:element name="usrLogResponse" type="tns:usrLogResponse" />
+      <xs:element name="documentnfLog" type="tns:documentnfLog" />
+      <xs:element name="documentnfLogResponse" type="tns:documentnfLogResponse" />
+      <xs:complexType name="getFile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:fileDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="fileDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bytes" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="extension" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ServiceException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BusinessException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getParams">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getParamsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="paramDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="paramAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="paramValue" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ping">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="pingResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeBatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="totalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docsCanceled" type="xs:int" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeBatchResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getDocsNumber">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="qt" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsNumberResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openBatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchType" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openBatchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setBatchTransmitted">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="totalDocs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setBatchTransmittedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="txDocF">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="docId" type="xs:long" />
+          <xs:element minOccurs="0" name="fileTypeFront" type="xs:string" />
+          <xs:element minOccurs="0" name="fileSizeFront" type="xs:long" />
+          <xs:element minOccurs="0" name="ocr" type="xs:string" />
+          <xs:element minOccurs="0" name="captureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="pages" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="txDocFResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="DocumentException">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="exceptions" type="xs:anyType" />
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="doUpload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bytes" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" name="dirOut" type="xs:string" />
+          <xs:element name="part" type="xs:int" />
+          <xs:element name="totalParts" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="doUploadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="roundTrip">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="roundTripResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findQueueTransmission">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findQueueTransmissionResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:queue" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueTranmissionId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueTransmissionType" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocumentSent">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="queueTransmissionId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueTransmissionType" type="xs:int" />
+          <xs:element minOccurs="0" name="size" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocumentSentResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="doDownload">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="doDownloadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getImage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getImageResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:imageDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="imageDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bytes" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="extension" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+          <xs:element minOccurs="0" name="originalExtension" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findChecklistByWorkflowId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findChecklistByWorkflowIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:checklistDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checklistDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="checklistId" type="xs:long" />
+          <xs:element minOccurs="0" name="checklistMandatory" type="xs:int" />
+          <xs:element minOccurs="0" name="checklistObs" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getReports">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getReportsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reportDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reportDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="reportFieldDate" type="xs:string" />
+          <xs:element minOccurs="0" name="reportFile" type="xs:string" />
+          <xs:element minOccurs="0" name="reportGenericField1" type="xs:string" />
+          <xs:element minOccurs="0" name="reportGenericField2" type="xs:string" />
+          <xs:element minOccurs="0" name="reportGroupId" type="xs:long" />
+          <xs:element minOccurs="0" name="reportGroupName" type="xs:string" />
+          <xs:element minOccurs="0" name="reportId" type="xs:long" />
+          <xs:element minOccurs="0" name="reportName" type="xs:string" />
+          <xs:element minOccurs="0" name="reportPromptDate" type="xs:string" />
+          <xs:element minOccurs="0" name="reportPromptField1" type="xs:string" />
+          <xs:element minOccurs="0" name="reportPromptField2" type="xs:string" />
+          <xs:element minOccurs="0" name="reportSelectDate" type="xs:int" />
+          <xs:element minOccurs="0" name="reportSelectGeneric1" type="xs:int" />
+          <xs:element minOccurs="0" name="reportSelectGeneric2" type="xs:int" />
+          <xs:element minOccurs="0" name="reportSelectSite" type="xs:int" />
+          <xs:element minOccurs="0" name="reportSelectStation" type="xs:int" />
+          <xs:element minOccurs="0" name="reportSelectUsr" type="xs:int" />
+          <xs:element minOccurs="0" name="reportTypeField1" type="xs:int" />
+          <xs:element minOccurs="0" name="reportTypeField2" type="xs:int" />
+          <xs:element minOccurs="0" name="reportXml" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="confirmRecapture">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docId" type="xs:long" />
+          <xs:element minOccurs="0" name="imageExtension" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="confirmRecaptureResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="usrLog">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="action" type="xs:int" />
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="usrLogResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="documentnfLog">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="action" type="xs:int" />
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documentnfLogResponse">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="BusinessException">
+    <part name="BusinessException" element="tns:BusinessException" />
+  </message>
+  <message name="InterfaceService_pingResponse">
+    <part name="pingResponse" element="tns:pingResponse" />
+  </message>
+  <message name="InterfaceService_getDocsNumberResponse">
+    <part name="getDocsNumberResponse" element="tns:getDocsNumberResponse" />
+  </message>
+  <message name="InterfaceService_documentnfLogResponse">
+    <part name="documentnfLogResponse" element="tns:documentnfLogResponse" />
+  </message>
+  <message name="InterfaceService_findQueueTransmissionResponse">
+    <part name="findQueueTransmissionResponse" element="tns:findQueueTransmissionResponse" />
+  </message>
+  <message name="InterfaceService_findQueueTransmission">
+    <part name="findQueueTransmission" element="tns:findQueueTransmission" />
+  </message>
+  <message name="InterfaceService_getFile">
+    <part name="getFile" element="tns:getFile" />
+  </message>
+  <message name="InterfaceService_getDocsNumber">
+    <part name="getDocsNumber" element="tns:getDocsNumber" />
+  </message>
+  <message name="InterfaceService_getImage">
+    <part name="getImage" element="tns:getImage" />
+  </message>
+  <message name="DocumentException">
+    <part name="DocumentException" element="tns:DocumentException" />
+  </message>
+  <message name="InterfaceService_documentnfLog">
+    <part name="documentnfLog" element="tns:documentnfLog" />
+  </message>
+  <message name="InterfaceService_usrLog">
+    <part name="usrLog" element="tns:usrLog" />
+  </message>
+  <message name="InterfaceService_getParamsResponse">
+    <part name="getParamsResponse" element="tns:getParamsResponse" />
+  </message>
+  <message name="InterfaceService_txDocFResponse">
+    <part name="txDocFResponse" element="tns:txDocFResponse" />
+  </message>
+  <message name="InterfaceService_doUploadResponse">
+    <part name="doUploadResponse" element="tns:doUploadResponse" />
+  </message>
+  <message name="InterfaceService_getReports">
+    <part name="getReports" element="tns:getReports" />
+  </message>
+  <message name="InterfaceService_closeBatch">
+    <part name="closeBatch" element="tns:closeBatch" />
+  </message>
+  <message name="InterfaceService_confirmRecapture">
+    <part name="confirmRecapture" element="tns:confirmRecapture" />
+  </message>
+  <message name="InterfaceService_roundTrip">
+    <part name="roundTrip" element="tns:roundTrip" />
+  </message>
+  <message name="InterfaceService_findChecklistByWorkflowIdResponse">
+    <part name="findChecklistByWorkflowIdResponse" element="tns:findChecklistByWorkflowIdResponse" />
+  </message>
+  <message name="InterfaceService_setBatchTransmittedResponse">
+    <part name="setBatchTransmittedResponse" element="tns:setBatchTransmittedResponse" />
+  </message>
+  <message name="InterfaceService_doDownloadResponse">
+    <part name="doDownloadResponse" element="tns:doDownloadResponse" />
+  </message>
+  <message name="InterfaceService_setDocumentSent">
+    <part name="setDocumentSent" element="tns:setDocumentSent" />
+  </message>
+  <message name="InterfaceService_closeBatchResponse">
+    <part name="closeBatchResponse" element="tns:closeBatchResponse" />
+  </message>
+  <message name="InterfaceService_findChecklistByWorkflowId">
+    <part name="findChecklistByWorkflowId" element="tns:findChecklistByWorkflowId" />
+  </message>
+  <message name="InterfaceService_getReportsResponse">
+    <part name="getReportsResponse" element="tns:getReportsResponse" />
+  </message>
+  <message name="InterfaceService_roundTripResponse">
+    <part name="roundTripResponse" element="tns:roundTripResponse" />
+  </message>
+  <message name="InterfaceService_openBatch">
+    <part name="openBatch" element="tns:openBatch" />
+  </message>
+  <message name="InterfaceService_openBatchResponse">
+    <part name="openBatchResponse" element="tns:openBatchResponse" />
+  </message>
+  <message name="ServiceException">
+    <part name="ServiceException" element="tns:ServiceException" />
+  </message>
+  <message name="InterfaceService_setBatchTransmitted">
+    <part name="setBatchTransmitted" element="tns:setBatchTransmitted" />
+  </message>
+  <message name="Exception">
+    <part name="Exception" element="tns:Exception" />
+  </message>
+  <message name="InterfaceService_getImageResponse">
+    <part name="getImageResponse" element="tns:getImageResponse" />
+  </message>
+  <message name="InterfaceService_ping">
+    <part name="ping" element="tns:ping" />
+  </message>
+  <message name="InterfaceService_doUpload">
+    <part name="doUpload" element="tns:doUpload" />
+  </message>
+  <message name="InterfaceService_usrLogResponse">
+    <part name="usrLogResponse" element="tns:usrLogResponse" />
+  </message>
+  <message name="InterfaceService_txDocF">
+    <part name="txDocF" element="tns:txDocF" />
+  </message>
+  <message name="InterfaceService_doDownload">
+    <part name="doDownload" element="tns:doDownload" />
+  </message>
+  <message name="InterfaceService_setDocumentSentResponse">
+    <part name="setDocumentSentResponse" element="tns:setDocumentSentResponse" />
+  </message>
+  <message name="InterfaceService_confirmRecaptureResponse">
+    <part name="confirmRecaptureResponse" element="tns:confirmRecaptureResponse" />
+  </message>
+  <message name="InterfaceService_getFileResponse">
+    <part name="getFileResponse" element="tns:getFileResponse" />
+  </message>
+  <message name="InterfaceService_getParams">
+    <part name="getParams" element="tns:getParams" />
+  </message>
+  <portType name="InterfaceService">
+    <operation name="closeBatch" parameterOrder="closeBatch">
+      <input message="tns:InterfaceService_closeBatch" />
+      <output message="tns:InterfaceService_closeBatchResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="confirmRecapture" parameterOrder="confirmRecapture">
+      <input message="tns:InterfaceService_confirmRecapture" />
+      <output message="tns:InterfaceService_confirmRecaptureResponse" />
+    </operation>
+    <operation name="doDownload" parameterOrder="doDownload">
+      <input message="tns:InterfaceService_doDownload" />
+      <output message="tns:InterfaceService_doDownloadResponse" />
+      <fault name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="doUpload" parameterOrder="doUpload">
+      <input message="tns:InterfaceService_doUpload" />
+      <output message="tns:InterfaceService_doUploadResponse" />
+      <fault name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="findChecklistByWorkflowId" parameterOrder="findChecklistByWorkflowId">
+      <input message="tns:InterfaceService_findChecklistByWorkflowId" />
+      <output message="tns:InterfaceService_findChecklistByWorkflowIdResponse" />
+    </operation>
+    <operation name="findQueueTransmission" parameterOrder="findQueueTransmission">
+      <input message="tns:InterfaceService_findQueueTransmission" />
+      <output message="tns:InterfaceService_findQueueTransmissionResponse" />
+    </operation>
+    <operation name="getDocsNumber" parameterOrder="getDocsNumber">
+      <input message="tns:InterfaceService_getDocsNumber" />
+      <output message="tns:InterfaceService_getDocsNumberResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="getFile" parameterOrder="getFile">
+      <input message="tns:InterfaceService_getFile" />
+      <output message="tns:InterfaceService_getFileResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="getImage" parameterOrder="getImage">
+      <input message="tns:InterfaceService_getImage" />
+      <output message="tns:InterfaceService_getImageResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="getParams" parameterOrder="getParams">
+      <input message="tns:InterfaceService_getParams" />
+      <output message="tns:InterfaceService_getParamsResponse" />
+    </operation>
+    <operation name="getReports" parameterOrder="getReports">
+      <input message="tns:InterfaceService_getReports" />
+      <output message="tns:InterfaceService_getReportsResponse" />
+    </operation>
+    <operation name="openBatch" parameterOrder="openBatch">
+      <input message="tns:InterfaceService_openBatch" />
+      <output message="tns:InterfaceService_openBatchResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="ping" parameterOrder="ping">
+      <input message="tns:InterfaceService_ping" />
+      <output message="tns:InterfaceService_pingResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="roundTrip" parameterOrder="roundTrip">
+      <input message="tns:InterfaceService_roundTrip" />
+      <output message="tns:InterfaceService_roundTripResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="setBatchTransmitted" parameterOrder="setBatchTransmitted">
+      <input message="tns:InterfaceService_setBatchTransmitted" />
+      <output message="tns:InterfaceService_setBatchTransmittedResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="setDocumentSent" parameterOrder="setDocumentSent">
+      <input message="tns:InterfaceService_setDocumentSent" />
+      <output message="tns:InterfaceService_setDocumentSentResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="txDocF" parameterOrder="txDocF">
+      <input message="tns:InterfaceService_txDocF" />
+      <output message="tns:InterfaceService_txDocFResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="DocumentException" message="tns:DocumentException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="usrLog" parameterOrder="usrLog">
+      <input message="tns:InterfaceService_usrLog" />
+      <output message="tns:InterfaceService_usrLogResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="documentnfLog" parameterOrder="documentnfLog">
+      <input message="tns:InterfaceService_documentnfLog" />
+      <output message="tns:InterfaceService_documentnfLogResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+  </portType>
+  <binding name="InterfaceServiceBinding" type="tns:InterfaceService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="closeBatch">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="confirmRecapture">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="doDownload">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="doUpload">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="findChecklistByWorkflowId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="findQueueTransmission">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDocsNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getFile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getImage">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getParams">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getReports">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="openBatch">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="ping">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="roundTrip">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setBatchTransmitted">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setDocumentSent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="txDocF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="DocumentException">
+        <soap:fault use="literal" name="DocumentException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="usrLog">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="DocumentException">
+        <soap:fault use="literal" name="DocumentException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="documentnfLog">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="DocumentException">
+        <soap:fault use="literal" name="DocumentException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSService">
+    <port name="WSPort" binding="tns:InterfaceServiceBinding">
+      <soap:address location="http://192.168.1.2:8080/bnb/Service/InterfaceService" />
+    </port>
+  </service>
+</definitions>

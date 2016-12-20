@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SecurityService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="authenticUsr" type="tns:authenticUsr" />
+      <xs:element name="authenticUsrResponse" type="tns:authenticUsrResponse" />
+      <xs:element name="findModuleByUsrGroupsId" type="tns:findModuleByUsrGroupsId" />
+      <xs:element name="findModuleByUsrGroupsIdResponse" type="tns:findModuleByUsrGroupsIdResponse" />
+      <xs:element name="getModulesXML" type="tns:getModulesXML" />
+      <xs:element name="getModulesXMLResponse" type="tns:getModulesXMLResponse" />
+      <xs:element name="getRandomSaltKey" type="tns:getRandomSaltKey" />
+      <xs:element name="getRandomSaltKeyResponse" type="tns:getRandomSaltKeyResponse" />
+      <xs:element name="login" type="tns:login" />
+      <xs:element name="loginResponse" type="tns:loginResponse" />
+      <xs:element name="logoff" type="tns:logoff" />
+      <xs:element name="logoffResponse" type="tns:logoffResponse" />
+      <xs:complexType name="logoff">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="logoffResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="authenticUsr">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrName" type="xs:string" />
+          <xs:element minOccurs="0" name="usrPassword" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="authenticUsrResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="login">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrName" type="xs:string" />
+          <xs:element minOccurs="0" name="usrPassword" type="xs:string" />
+          <xs:element minOccurs="0" name="stationName" type="xs:string" />
+          <xs:element minOccurs="0" name="ip" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="loginResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:usrSession" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="usrSession">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="areaId" type="xs:long" />
+          <xs:element minOccurs="0" name="areaName" type="xs:string" />
+          <xs:element minOccurs="0" name="branchNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="hwScanId" type="xs:long" />
+          <xs:element minOccurs="0" name="ip" type="xs:string" />
+          <xs:element minOccurs="0" name="numberRecordsPage" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="permissionAliasInUsrGroups" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="securityToken" type="xs:string" />
+          <xs:element minOccurs="0" name="siteBandWidth" type="xs:int" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="siteInternalNumbers" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="siteName" type="xs:string" />
+          <xs:element name="siteSpecialAccess" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteType" type="xs:int" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationName" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="typeAliasInUsrGroups" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="usrEmail" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupIds" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrInternalId" type="xs:string" />
+          <xs:element minOccurs="0" name="usrLogSession" type="tns:usrLogSession" />
+          <xs:element minOccurs="0" name="usrName" type="xs:string" />
+          <xs:element minOccurs="0" name="usrSecurityLevel" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="usrLogSession">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ip" type="xs:string" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findModuleByUsrGroupsId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupsId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findModuleByUsrGroupsIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:moduleDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="moduleDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="moduleAction" type="xs:string" />
+          <xs:element minOccurs="0" name="moduleAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="moduleClientC" type="xs:int" />
+          <xs:element minOccurs="0" name="moduleIcon" type="xs:string" />
+          <xs:element minOccurs="0" name="moduleId" type="xs:long" />
+          <xs:element minOccurs="0" name="moduleName" type="xs:string" />
+          <xs:element minOccurs="0" name="moduleOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="moduleParam" type="xs:string" />
+          <xs:element minOccurs="0" name="moduleParentId" type="xs:long" />
+          <xs:element minOccurs="0" name="moduleToolTip" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getModulesXML">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupsId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getModulesXMLResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getRandomSaltKey">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usrInternalId" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getRandomSaltKeyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getRandomSaltKey">
+    <wsdl:part name="parameters" element="ns1:getRandomSaltKey" />
+  </wsdl:message>
+  <wsdl:message name="getRandomSaltKeyResponse">
+    <wsdl:part name="parameters" element="ns1:getRandomSaltKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="authenticUsrResponse">
+    <wsdl:part name="parameters" element="ns1:authenticUsrResponse" />
+  </wsdl:message>
+  <wsdl:message name="login">
+    <wsdl:part name="parameters" element="ns1:login" />
+  </wsdl:message>
+  <wsdl:message name="logoff">
+    <wsdl:part name="parameters" element="ns1:logoff" />
+  </wsdl:message>
+  <wsdl:message name="findModuleByUsrGroupsId">
+    <wsdl:part name="parameters" element="ns1:findModuleByUsrGroupsId" />
+  </wsdl:message>
+  <wsdl:message name="getModulesXMLResponse">
+    <wsdl:part name="parameters" element="ns1:getModulesXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="authenticUsr">
+    <wsdl:part name="parameters" element="ns1:authenticUsr" />
+  </wsdl:message>
+  <wsdl:message name="loginResponse">
+    <wsdl:part name="parameters" element="ns1:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="logoffResponse">
+    <wsdl:part name="parameters" element="ns1:logoffResponse" />
+  </wsdl:message>
+  <wsdl:message name="findModuleByUsrGroupsIdResponse">
+    <wsdl:part name="parameters" element="ns1:findModuleByUsrGroupsIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getModulesXML">
+    <wsdl:part name="parameters" element="ns1:getModulesXML" />
+  </wsdl:message>
+  <wsdl:portType name="SecurityService">
+    <wsdl:operation name="logoff">
+      <wsdl:input name="logoff" message="ns1:logoff" />
+      <wsdl:output name="logoffResponse" message="ns1:logoffResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="authenticUsr">
+      <wsdl:input name="authenticUsr" message="ns1:authenticUsr" />
+      <wsdl:output name="authenticUsrResponse" message="ns1:authenticUsrResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input name="login" message="ns1:login" />
+      <wsdl:output name="loginResponse" message="ns1:loginResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="findModuleByUsrGroupsId">
+      <wsdl:input name="findModuleByUsrGroupsId" message="ns1:findModuleByUsrGroupsId" />
+      <wsdl:output name="findModuleByUsrGroupsIdResponse" message="ns1:findModuleByUsrGroupsIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getModulesXML">
+      <wsdl:input name="getModulesXML" message="ns1:getModulesXML" />
+      <wsdl:output name="getModulesXMLResponse" message="ns1:getModulesXMLResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getRandomSaltKey">
+      <wsdl:input name="getRandomSaltKey" message="ns1:getRandomSaltKey" />
+      <wsdl:output name="getRandomSaltKeyResponse" message="ns1:getRandomSaltKeyResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

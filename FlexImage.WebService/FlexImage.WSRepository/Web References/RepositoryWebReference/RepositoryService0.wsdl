@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RepositoryService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="delete" type="tns:delete" />
+      <xs:element name="deleteGeneric" type="tns:deleteGeneric" />
+      <xs:element name="deleteGenericResponse" type="tns:deleteGenericResponse" />
+      <xs:element name="deleteResponse" type="tns:deleteResponse" />
+      <xs:element name="dirList" type="tns:dirList" />
+      <xs:element name="dirListResponse" type="tns:dirListResponse" />
+      <xs:element name="getFileGeneric" type="tns:getFileGeneric" />
+      <xs:element name="getFileGenericResponse" type="tns:getFileGenericResponse" />
+      <xs:element name="getFileWithExtension" type="tns:getFileWithExtension" />
+      <xs:element name="getFileWithExtensionResponse" type="tns:getFileWithExtensionResponse" />
+      <xs:element name="getPdfPages" type="tns:getPdfPages" />
+      <xs:element name="getPdfPagesResponse" type="tns:getPdfPagesResponse" />
+      <xs:element name="recoverInfo" type="tns:recoverInfo" />
+      <xs:element name="recoverInfoResponse" type="tns:recoverInfoResponse" />
+      <xs:element name="upload" type="tns:upload" />
+      <xs:element name="uploadGeneric" type="tns:uploadGeneric" />
+      <xs:element name="uploadGenericResponse" type="tns:uploadGenericResponse" />
+      <xs:element name="uploadResponse" type="tns:uploadResponse" />
+      <xs:complexType name="getFileGeneric">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="path" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFileGenericResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:fileDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="fileDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="byteArray" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="contentType" type="xs:string" />
+          <xs:element minOccurs="0" name="extension" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+          <xs:element minOccurs="0" name="path" type="xs:string" />
+          <xs:element minOccurs="0" name="size" type="xs:int" />
+          <xs:element minOccurs="0" name="validDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFileWithExtension">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element name="isBack" type="xs:boolean" />
+          <xs:element minOccurs="0" name="extension" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getFileWithExtensionResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:fileDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uploadGeneric">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="file" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="path" type="xs:string" />
+          <xs:element minOccurs="0" name="filename" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uploadGenericResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="upload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="file" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element name="isBack" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" name="part" type="xs:int" />
+          <xs:element minOccurs="0" name="totalParts" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="uploadResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dirList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="path" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="dirListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteGeneric">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="path" type="xs:string" />
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteGenericResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="recoverInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="length" type="xs:long" />
+          <xs:element minOccurs="0" name="hashFile" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="recoverInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="delete">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element name="isBack" type="xs:boolean" />
+          <xs:element minOccurs="0" name="extension" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPdfPages">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="startPage" type="xs:int" />
+          <xs:element minOccurs="0" name="endPage" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPdfPagesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:fileDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="ns1:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getFileWithExtension">
+    <wsdl:part name="parameters" element="ns1:getFileWithExtension" />
+  </wsdl:message>
+  <wsdl:message name="getFileGeneric">
+    <wsdl:part name="parameters" element="ns1:getFileGeneric" />
+  </wsdl:message>
+  <wsdl:message name="dirListResponse">
+    <wsdl:part name="parameters" element="ns1:dirListResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteGenericResponse">
+    <wsdl:part name="parameters" element="ns1:deleteGenericResponse" />
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="ns1:delete" />
+  </wsdl:message>
+  <wsdl:message name="recoverInfoResponse">
+    <wsdl:part name="parameters" element="ns1:recoverInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadGeneric">
+    <wsdl:part name="parameters" element="ns1:uploadGeneric" />
+  </wsdl:message>
+  <wsdl:message name="dirList">
+    <wsdl:part name="parameters" element="ns1:dirList" />
+  </wsdl:message>
+  <wsdl:message name="uploadResponse">
+    <wsdl:part name="parameters" element="ns1:uploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteGeneric">
+    <wsdl:part name="parameters" element="ns1:deleteGeneric" />
+  </wsdl:message>
+  <wsdl:message name="getPdfPages">
+    <wsdl:part name="parameters" element="ns1:getPdfPages" />
+  </wsdl:message>
+  <wsdl:message name="getFileGenericResponse">
+    <wsdl:part name="parameters" element="ns1:getFileGenericResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadGenericResponse">
+    <wsdl:part name="parameters" element="ns1:uploadGenericResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFileWithExtensionResponse">
+    <wsdl:part name="parameters" element="ns1:getFileWithExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPdfPagesResponse">
+    <wsdl:part name="parameters" element="ns1:getPdfPagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="recoverInfo">
+    <wsdl:part name="parameters" element="ns1:recoverInfo" />
+  </wsdl:message>
+  <wsdl:message name="upload">
+    <wsdl:part name="parameters" element="ns1:upload" />
+  </wsdl:message>
+  <wsdl:portType name="RepositoryService">
+    <wsdl:operation name="getFileGeneric">
+      <wsdl:input name="getFileGeneric" message="ns1:getFileGeneric" />
+      <wsdl:output name="getFileGenericResponse" message="ns1:getFileGenericResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getFileWithExtension">
+      <wsdl:input name="getFileWithExtension" message="ns1:getFileWithExtension" />
+      <wsdl:output name="getFileWithExtensionResponse" message="ns1:getFileWithExtensionResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadGeneric">
+      <wsdl:input name="uploadGeneric" message="ns1:uploadGeneric" />
+      <wsdl:output name="uploadGenericResponse" message="ns1:uploadGenericResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="upload">
+      <wsdl:input name="upload" message="ns1:upload" />
+      <wsdl:output name="uploadResponse" message="ns1:uploadResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="dirList">
+      <wsdl:input name="dirList" message="ns1:dirList" />
+      <wsdl:output name="dirListResponse" message="ns1:dirListResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteGeneric">
+      <wsdl:input name="deleteGeneric" message="ns1:deleteGeneric" />
+      <wsdl:output name="deleteGenericResponse" message="ns1:deleteGenericResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="recoverInfo">
+      <wsdl:input name="recoverInfo" message="ns1:recoverInfo" />
+      <wsdl:output name="recoverInfoResponse" message="ns1:recoverInfoResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input name="delete" message="ns1:delete" />
+      <wsdl:output name="deleteResponse" message="ns1:deleteResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getPdfPages">
+      <wsdl:input name="getPdfPages" message="ns1:getPdfPages" />
+      <wsdl:output name="getPdfPagesResponse" message="ns1:getPdfPagesResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

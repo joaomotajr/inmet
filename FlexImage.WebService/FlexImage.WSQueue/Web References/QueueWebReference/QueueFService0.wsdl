@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="QueueFService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.124:8080/flexpsService/QueueFService?wsdl=QueueFService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="QueueFServiceSoapBinding" type="ns1:QueueFService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMonitoring">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getMonitoring">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMonitoringResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTransInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTransInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTransInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="abortBatchInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="abortBatchInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="abortBatchInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="refreshTrans">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="refreshTrans">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="refreshTransResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="refreshBatch">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="refreshBatch">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="refreshBatchResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAutomaticQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getAutomaticQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAutomaticQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocsInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocsInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocsInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="abortDocsInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="abortDocsInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="abortDocsInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocsInQueueForSystem">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocsInQueueForSystem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocsInQueueForSystemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBatchInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBatchInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBatchInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="abortTransInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="abortTransInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="abortTransInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getDocsInQueueByWorkflow">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getDocsInQueueByWorkflow">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDocsInQueueByWorkflowResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getRobotInQueue">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getRobotInQueue">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getRobotInQueueResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QueueFService">
+    <wsdl:port name="QueueFServiceImplPort" binding="tns:QueueFServiceSoapBinding">
+      <soap:address location="http://flexps.corp.flexdoc.com.br:8080/flexpsService/QueueFService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

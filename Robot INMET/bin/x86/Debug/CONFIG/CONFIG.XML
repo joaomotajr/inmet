@@ -1,0 +1,22 @@
+<ROOT>
+  <BYPASS>1</BYPASS>
+  
+  <ENVIRONMENTS>
+    
+	<ENVIRONMENT1>
+      <DEPLOY>SIA</DEPLOY>
+      <PROTOCOL>HTTP</PROTOCOL>
+       <SERVICE>/flexpsService/</SERVICE>
+       <PORT>8080</PORT>
+       <SERVER>192.168.2.5</SERVER>
+    </ENVIRONMENT1> 	
+	
+  </ENVIRONMENTS>
+  
+ <ABBYY>
+	<SN>SWTR10100004299253149846</SN>
+      <DLLPATH>C:\Program Files (x86)\ABBYY SDK\10\FlexiCapture Engine\Bin\FCEngine.dll</DLLPATH>
+  </ABBYY>
+
+
+</ROOT>

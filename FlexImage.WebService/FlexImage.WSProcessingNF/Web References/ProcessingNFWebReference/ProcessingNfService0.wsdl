@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProcessingNfService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="processDifferenceLivro" type="tns:processDifferenceLivro" />
+      <xs:element name="processDifferenceLivroResponse" type="tns:processDifferenceLivroResponse" />
+      <xs:element name="processDoubleTypingLivro" type="tns:processDoubleTypingLivro" />
+      <xs:element name="processDoubleTypingLivroResponse" type="tns:processDoubleTypingLivroResponse" />
+      <xs:element name="processIndex" type="tns:processIndex" />
+      <xs:element name="processIndexResponse" type="tns:processIndexResponse" />
+      <xs:element name="processOcr" type="tns:processOcr" />
+      <xs:element name="processOcrFieldCaderneta" type="tns:processOcrFieldCaderneta" />
+      <xs:element name="processOcrFieldCadernetaResponse" type="tns:processOcrFieldCadernetaResponse" />
+      <xs:element name="processOcrResponse" type="tns:processOcrResponse" />
+      <xs:element name="processOcrWithType" type="tns:processOcrWithType" />
+      <xs:element name="processOcrWithTypeResponse" type="tns:processOcrWithTypeResponse" />
+      <xs:element name="processPreIndex" type="tns:processPreIndex" />
+      <xs:element name="processPreIndexResponse" type="tns:processPreIndexResponse" />
+      <xs:element name="processTypingLivro" type="tns:processTypingLivro" />
+      <xs:element name="processTypingLivroResponse" type="tns:processTypingLivroResponse" />
+      <xs:element name="reprocessBatchNf" type="tns:reprocessBatchNf" />
+      <xs:element name="reprocessBatchNfResponse" type="tns:reprocessBatchNfResponse" />
+      <xs:complexType name="processOcr">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processOcrResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processOcrFieldCaderneta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="xml" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processOcrFieldCadernetaResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processDoubleTypingLivro">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfXmlTyping" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processDoubleTypingLivroResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processDifferenceLivro">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfXmlTyping" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processDifferenceLivroResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processIndex">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docKeyDtos" type="tns:docKeyDto" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docKeyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="docKeyId" type="xs:long" />
+          <xs:element minOccurs="0" name="docKeyOcrScore" type="xs:int" />
+          <xs:element minOccurs="0" name="docKeyOcrText" type="xs:string" />
+          <xs:element minOccurs="0" name="docKeyValue" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processIndexResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="reprocessBatchNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reprocessBatchNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processPreIndex">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="preDocumentId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processPreIndexResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processTypingLivro">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfXmlTyping" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processTypingLivroResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="processOcrWithType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="processOcrWithTypeResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="processPreIndexResponse">
+    <wsdl:part name="parameters" element="ns1:processPreIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="processDoubleTypingLivroResponse">
+    <wsdl:part name="parameters" element="ns1:processDoubleTypingLivroResponse" />
+  </wsdl:message>
+  <wsdl:message name="processIndexResponse">
+    <wsdl:part name="parameters" element="ns1:processIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="processOcrResponse">
+    <wsdl:part name="parameters" element="ns1:processOcrResponse" />
+  </wsdl:message>
+  <wsdl:message name="reprocessBatchNf">
+    <wsdl:part name="parameters" element="ns1:reprocessBatchNf" />
+  </wsdl:message>
+  <wsdl:message name="processOcrFieldCaderneta">
+    <wsdl:part name="parameters" element="ns1:processOcrFieldCaderneta" />
+  </wsdl:message>
+  <wsdl:message name="processTypingLivro">
+    <wsdl:part name="parameters" element="ns1:processTypingLivro" />
+  </wsdl:message>
+  <wsdl:message name="processOcrFieldCadernetaResponse">
+    <wsdl:part name="parameters" element="ns1:processOcrFieldCadernetaResponse" />
+  </wsdl:message>
+  <wsdl:message name="processDoubleTypingLivro">
+    <wsdl:part name="parameters" element="ns1:processDoubleTypingLivro" />
+  </wsdl:message>
+  <wsdl:message name="processTypingLivroResponse">
+    <wsdl:part name="parameters" element="ns1:processTypingLivroResponse" />
+  </wsdl:message>
+  <wsdl:message name="processDifferenceLivroResponse">
+    <wsdl:part name="parameters" element="ns1:processDifferenceLivroResponse" />
+  </wsdl:message>
+  <wsdl:message name="processOcrWithTypeResponse">
+    <wsdl:part name="parameters" element="ns1:processOcrWithTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="processPreIndex">
+    <wsdl:part name="parameters" element="ns1:processPreIndex" />
+  </wsdl:message>
+  <wsdl:message name="processDifferenceLivro">
+    <wsdl:part name="parameters" element="ns1:processDifferenceLivro" />
+  </wsdl:message>
+  <wsdl:message name="processOcrWithType">
+    <wsdl:part name="parameters" element="ns1:processOcrWithType" />
+  </wsdl:message>
+  <wsdl:message name="processOcr">
+    <wsdl:part name="parameters" element="ns1:processOcr" />
+  </wsdl:message>
+  <wsdl:message name="processIndex">
+    <wsdl:part name="parameters" element="ns1:processIndex" />
+  </wsdl:message>
+  <wsdl:message name="reprocessBatchNfResponse">
+    <wsdl:part name="parameters" element="ns1:reprocessBatchNfResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProcessingNfService">
+    <wsdl:operation name="processOcr">
+      <wsdl:input name="processOcr" message="ns1:processOcr" />
+      <wsdl:output name="processOcrResponse" message="ns1:processOcrResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processOcrFieldCaderneta">
+      <wsdl:input name="processOcrFieldCaderneta" message="ns1:processOcrFieldCaderneta" />
+      <wsdl:output name="processOcrFieldCadernetaResponse" message="ns1:processOcrFieldCadernetaResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processDoubleTypingLivro">
+      <wsdl:input name="processDoubleTypingLivro" message="ns1:processDoubleTypingLivro" />
+      <wsdl:output name="processDoubleTypingLivroResponse" message="ns1:processDoubleTypingLivroResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processDifferenceLivro">
+      <wsdl:input name="processDifferenceLivro" message="ns1:processDifferenceLivro" />
+      <wsdl:output name="processDifferenceLivroResponse" message="ns1:processDifferenceLivroResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processIndex">
+      <wsdl:input name="processIndex" message="ns1:processIndex" />
+      <wsdl:output name="processIndexResponse" message="ns1:processIndexResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="reprocessBatchNf">
+      <wsdl:input name="reprocessBatchNf" message="ns1:reprocessBatchNf" />
+      <wsdl:output name="reprocessBatchNfResponse" message="ns1:reprocessBatchNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processPreIndex">
+      <wsdl:input name="processPreIndex" message="ns1:processPreIndex" />
+      <wsdl:output name="processPreIndexResponse" message="ns1:processPreIndexResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processTypingLivro">
+      <wsdl:input name="processTypingLivro" message="ns1:processTypingLivro" />
+      <wsdl:output name="processTypingLivroResponse" message="ns1:processTypingLivroResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="processOcrWithType">
+      <wsdl:input name="processOcrWithType" message="ns1:processOcrWithType" />
+      <wsdl:output name="processOcrWithTypeResponse" message="ns1:processOcrWithTypeResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

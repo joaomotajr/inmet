@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MonitoringService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getAnalyticWorkflowFin" type="tns:getAnalyticWorkflowFin" />
+      <xs:element name="getAnalyticWorkflowFinResponse" type="tns:getAnalyticWorkflowFinResponse" />
+      <xs:element name="getAnalyticWorkflowMonitoring" type="tns:getAnalyticWorkflowMonitoring" />
+      <xs:element name="getAnalyticWorkflowMonitoringResponse" type="tns:getAnalyticWorkflowMonitoringResponse" />
+      <xs:element name="getSyntheticWorkflowMonitoring" type="tns:getSyntheticWorkflowMonitoring" />
+      <xs:element name="getSyntheticWorkflowMonitoringResponse" type="tns:getSyntheticWorkflowMonitoringResponse" />
+      <xs:element name="ping" type="tns:ping" />
+      <xs:element name="pingResponse" type="tns:pingResponse" />
+      <xs:complexType name="getAnalyticWorkflowMonitoring">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAnalyticWorkflowMonitoringResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:analyticMonitorDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="analyticMonitorDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchLastAction" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="batchStart" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="percent" type="xs:double" />
+          <xs:element minOccurs="0" name="phaseName" type="xs:string" />
+          <xs:element minOccurs="0" name="siteInternalNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="transStatus" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSyntheticWorkflowMonitoring">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSyntheticWorkflowMonitoringResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:syntheticMonitorDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="syntheticMonitorDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="phases" nillable="true" type="tns:phaseMonitorDto" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowName" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowTotalDocs" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="phaseMonitorDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="oldestBatch" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="phaseBatchStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="phaseId" type="xs:long" />
+          <xs:element minOccurs="0" name="phaseName" type="xs:string" />
+          <xs:element minOccurs="0" name="phaseOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="remainDocs" type="xs:long" />
+          <xs:element minOccurs="0" name="totalDocs" type="xs:long" />
+          <xs:element minOccurs="0" name="totalDocsPercent" type="xs:float" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAnalyticWorkflowFin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element name="isFinished" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAnalyticWorkflowFinResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:analyticWorkflowDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="analyticWorkflowDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchStatus" type="xs:int" />
+          <xs:element name="blockCloseSite" type="xs:boolean" />
+          <xs:element minOccurs="0" name="phaseName" type="xs:string" />
+          <xs:element minOccurs="0" name="siteInternalNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="total" type="xs:long" />
+          <xs:element minOccurs="0" name="transStatus" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ping">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="pingResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getSyntheticWorkflowMonitoringResponse">
+    <wsdl:part name="parameters" element="ns1:getSyntheticWorkflowMonitoringResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAnalyticWorkflowMonitoringResponse">
+    <wsdl:part name="parameters" element="ns1:getAnalyticWorkflowMonitoringResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAnalyticWorkflowFin">
+    <wsdl:part name="parameters" element="ns1:getAnalyticWorkflowFin" />
+  </wsdl:message>
+  <wsdl:message name="getAnalyticWorkflowMonitoring">
+    <wsdl:part name="parameters" element="ns1:getAnalyticWorkflowMonitoring" />
+  </wsdl:message>
+  <wsdl:message name="getSyntheticWorkflowMonitoring">
+    <wsdl:part name="parameters" element="ns1:getSyntheticWorkflowMonitoring" />
+  </wsdl:message>
+  <wsdl:message name="ping">
+    <wsdl:part name="parameters" element="ns1:ping" />
+  </wsdl:message>
+  <wsdl:message name="getAnalyticWorkflowFinResponse">
+    <wsdl:part name="parameters" element="ns1:getAnalyticWorkflowFinResponse" />
+  </wsdl:message>
+  <wsdl:message name="pingResponse">
+    <wsdl:part name="parameters" element="ns1:pingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MonitoringService">
+    <wsdl:operation name="getAnalyticWorkflowMonitoring">
+      <wsdl:input name="getAnalyticWorkflowMonitoring" message="ns1:getAnalyticWorkflowMonitoring" />
+      <wsdl:output name="getAnalyticWorkflowMonitoringResponse" message="ns1:getAnalyticWorkflowMonitoringResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getSyntheticWorkflowMonitoring">
+      <wsdl:input name="getSyntheticWorkflowMonitoring" message="ns1:getSyntheticWorkflowMonitoring" />
+      <wsdl:output name="getSyntheticWorkflowMonitoringResponse" message="ns1:getSyntheticWorkflowMonitoringResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getAnalyticWorkflowFin">
+      <wsdl:input name="getAnalyticWorkflowFin" message="ns1:getAnalyticWorkflowFin" />
+      <wsdl:output name="getAnalyticWorkflowFinResponse" message="ns1:getAnalyticWorkflowFinResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="ping">
+      <wsdl:input name="ping" message="ns1:ping" />
+      <wsdl:output name="pingResponse" message="ns1:pingResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

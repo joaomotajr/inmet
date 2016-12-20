@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://impl.service.flexps.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" name="ProcessingFService" targetNamespace="http://impl.service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.flexps.flexdoc.com.br/" location="http://192.168.1.124:8080/flexpsService/ProcessingFService?wsdl=ProcessingFService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="ProcessingFServiceSoapBinding" type="ns1:ProcessingFService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="processIcr">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processIcr">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processIcrResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingCmc7Ctd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingCmc7Ctd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingCmc7CtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markValSignAuto">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markValSignAuto">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markValSignAutoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingDataBoaCtd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingDataBoaCtd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingDataBoaCtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processOcrA">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processOcrA">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processOcrAResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove1">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInApprove1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInApprove1Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInDiff3">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInDiff3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInDiff3Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingValCtd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingValCtd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingValCtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove4">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInApprove4">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInApprove4Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingCmc7Trunc">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingCmc7Trunc">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingCmc7TruncResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markValSignManual">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markValSignManual">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markValSignManualResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markTransInDiff2">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markTransInDiff2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markTransInDiff2Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processClassify">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processClassify">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processClassifyResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingBorderoTrunc">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingBorderoTrunc">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingBorderoTruncResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processDoubleTypingValCtd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processDoubleTypingValCtd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processDoubleTypingValCtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInDiff1">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInDiff1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInDiff1Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingBorderoCtd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingBorderoCtd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingBorderoCtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processDoubleTypingDataBoaCtd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processDoubleTypingDataBoaCtd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processDoubleTypingDataBoaCtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markTransInDiff1">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markTransInDiff1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markTransInDiff1Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveForm">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveForm">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveFormResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveValSignManual">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveValSignManual">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveValSignManualResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingValTrunc">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingValTrunc">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingValTruncResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markForm">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markForm">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markFormResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveValSignAuto">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveValSignAuto">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveValSignAutoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTypingCpfCnpjCtd">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTypingCpfCnpjCtd">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingCpfCnpjCtdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove3">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInApprove3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInApprove3Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markTransInApprove3">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markTransInApprove3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markTransInApprove3Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInApprove2">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInApprove2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInApprove2Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="approveTransInDiff2">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="approveTransInDiff2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="approveTransInDiff2Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="markTransInApprove1">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="markTransInApprove1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="markTransInApprove1Response">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="processTyping">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="processTyping">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="processTypingResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FlexpsException">
+        <soap:fault use="literal" name="FlexpsException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProcessingFService">
+    <wsdl:port name="ProcessingFServiceImplPort" binding="tns:ProcessingFServiceSoapBinding">
+      <soap:address location="http://flexps.corp.flexdoc.com.br:8080/flexpsService/ProcessingFService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

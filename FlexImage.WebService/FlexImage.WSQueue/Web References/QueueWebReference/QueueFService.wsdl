@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="QueueFService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="abortBatchInQueue" type="tns:abortBatchInQueue" />
+      <xs:element name="abortBatchInQueueResponse" type="tns:abortBatchInQueueResponse" />
+      <xs:element name="abortDocsInQueue" type="tns:abortDocsInQueue" />
+      <xs:element name="abortDocsInQueueResponse" type="tns:abortDocsInQueueResponse" />
+      <xs:element name="abortTransInQueue" type="tns:abortTransInQueue" />
+      <xs:element name="abortTransInQueueResponse" type="tns:abortTransInQueueResponse" />
+      <xs:element name="getAutomaticQueue" type="tns:getAutomaticQueue" />
+      <xs:element name="getAutomaticQueueResponse" type="tns:getAutomaticQueueResponse" />
+      <xs:element name="getBatchInQueue" type="tns:getBatchInQueue" />
+      <xs:element name="getBatchInQueueResponse" type="tns:getBatchInQueueResponse" />
+      <xs:element name="getDocsInQueue" type="tns:getDocsInQueue" />
+      <xs:element name="getDocsInQueueByWorkflow" type="tns:getDocsInQueueByWorkflow" />
+      <xs:element name="getDocsInQueueByWorkflowResponse" type="tns:getDocsInQueueByWorkflowResponse" />
+      <xs:element name="getDocsInQueueForSystem" type="tns:getDocsInQueueForSystem" />
+      <xs:element name="getDocsInQueueForSystemResponse" type="tns:getDocsInQueueForSystemResponse" />
+      <xs:element name="getDocsInQueueResponse" type="tns:getDocsInQueueResponse" />
+      <xs:element name="getMonitoring" type="tns:getMonitoring" />
+      <xs:element name="getMonitoringResponse" type="tns:getMonitoringResponse" />
+      <xs:element name="getRobotInQueue" type="tns:getRobotInQueue" />
+      <xs:element name="getRobotInQueueResponse" type="tns:getRobotInQueueResponse" />
+      <xs:element name="getTransInQueue" type="tns:getTransInQueue" />
+      <xs:element name="getTransInQueueResponse" type="tns:getTransInQueueResponse" />
+      <xs:element name="refreshBatch" type="tns:refreshBatch" />
+      <xs:element name="refreshBatchResponse" type="tns:refreshBatchResponse" />
+      <xs:element name="refreshTrans" type="tns:refreshTrans" />
+      <xs:element name="refreshTransResponse" type="tns:refreshTransResponse" />
+      <xs:complexType name="getMonitoring">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getMonitoringResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:queueMonitoringDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queueMonitoringDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="countObjs" type="xs:int" />
+          <xs:element minOccurs="0" name="countUsers" type="xs:int" />
+          <xs:element minOccurs="0" name="forecast" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="queueAvg" type="xs:int" />
+          <xs:element minOccurs="0" name="queueFunction" type="xs:string" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueName" type="xs:string" />
+          <xs:element name="selected" type="xs:boolean" />
+          <xs:element minOccurs="0" name="timeTotal" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTransInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="numObjs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getTransInQueueResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:transQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="transQueueDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="difValue" type="xs:decimal" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="documentDtoList" nillable="true" type="tns:documentDto" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="transTotDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="transType" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documentDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentCaptureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="documentCreated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="documentFileBack" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="documentFileFront" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="documentFileSizeBack" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileSizeFront" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentFileTypeFront" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFile" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashFileBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXml" type="xs:string" />
+          <xs:element minOccurs="0" name="documentHashXmlBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNsu" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNsuHost" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string" />
+          <xs:element minOccurs="0" name="documentReason" type="xs:string" />
+          <xs:element minOccurs="0" name="documentStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="documentXml" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="exceptionDtoList" nillable="true" type="tns:exceptionDto" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="pendingDtoList" nillable="true" type="tns:pendingDto" />
+          <xs:element name="receipt" type="xs:boolean" />
+          <xs:element minOccurs="0" name="siteExternalId" type="xs:int" />
+          <xs:element minOccurs="0" name="siteName" type="xs:string" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeOperation" type="xs:int" />
+          <xs:element minOccurs="0" name="typeReceipt" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="exceptionDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="exceptionAuthType" type="xs:int" />
+          <xs:element minOccurs="0" name="exceptionId" type="xs:long" />
+          <xs:element minOccurs="0" name="exceptionName" type="xs:string" />
+          <xs:element minOccurs="0" name="exceptionOrigin" type="xs:int" />
+          <xs:element minOccurs="0" name="exceptionOsf" type="xs:string" />
+          <xs:element minOccurs="0" name="exceptionPending" type="xs:int" />
+          <xs:element minOccurs="0" name="exceptionType" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="pendingDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pendingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="pendingId" type="xs:long" />
+          <xs:element minOccurs="0" name="pendingReason" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abortBatchInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchQueueDto" type="tns:batchQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="batchQueueDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchPriority" type="xs:int" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docQueueDtos" nillable="true" type="tns:docQueueDto" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docQueueDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchPriority" type="xs:int" />
+          <xs:element minOccurs="0" name="batchTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="documentCaptureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="documentFileTypeBack" type="xs:string" />
+          <xs:element minOccurs="0" name="documentFileTypeFront" type="xs:string" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="documentValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="documentXml" type="xs:string" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" name="typeOperation" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abortBatchInQueueResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="refreshTrans">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="transId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="refreshTransResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:transQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="refreshBatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="refreshBatchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:batchQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAutomaticQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="usrGroupIds" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getAutomaticQueueResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="numObjs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInQueueResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInQueueForSystem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="numObjs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInQueueForSystemResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abortDocsInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="docQueueDto" type="tns:docQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abortDocsInQueueResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getBatchInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="numObjs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBatchInQueueResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:batchQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInQueueByWorkflow">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="numObjs" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsInQueueByWorkflowResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abortTransInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="transQueueDto" type="tns:transQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abortTransInQueueResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getRobotInQueue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getRobotInQueueResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:robotQueueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="robotQueueDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentCaptureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="documentId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="type" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getDocsInQueueByWorkflowResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsInQueueByWorkflowResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRobotInQueue">
+    <wsdl:part name="parameters" element="ns1:getRobotInQueue" />
+  </wsdl:message>
+  <wsdl:message name="getDocsInQueue">
+    <wsdl:part name="parameters" element="ns1:getDocsInQueue" />
+  </wsdl:message>
+  <wsdl:message name="abortDocsInQueue">
+    <wsdl:part name="parameters" element="ns1:abortDocsInQueue" />
+  </wsdl:message>
+  <wsdl:message name="getTransInQueue">
+    <wsdl:part name="parameters" element="ns1:getTransInQueue" />
+  </wsdl:message>
+  <wsdl:message name="getDocsInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="abortTransInQueue">
+    <wsdl:part name="parameters" element="ns1:abortTransInQueue" />
+  </wsdl:message>
+  <wsdl:message name="getDocsInQueueByWorkflow">
+    <wsdl:part name="parameters" element="ns1:getDocsInQueueByWorkflow" />
+  </wsdl:message>
+  <wsdl:message name="refreshBatchResponse">
+    <wsdl:part name="parameters" element="ns1:refreshBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTransInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:getTransInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocsInQueueForSystem">
+    <wsdl:part name="parameters" element="ns1:getDocsInQueueForSystem" />
+  </wsdl:message>
+  <wsdl:message name="getRobotInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:getRobotInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="abortDocsInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:abortDocsInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="abortBatchInQueue">
+    <wsdl:part name="parameters" element="ns1:abortBatchInQueue" />
+  </wsdl:message>
+  <wsdl:message name="getBatchInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:getBatchInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMonitoring">
+    <wsdl:part name="parameters" element="ns1:getMonitoring" />
+  </wsdl:message>
+  <wsdl:message name="getMonitoringResponse">
+    <wsdl:part name="parameters" element="ns1:getMonitoringResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocsInQueueForSystemResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsInQueueForSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="refreshTransResponse">
+    <wsdl:part name="parameters" element="ns1:refreshTransResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAutomaticQueue">
+    <wsdl:part name="parameters" element="ns1:getAutomaticQueue" />
+  </wsdl:message>
+  <wsdl:message name="getAutomaticQueueResponse">
+    <wsdl:part name="parameters" element="ns1:getAutomaticQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="abortTransInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:abortTransInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="abortBatchInQueueResponse">
+    <wsdl:part name="parameters" element="ns1:abortBatchInQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="refreshBatch">
+    <wsdl:part name="parameters" element="ns1:refreshBatch" />
+  </wsdl:message>
+  <wsdl:message name="refreshTrans">
+    <wsdl:part name="parameters" element="ns1:refreshTrans" />
+  </wsdl:message>
+  <wsdl:message name="getBatchInQueue">
+    <wsdl:part name="parameters" element="ns1:getBatchInQueue" />
+  </wsdl:message>
+  <wsdl:portType name="QueueFService">
+    <wsdl:operation name="getMonitoring">
+      <wsdl:input name="getMonitoring" message="ns1:getMonitoring" />
+      <wsdl:output name="getMonitoringResponse" message="ns1:getMonitoringResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getTransInQueue">
+      <wsdl:input name="getTransInQueue" message="ns1:getTransInQueue" />
+      <wsdl:output name="getTransInQueueResponse" message="ns1:getTransInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="abortBatchInQueue">
+      <wsdl:input name="abortBatchInQueue" message="ns1:abortBatchInQueue" />
+      <wsdl:output name="abortBatchInQueueResponse" message="ns1:abortBatchInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="refreshTrans">
+      <wsdl:input name="refreshTrans" message="ns1:refreshTrans" />
+      <wsdl:output name="refreshTransResponse" message="ns1:refreshTransResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="refreshBatch">
+      <wsdl:input name="refreshBatch" message="ns1:refreshBatch" />
+      <wsdl:output name="refreshBatchResponse" message="ns1:refreshBatchResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getAutomaticQueue">
+      <wsdl:input name="getAutomaticQueue" message="ns1:getAutomaticQueue" />
+      <wsdl:output name="getAutomaticQueueResponse" message="ns1:getAutomaticQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocsInQueue">
+      <wsdl:input name="getDocsInQueue" message="ns1:getDocsInQueue" />
+      <wsdl:output name="getDocsInQueueResponse" message="ns1:getDocsInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocsInQueueForSystem">
+      <wsdl:input name="getDocsInQueueForSystem" message="ns1:getDocsInQueueForSystem" />
+      <wsdl:output name="getDocsInQueueForSystemResponse" message="ns1:getDocsInQueueForSystemResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="abortDocsInQueue">
+      <wsdl:input name="abortDocsInQueue" message="ns1:abortDocsInQueue" />
+      <wsdl:output name="abortDocsInQueueResponse" message="ns1:abortDocsInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getBatchInQueue">
+      <wsdl:input name="getBatchInQueue" message="ns1:getBatchInQueue" />
+      <wsdl:output name="getBatchInQueueResponse" message="ns1:getBatchInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocsInQueueByWorkflow">
+      <wsdl:input name="getDocsInQueueByWorkflow" message="ns1:getDocsInQueueByWorkflow" />
+      <wsdl:output name="getDocsInQueueByWorkflowResponse" message="ns1:getDocsInQueueByWorkflowResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="abortTransInQueue">
+      <wsdl:input name="abortTransInQueue" message="ns1:abortTransInQueue" />
+      <wsdl:output name="abortTransInQueueResponse" message="ns1:abortTransInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getRobotInQueue">
+      <wsdl:input name="getRobotInQueue" message="ns1:getRobotInQueue" />
+      <wsdl:output name="getRobotInQueueResponse" message="ns1:getRobotInQueueResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

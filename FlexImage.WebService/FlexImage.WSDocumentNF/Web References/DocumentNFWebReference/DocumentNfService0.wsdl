@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DocumentNfService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="closeBackups" type="tns:closeBackups" />
+      <xs:element name="closeBackupsResponse" type="tns:closeBackupsResponse" />
+      <xs:element name="deleteDocumentNf" type="tns:deleteDocumentNf" />
+      <xs:element name="deleteDocumentNfResponse" type="tns:deleteDocumentNfResponse" />
+      <xs:element name="getDocKeyByDocNfId" type="tns:getDocKeyByDocNfId" />
+      <xs:element name="getDocKeyByDocNfIdResponse" type="tns:getDocKeyByDocNfIdResponse" />
+      <xs:element name="getDocsNfByBatchNf" type="tns:getDocsNfByBatchNf" />
+      <xs:element name="getDocsNfByBatchNfResponse" type="tns:getDocsNfByBatchNfResponse" />
+      <xs:element name="getDocsNfId" type="tns:getDocsNfId" />
+      <xs:element name="getDocsNfIdResponse" type="tns:getDocsNfIdResponse" />
+      <xs:element name="getDocumentNf" type="tns:getDocumentNf" />
+      <xs:element name="getDocumentNfResponse" type="tns:getDocumentNfResponse" />
+      <xs:element name="getListDocsForBkp" type="tns:getListDocsForBkp" />
+      <xs:element name="getListDocsForBkpByDate" type="tns:getListDocsForBkpByDate" />
+      <xs:element name="getListDocsForBkpByDateResponse" type="tns:getListDocsForBkpByDateResponse" />
+      <xs:element name="getListDocsForBkpByType" type="tns:getListDocsForBkpByType" />
+      <xs:element name="getListDocsForBkpByTypeResponse" type="tns:getListDocsForBkpByTypeResponse" />
+      <xs:element name="getListDocsForBkpResponse" type="tns:getListDocsForBkpResponse" />
+      <xs:element name="getOpenBackup" type="tns:getOpenBackup" />
+      <xs:element name="getOpenBackupResponse" type="tns:getOpenBackupResponse" />
+      <xs:element name="getPendingSignature" type="tns:getPendingSignature" />
+      <xs:element name="getPendingSignatureResponse" type="tns:getPendingSignatureResponse" />
+      <xs:element name="getPreDocKeyByPreDocumentId" type="tns:getPreDocKeyByPreDocumentId" />
+      <xs:element name="getPreDocKeyByPreDocumentIdResponse" type="tns:getPreDocKeyByPreDocumentIdResponse" />
+      <xs:element name="indexDocumentNf" type="tns:indexDocumentNf" />
+      <xs:element name="indexDocumentNfResponse" type="tns:indexDocumentNfResponse" />
+      <xs:element name="insertDocumentNf" type="tns:insertDocumentNf" />
+      <xs:element name="insertDocumentNfResponse" type="tns:insertDocumentNfResponse" />
+      <xs:element name="insertPredocument" type="tns:insertPredocument" />
+      <xs:element name="insertPredocumentResponse" type="tns:insertPredocumentResponse" />
+      <xs:element name="isCapa" type="tns:isCapa" />
+      <xs:element name="isCapaResponse" type="tns:isCapaResponse" />
+      <xs:element name="openBackups" type="tns:openBackups" />
+      <xs:element name="openBackupsResponse" type="tns:openBackupsResponse" />
+      <xs:element name="reBackup" type="tns:reBackup" />
+      <xs:element name="reBackupResponse" type="tns:reBackupResponse" />
+      <xs:element name="setDocumentBackuped" type="tns:setDocumentBackuped" />
+      <xs:element name="setDocumentBackupedResponse" type="tns:setDocumentBackupedResponse" />
+      <xs:element name="updateFileInfo" type="tns:updateFileInfo" />
+      <xs:element name="updateFileInfoResponse" type="tns:updateFileInfoResponse" />
+      <xs:complexType name="getListDocsForBkp">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfIdInitial" type="xs:long" />
+          <xs:element minOccurs="0" name="length" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListDocsForBkpResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documentNfDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="backupsId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="boxDesc1" type="xs:string" />
+          <xs:element minOccurs="0" name="boxDesc2" type="xs:string" />
+          <xs:element minOccurs="0" name="boxDesc3" type="xs:string" />
+          <xs:element minOccurs="0" name="boxGroup" type="xs:string" />
+          <xs:element minOccurs="0" name="boxId" type="xs:long" />
+          <xs:element minOccurs="0" name="boxNum" type="xs:int" />
+          <xs:element minOccurs="0" name="boxYear" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docKeyDtoList" nillable="true" type="tns:docKeyDto" />
+          <xs:element minOccurs="0" name="docKeysLabel" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfCaptureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfCreated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="documentNfCrypto" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfFileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfFileType" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfHash" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfPages" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfReason" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfSecurityLevel" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfVirtualFolder" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" name="typeOperation" type="xs:int" />
+          <xs:element minOccurs="0" name="typeParent" type="xs:long" />
+          <xs:element minOccurs="0" name="usrCaptId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrCaptName" type="xs:string" />
+          <xs:element minOccurs="0" name="usrIndexId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrIndexName" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docKeyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="docKeyId" type="xs:long" />
+          <xs:element minOccurs="0" name="docKeyOcrScore" type="xs:int" />
+          <xs:element minOccurs="0" name="docKeyOcrText" type="xs:string" />
+          <xs:element minOccurs="0" name="docKeyValue" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentNfResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeBackups">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="backupId" type="xs:long" />
+          <xs:element minOccurs="0" name="totalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="totalBytes" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeBackupsResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getListDocsForBkpByType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfIdInitial" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListDocsForBkpByTypeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="insertDocumentNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="virtualFolderId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="origin" type="xs:int" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="captSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="totalPages" type="xs:int" />
+          <xs:element minOccurs="0" name="originalFileName" type="xs:string" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="insertDocumentNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getListDocsForBkpByDate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="dataInicial" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="dataFinal" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getListDocsForBkpByDateResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="insertPredocument">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="preDocKeyDtoList" type="tns:preDocKeyDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="preDocKeyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+          <xs:element minOccurs="0" name="preDocKeyId" type="xs:long" />
+          <xs:element minOccurs="0" name="preDocKeyValue" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="insertPredocumentResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getOpenBackup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getOpenBackupResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsNfByBatchNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsNfByBatchNfResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="indexDocumentNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docKeys" type="tns:docKeyDto" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element name="autoIndexed" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="indexDocumentNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setDocumentBackuped">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="backupsId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocumentBackupedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="isCapa">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="isCapaResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateFileInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="hashFile" type="xs:string" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="updateFileInfoResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getPendingSignature">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPendingSignatureResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocKeyByDocNfId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocKeyByDocNfIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:docKeyDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPreDocKeyByPreDocumentId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="preDocumentId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPreDocKeyByPreDocumentIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:preDocKeyDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reBackup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="backupsId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="reBackupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openBackups">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="desc" type="xs:string" />
+          <xs:element minOccurs="0" name="mediaTypeId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openBackupsResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsNfId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="cache" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocsNfIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteDocumentNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="deleteDocumentNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="getPendingSignatureResponse">
+    <wsdl:part name="parameters" element="ns1:getPendingSignatureResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListDocsForBkpByDate">
+    <wsdl:part name="parameters" element="ns1:getListDocsForBkpByDate" />
+  </wsdl:message>
+  <wsdl:message name="getPreDocKeyByPreDocumentId">
+    <wsdl:part name="parameters" element="ns1:getPreDocKeyByPreDocumentId" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentNfResponse">
+    <wsdl:part name="parameters" element="ns1:getDocumentNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocsNfId">
+    <wsdl:part name="parameters" element="ns1:getDocsNfId" />
+  </wsdl:message>
+  <wsdl:message name="updateFileInfoResponse">
+    <wsdl:part name="parameters" element="ns1:updateFileInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOpenBackup">
+    <wsdl:part name="parameters" element="ns1:getOpenBackup" />
+  </wsdl:message>
+  <wsdl:message name="insertPredocument">
+    <wsdl:part name="parameters" element="ns1:insertPredocument" />
+  </wsdl:message>
+  <wsdl:message name="insertDocumentNfResponse">
+    <wsdl:part name="parameters" element="ns1:insertDocumentNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeBackupsResponse">
+    <wsdl:part name="parameters" element="ns1:closeBackupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPendingSignature">
+    <wsdl:part name="parameters" element="ns1:getPendingSignature" />
+  </wsdl:message>
+  <wsdl:message name="getListDocsForBkpByType">
+    <wsdl:part name="parameters" element="ns1:getListDocsForBkpByType" />
+  </wsdl:message>
+  <wsdl:message name="getListDocsForBkpResponse">
+    <wsdl:part name="parameters" element="ns1:getListDocsForBkpResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPreDocKeyByPreDocumentIdResponse">
+    <wsdl:part name="parameters" element="ns1:getPreDocKeyByPreDocumentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateFileInfo">
+    <wsdl:part name="parameters" element="ns1:updateFileInfo" />
+  </wsdl:message>
+  <wsdl:message name="getDocsNfByBatchNfResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsNfByBatchNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="isCapaResponse">
+    <wsdl:part name="parameters" element="ns1:isCapaResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteDocumentNfResponse">
+    <wsdl:part name="parameters" element="ns1:deleteDocumentNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeBackups">
+    <wsdl:part name="parameters" element="ns1:closeBackups" />
+  </wsdl:message>
+  <wsdl:message name="setDocumentBackupedResponse">
+    <wsdl:part name="parameters" element="ns1:setDocumentBackupedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocsNfIdResponse">
+    <wsdl:part name="parameters" element="ns1:getDocsNfIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOpenBackupResponse">
+    <wsdl:part name="parameters" element="ns1:getOpenBackupResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertPredocumentResponse">
+    <wsdl:part name="parameters" element="ns1:insertPredocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListDocsForBkpByDateResponse">
+    <wsdl:part name="parameters" element="ns1:getListDocsForBkpByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="isCapa">
+    <wsdl:part name="parameters" element="ns1:isCapa" />
+  </wsdl:message>
+  <wsdl:message name="getDocsNfByBatchNf">
+    <wsdl:part name="parameters" element="ns1:getDocsNfByBatchNf" />
+  </wsdl:message>
+  <wsdl:message name="getListDocsForBkpByTypeResponse">
+    <wsdl:part name="parameters" element="ns1:getListDocsForBkpByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="indexDocumentNfResponse">
+    <wsdl:part name="parameters" element="ns1:indexDocumentNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="openBackups">
+    <wsdl:part name="parameters" element="ns1:openBackups" />
+  </wsdl:message>
+  <wsdl:message name="getDocKeyByDocNfIdResponse">
+    <wsdl:part name="parameters" element="ns1:getDocKeyByDocNfIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="reBackup">
+    <wsdl:part name="parameters" element="ns1:reBackup" />
+  </wsdl:message>
+  <wsdl:message name="indexDocumentNf">
+    <wsdl:part name="parameters" element="ns1:indexDocumentNf" />
+  </wsdl:message>
+  <wsdl:message name="getDocKeyByDocNfId">
+    <wsdl:part name="parameters" element="ns1:getDocKeyByDocNfId" />
+  </wsdl:message>
+  <wsdl:message name="insertDocumentNf">
+    <wsdl:part name="parameters" element="ns1:insertDocumentNf" />
+  </wsdl:message>
+  <wsdl:message name="getListDocsForBkp">
+    <wsdl:part name="parameters" element="ns1:getListDocsForBkp" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentNf">
+    <wsdl:part name="parameters" element="ns1:getDocumentNf" />
+  </wsdl:message>
+  <wsdl:message name="openBackupsResponse">
+    <wsdl:part name="parameters" element="ns1:openBackupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="reBackupResponse">
+    <wsdl:part name="parameters" element="ns1:reBackupResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteDocumentNf">
+    <wsdl:part name="parameters" element="ns1:deleteDocumentNf" />
+  </wsdl:message>
+  <wsdl:message name="setDocumentBackuped">
+    <wsdl:part name="parameters" element="ns1:setDocumentBackuped" />
+  </wsdl:message>
+  <wsdl:portType name="DocumentNfService">
+    <wsdl:operation name="getListDocsForBkp">
+      <wsdl:input name="getListDocsForBkp" message="ns1:getListDocsForBkp" />
+      <wsdl:output name="getListDocsForBkpResponse" message="ns1:getListDocsForBkpResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentNf">
+      <wsdl:input name="getDocumentNf" message="ns1:getDocumentNf" />
+      <wsdl:output name="getDocumentNfResponse" message="ns1:getDocumentNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="closeBackups">
+      <wsdl:input name="closeBackups" message="ns1:closeBackups" />
+      <wsdl:output name="closeBackupsResponse" message="ns1:closeBackupsResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getListDocsForBkpByType">
+      <wsdl:input name="getListDocsForBkpByType" message="ns1:getListDocsForBkpByType" />
+      <wsdl:output name="getListDocsForBkpByTypeResponse" message="ns1:getListDocsForBkpByTypeResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="insertDocumentNf">
+      <wsdl:input name="insertDocumentNf" message="ns1:insertDocumentNf" />
+      <wsdl:output name="insertDocumentNfResponse" message="ns1:insertDocumentNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getListDocsForBkpByDate">
+      <wsdl:input name="getListDocsForBkpByDate" message="ns1:getListDocsForBkpByDate" />
+      <wsdl:output name="getListDocsForBkpByDateResponse" message="ns1:getListDocsForBkpByDateResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="insertPredocument">
+      <wsdl:input name="insertPredocument" message="ns1:insertPredocument" />
+      <wsdl:output name="insertPredocumentResponse" message="ns1:insertPredocumentResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getOpenBackup">
+      <wsdl:input name="getOpenBackup" message="ns1:getOpenBackup" />
+      <wsdl:output name="getOpenBackupResponse" message="ns1:getOpenBackupResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocsNfByBatchNf">
+      <wsdl:input name="getDocsNfByBatchNf" message="ns1:getDocsNfByBatchNf" />
+      <wsdl:output name="getDocsNfByBatchNfResponse" message="ns1:getDocsNfByBatchNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="indexDocumentNf">
+      <wsdl:input name="indexDocumentNf" message="ns1:indexDocumentNf" />
+      <wsdl:output name="indexDocumentNfResponse" message="ns1:indexDocumentNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setDocumentBackuped">
+      <wsdl:input name="setDocumentBackuped" message="ns1:setDocumentBackuped" />
+      <wsdl:output name="setDocumentBackupedResponse" message="ns1:setDocumentBackupedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="isCapa">
+      <wsdl:input name="isCapa" message="ns1:isCapa" />
+      <wsdl:output name="isCapaResponse" message="ns1:isCapaResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="updateFileInfo">
+      <wsdl:input name="updateFileInfo" message="ns1:updateFileInfo" />
+      <wsdl:output name="updateFileInfoResponse" message="ns1:updateFileInfoResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getPendingSignature">
+      <wsdl:input name="getPendingSignature" message="ns1:getPendingSignature" />
+      <wsdl:output name="getPendingSignatureResponse" message="ns1:getPendingSignatureResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocKeyByDocNfId">
+      <wsdl:input name="getDocKeyByDocNfId" message="ns1:getDocKeyByDocNfId" />
+      <wsdl:output name="getDocKeyByDocNfIdResponse" message="ns1:getDocKeyByDocNfIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getPreDocKeyByPreDocumentId">
+      <wsdl:input name="getPreDocKeyByPreDocumentId" message="ns1:getPreDocKeyByPreDocumentId" />
+      <wsdl:output name="getPreDocKeyByPreDocumentIdResponse" message="ns1:getPreDocKeyByPreDocumentIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="reBackup">
+      <wsdl:input name="reBackup" message="ns1:reBackup" />
+      <wsdl:output name="reBackupResponse" message="ns1:reBackupResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="openBackups">
+      <wsdl:input name="openBackups" message="ns1:openBackups" />
+      <wsdl:output name="openBackupsResponse" message="ns1:openBackupsResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocsNfId">
+      <wsdl:input name="getDocsNfId" message="ns1:getDocsNfId" />
+      <wsdl:output name="getDocsNfIdResponse" message="ns1:getDocsNfIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDocumentNf">
+      <wsdl:input name="deleteDocumentNf" message="ns1:deleteDocumentNf" />
+      <wsdl:output name="deleteDocumentNfResponse" message="ns1:deleteDocumentNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

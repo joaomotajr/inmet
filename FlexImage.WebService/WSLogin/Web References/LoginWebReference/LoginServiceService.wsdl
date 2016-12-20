@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://login.service.ws.mdi.flexdoc.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoginServiceService" targetNamespace="http://login.service.ws.mdi.flexdoc.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://login.service.ws.mdi.flexdoc.com.br/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="BusinessException" type="tns:BusinessException" />
+      <xs:element name="ServiceException" type="tns:ServiceException" />
+      <xs:element name="getUserName" type="tns:getUserName" />
+      <xs:element name="getUserNameResponse" type="tns:getUserNameResponse" />
+      <xs:element name="login" type="tns:login" />
+      <xs:element name="loginResponse" type="tns:loginResponse" />
+      <xs:complexType name="getUserName">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getUserNameResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="login">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+          <xs:element minOccurs="0" name="userPassword" type="xs:string" />
+          <xs:element minOccurs="0" name="localIP" type="xs:string" />
+          <xs:element minOccurs="0" name="stationName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="loginResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:userLogin" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="userLogin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="dateLastLogin" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="groupSiteId" type="xs:long" />
+          <xs:element minOccurs="0" name="HWPrinterId" type="xs:long" />
+          <xs:element minOccurs="0" name="HWPrinterName" type="xs:string" />
+          <xs:element minOccurs="0" name="HWPrinterType" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanBrightness" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanContrast" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanDriver" type="xs:string" />
+          <xs:element minOccurs="0" name="HWScanDriverType" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanGamma" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanId" type="xs:long" />
+          <xs:element minOccurs="0" name="HWScanMaintenance1" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanMaintenance2" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanName" type="xs:string" />
+          <xs:element minOccurs="0" name="HWScanXml" type="xs:string" />
+          <xs:element minOccurs="0" name="HWScanOutputType" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanColorFormat" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanCompression" type="xs:int" />
+          <xs:element minOccurs="0" name="HWScanSchema" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="messages" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="modules" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="paramsLogin" nillable="true" type="tns:paramLogin" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="queues" nillable="true" type="tns:queueLoginDTO" />
+          <xs:element minOccurs="0" name="siteGroupName" type="xs:string" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteName" type="xs:string" />
+          <xs:element minOccurs="0" name="siteType" type="xs:int" />
+          <xs:element minOccurs="0" name="stationAllowUpdate" type="xs:int" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationName" type="xs:string" />
+          <xs:element minOccurs="0" name="userId" type="xs:long" />
+          <xs:element minOccurs="0" name="userInternalId" type="xs:string" />
+          <xs:element minOccurs="0" name="userName" type="xs:string" />
+          <xs:element name="usrGroups">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="entry">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element minOccurs="0" name="key" type="xs:long" />
+                      <xs:element minOccurs="0" name="value" type="xs:string" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="workflows" nillable="true" type="tns:workflowDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="paramLogin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="paramAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="paramValue" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queueLoginDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="queueAvgTime" type="xs:long" />
+          <xs:element minOccurs="0" name="queueId" type="xs:long" />
+          <xs:element minOccurs="0" name="queueModule" type="xs:string" />
+          <xs:element minOccurs="0" name="queueName" type="xs:string" />
+          <xs:element minOccurs="0" name="queueSwap" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="workflowDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="workflowAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowDaily" type="xs:int" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowName" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowXml" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ServiceException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BusinessException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="LoginService_login">
+    <part name="login" element="tns:login" />
+  </message>
+  <message name="ServiceException">
+    <part name="ServiceException" element="tns:ServiceException" />
+  </message>
+  <message name="LoginService_getUserNameResponse">
+    <part name="getUserNameResponse" element="tns:getUserNameResponse" />
+  </message>
+  <message name="LoginService_getUserName">
+    <part name="getUserName" element="tns:getUserName" />
+  </message>
+  <message name="LoginService_loginResponse">
+    <part name="loginResponse" element="tns:loginResponse" />
+  </message>
+  <message name="BusinessException">
+    <part name="BusinessException" element="tns:BusinessException" />
+  </message>
+  <portType name="LoginService">
+    <operation name="getUserName" parameterOrder="getUserName">
+      <input message="tns:LoginService_getUserName" />
+      <output message="tns:LoginService_getUserNameResponse" />
+    </operation>
+    <operation name="login" parameterOrder="login">
+      <input message="tns:LoginService_login" />
+      <output message="tns:LoginService_loginResponse" />
+      <fault name="BusinessException" message="tns:BusinessException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+  </portType>
+  <binding name="LoginServiceBinding" type="tns:LoginService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getUserName">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="BusinessException">
+        <soap:fault use="literal" name="BusinessException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="LoginServiceService">
+    <port name="LoginServicePort" binding="tns:LoginServiceBinding">
+      <soap:address location="http://192.168.1.2:8080/inmet/Service/LoginService" />
+    </port>
+  </service>
+</definitions>

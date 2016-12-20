@@ -1,0 +1,848 @@
+2016-12-19 20:18:53,424 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:18:53,439 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:18:53,470 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:19:23,501 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:19:23,501 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:19:23,501 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:19:23,501 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:19:23,517 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:19:53,595 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:19:53,595 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:19:53,595 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:19:53,595 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:19:53,626 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:20:23,688 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:20:23,688 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:20:23,688 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:20:23,688 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:20:23,719 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:20:53,750 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:20:53,750 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:20:53,750 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:20:53,750 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:20:53,766 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:21:23,860 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:21:23,860 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:21:23,860 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:21:23,860 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:21:23,894 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:21:54,007 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:21:54,007 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:21:54,007 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:21:54,007 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:21:54,038 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:22:24,185 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:22:24,185 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:22:24,185 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:22:24,185 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:22:24,216 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:22:54,278 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:22:54,278 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:22:54,278 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:22:54,278 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:22:54,309 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:23:24,425 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:23:24,425 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:23:24,425 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:23:24,425 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:23:24,456 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:23:54,503 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:23:54,503 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:23:54,503 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:23:54,503 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:23:54,518 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:24:24,580 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:24:24,580 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:24:24,580 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:24:24,580 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:24:24,612 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:24:54,658 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:24:54,658 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:24:54,658 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:24:54,658 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:24:54,674 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:25:24,736 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:25:24,736 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:25:24,736 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:25:24,736 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:25:24,767 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:25:54,814 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:25:54,814 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:25:54,814 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:25:54,814 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:25:54,829 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:26:24,891 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:26:24,891 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:26:24,891 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:26:24,891 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:26:24,923 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:26:54,985 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:26:54,985 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:26:54,985 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:26:54,985 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:26:55,000 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:27:25,047 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:27:25,047 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:27:25,047 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:27:25,047 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:27:25,078 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:27:55,156 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:27:55,156 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:27:55,156 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:27:55,156 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:27:55,172 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:28:25,218 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:28:25,218 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:28:25,218 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:28:25,218 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:28:25,249 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:28:55,312 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:28:55,312 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:28:55,312 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:28:55,312 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:28:55,343 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:29:25,458 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:29:25,458 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:29:25,458 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:29:25,458 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:29:25,489 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:29:55,536 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:29:55,536 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:29:55,536 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:29:55,536 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:29:55,567 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:30:25,614 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:30:25,614 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:30:25,614 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:30:25,614 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:30:25,645 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:30:55,691 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:30:55,691 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:30:55,691 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:30:55,691 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:30:55,723 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:31:25,769 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:31:25,769 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:31:25,769 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:31:25,769 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:31:25,800 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:31:55,847 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:31:55,847 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:31:55,847 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:31:55,847 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:31:55,878 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:32:25,925 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:32:25,925 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:32:25,925 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:32:25,925 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:32:25,956 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:32:56,018 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:32:56,018 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:32:56,018 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:32:56,018 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:32:56,049 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:33:26,096 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:33:26,096 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:33:26,096 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:33:26,096 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:33:26,127 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:33:56,173 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:33:56,173 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:33:56,173 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:33:56,173 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:33:56,205 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:34:26,336 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:34:26,336 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:34:26,336 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:34:26,336 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:34:26,367 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:34:56,429 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:34:56,429 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:34:56,429 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:34:56,429 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:34:56,460 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:35:26,607 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:35:26,607 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:35:26,607 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:35:26,607 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:35:26,638 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:35:56,669 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:35:56,669 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:35:56,669 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:35:56,669 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:35:56,700 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:36:26,770 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:36:26,770 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:36:26,770 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:36:26,770 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:36:26,801 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:36:56,816 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:36:56,816 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:36:56,816 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:36:56,816 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:36:56,832 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:37:26,894 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:37:26,894 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:37:26,894 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:37:26,894 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:37:26,925 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:37:56,972 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:37:56,972 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:37:56,972 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:37:56,972 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:37:57,003 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:38:27,050 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:38:27,050 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:38:27,050 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:38:27,050 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:38:27,081 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:38:57,127 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:38:57,127 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:38:57,127 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:38:57,127 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:38:57,159 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:39:27,205 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:39:27,205 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:39:27,205 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:39:27,205 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:39:27,236 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:39:57,283 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:39:57,283 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:39:57,283 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:39:57,283 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:39:57,314 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:40:27,408 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:40:27,408 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:40:27,408 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:40:27,408 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:40:27,441 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:40:57,539 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:40:57,539 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:40:57,539 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:40:57,539 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:40:57,570 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:41:27,717 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:41:27,717 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:41:27,717 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:41:27,717 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:41:27,748 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:41:57,794 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:41:57,794 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:41:57,794 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:41:57,794 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:41:57,826 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:42:27,972 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:42:27,972 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:42:27,972 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:42:27,972 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:42:28,004 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:42:58,050 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:42:58,050 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:42:58,050 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:42:58,050 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:42:58,081 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:43:28,128 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:43:28,128 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:43:28,128 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:43:28,128 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:43:28,159 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:43:58,206 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:43:58,206 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:43:58,206 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:43:58,206 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:43:58,237 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:44:28,283 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:44:28,283 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:44:28,283 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:44:28,283 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:44:28,315 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:44:58,361 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:44:58,361 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:44:58,361 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:44:58,361 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:44:58,392 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:45:28,439 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:45:28,439 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:45:28,439 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:45:28,439 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:45:28,470 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:45:58,532 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:45:58,532 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:45:58,532 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:45:58,532 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:45:58,564 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:46:28,610 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:46:28,610 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:46:28,610 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:46:28,610 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:46:28,641 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:46:58,672 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:46:58,672 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:46:58,672 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:46:58,672 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:46:58,704 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:47:29,030 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:47:29,030 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:47:29,030 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:47:29,030 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:47:29,051 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:47:59,129 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:47:59,129 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:47:59,129 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:47:59,129 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:47:59,160 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:48:29,222 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:48:29,222 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:48:29,222 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:48:29,222 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:48:29,237 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:48:59,284 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:48:59,284 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:48:59,284 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:48:59,284 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:48:59,315 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:49:29,393 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:49:29,393 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:49:29,393 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:49:29,393 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:49:29,424 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:49:59,540 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:49:59,540 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:49:59,540 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:49:59,540 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:49:59,571 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:50:29,664 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:50:29,664 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:50:29,664 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:50:29,664 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:50:29,696 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:50:59,792 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:50:59,792 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:50:59,792 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:50:59,792 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:50:59,825 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:51:29,897 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:51:29,897 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:51:29,897 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:51:29,897 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:51:29,928 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:51:59,975 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:51:59,975 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:51:59,975 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:51:59,975 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:52:00,009 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:52:30,106 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:52:30,106 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:52:30,106 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:52:30,106 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:52:30,137 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:53:00,184 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:53:00,184 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:53:00,184 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:53:00,184 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:53:00,215 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:53:30,261 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:53:30,261 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:53:30,261 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:53:30,261 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:53:30,292 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:54:00,339 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:54:00,339 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:54:00,339 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:54:00,339 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:54:00,370 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:54:30,417 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:54:30,417 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:54:30,417 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:54:30,417 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:54:30,448 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:55:00,494 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:55:00,494 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:55:00,494 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:55:00,494 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:55:00,526 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:55:30,572 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:55:30,572 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:55:30,572 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:55:30,572 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:55:30,603 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:56:00,650 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:56:00,650 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:56:00,650 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:56:00,650 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:56:00,697 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:56:30,743 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:56:30,743 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:56:30,743 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:56:30,743 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:56:30,775 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:57:00,806 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:57:00,806 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:57:00,806 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:57:00,806 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:57:00,837 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:57:30,884 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:57:30,884 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:57:30,884 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:57:30,884 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:57:30,915 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:58:00,977 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:58:00,977 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:58:00,977 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:58:00,977 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:58:01,008 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:58:31,039 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:58:31,039 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:58:31,039 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:58:31,039 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:58:31,070 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:59:01,148 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:59:01,148 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:59:01,148 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:59:01,148 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:59:01,179 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 20:59:31,226 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:59:31,226 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 20:59:31,226 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 20:59:31,226 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 20:59:31,257 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:00:01,303 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:00:01,303 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:00:01,303 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:00:01,303 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:00:01,335 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:00:31,350 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:00:31,350 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:00:31,350 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:00:31,350 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:00:31,381 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:01:01,528 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:01:01,528 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:01:01,528 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:01:01,528 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:01:01,559 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:01:31,605 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:01:31,605 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:01:31,605 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:01:31,605 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:01:31,637 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:02:01,683 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:02:01,683 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:02:01,683 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:02:01,683 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:02:01,715 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:02:31,861 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:02:31,861 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:02:31,861 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:02:31,861 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:02:31,893 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:03:01,939 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:03:01,939 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:03:01,939 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:03:01,939 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:03:01,970 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:03:32,033 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:03:32,033 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:03:32,033 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:03:32,033 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:03:32,064 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:04:02,110 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:04:02,110 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:04:02,110 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:04:02,110 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:04:02,142 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:04:32,172 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:04:32,172 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:04:32,172 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:04:32,172 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:04:32,204 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:05:02,266 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:05:02,266 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:05:02,266 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:05:02,266 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:05:02,297 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:05:32,359 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:05:32,359 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:05:32,359 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:05:32,359 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:05:32,390 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:06:02,439 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:06:02,440 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:06:02,440 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:06:02,440 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:06:02,484 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:06:32,554 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:06:32,554 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:06:32,554 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:06:32,554 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:06:32,585 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:07:02,732 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:07:02,732 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:07:02,732 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:07:02,732 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:07:02,763 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:07:32,779 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:07:32,779 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:07:32,779 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:07:32,779 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:07:32,810 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:08:02,972 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:08:02,972 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:08:02,972 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:08:02,972 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:08:03,003 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:08:33,034 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:08:33,034 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:08:33,034 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:08:33,034 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:08:33,066 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:09:03,112 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:09:03,112 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:09:03,112 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:09:03,112 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:09:03,143 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:09:33,206 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:09:33,206 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:09:33,206 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:09:33,206 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:09:33,237 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:10:03,268 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:10:03,268 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:10:03,268 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:10:03,268 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:10:03,299 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:10:33,346 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:10:33,346 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:10:33,346 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:10:33,346 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:10:33,377 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:11:03,424 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:11:03,424 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:11:03,424 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:11:03,424 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:11:03,455 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:11:33,533 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:11:33,533 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:11:33,533 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:11:33,533 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:11:33,564 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:12:03,726 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:12:03,726 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:12:03,726 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:12:03,726 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:12:03,759 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:12:33,857 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:12:33,857 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:12:33,857 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:12:33,857 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:12:33,889 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:13:03,935 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:13:03,935 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:13:03,935 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:13:03,935 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:13:03,966 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:13:34,013 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:13:34,013 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:13:34,013 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:13:34,013 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:13:34,044 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:14:04,091 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:14:04,091 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:14:04,091 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:14:04,091 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:14:04,122 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:14:34,168 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:14:34,168 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:14:34,168 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:14:34,168 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:14:34,199 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:15:04,277 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:15:04,277 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:15:04,277 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:15:04,277 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:15:04,309 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:15:34,424 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:15:34,424 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:15:34,424 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:15:34,424 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:15:34,455 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:16:04,502 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:16:04,502 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:16:04,502 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:16:04,502 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:16:04,533 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:16:34,579 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:16:34,579 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:16:34,579 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:16:34,579 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:16:34,595 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:17:04,657 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:17:04,657 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:17:04,657 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:17:04,657 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:17:04,689 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:17:34,735 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:17:34,735 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:17:34,735 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:17:34,735 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:17:34,766 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:18:04,813 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:18:04,813 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:18:04,813 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:18:04,813 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:18:04,844 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:18:34,890 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:18:34,890 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:18:34,890 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:18:34,890 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:18:34,922 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:19:04,984 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:19:04,984 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:19:04,984 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:19:04,984 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:19:05,015 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:19:35,046 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:19:35,046 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:19:35,046 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:19:35,046 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:19:35,077 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:20:05,139 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:20:05,139 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:20:05,139 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:20:05,139 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:20:05,170 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:20:35,201 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:20:35,201 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:20:35,201 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:20:35,201 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:20:35,233 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:21:05,303 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:21:05,303 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:21:05,303 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:21:05,303 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:21:05,322 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:21:35,431 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:21:35,431 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:21:35,431 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:21:35,431 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:21:35,462 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:22:05,540 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:22:05,540 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:22:05,540 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:22:05,540 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:22:05,571 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:22:35,687 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:22:35,687 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:22:35,687 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:22:35,687 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:22:35,702 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:23:05,749 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:23:05,749 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:23:05,749 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:23:05,749 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:23:05,764 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:23:35,842 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:23:35,842 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:23:35,842 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:23:35,842 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:23:35,858 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:24:05,920 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:24:05,920 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:24:05,920 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:24:05,920 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:24:05,951 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:24:36,082 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:24:36,082 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:24:36,082 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:24:36,082 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:24:36,114 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:25:06,160 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:25:06,160 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:25:06,160 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:25:06,160 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:25:06,191 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:25:36,238 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:25:36,238 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:25:36,238 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:25:36,238 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:25:36,253 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:26:06,316 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:26:06,316 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:26:06,316 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:26:06,316 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:26:06,347 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:26:36,393 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:26:36,393 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:26:36,393 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:26:36,393 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:26:36,425 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:27:06,471 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:27:06,471 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:27:06,471 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:27:06,471 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:27:06,502 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:27:36,549 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:27:36,549 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:27:36,549 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:27:36,549 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:27:36,580 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:28:06,658 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:28:06,658 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:28:06,658 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:28:06,658 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:28:06,689 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:28:36,851 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:28:36,851 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:28:36,851 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:28:36,851 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:28:36,867 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:29:06,982 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:29:06,982 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:29:06,982 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:29:06,982 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:29:07,014 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:29:37,060 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:29:37,060 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:29:37,060 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:29:37,060 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:29:37,091 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:30:07,138 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:30:07,138 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:30:07,138 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:30:07,138 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:30:07,169 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:30:37,216 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:30:37,216 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:30:37,216 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:30:37,216 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:30:37,231 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:31:07,293 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:31:07,293 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:31:07,293 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:31:07,293 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:31:07,325 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:31:37,371 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:31:37,371 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:31:37,371 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:31:37,371 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:31:37,387 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:32:07,449 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:32:07,449 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:32:07,449 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:32:07,449 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:32:07,480 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:32:37,526 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:32:37,526 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:32:37,526 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:32:37,526 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:32:37,542 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:33:07,604 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:33:07,604 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:33:07,604 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:33:07,604 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:33:07,635 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:33:37,682 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:33:37,682 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:33:37,682 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:33:37,682 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:33:37,713 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:34:07,775 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:34:07,775 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:34:07,775 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:34:07,775 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:34:07,806 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:34:37,853 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:34:37,853 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:34:37,853 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:34:37,853 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:34:37,869 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:35:08,031 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:35:08,031 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:35:08,031 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:35:08,031 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:35:08,062 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:35:38,109 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:35:38,109 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:35:38,109 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:35:38,109 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:35:38,124 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:36:08,281 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:36:08,281 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:36:08,281 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:36:08,281 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:36:08,312 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:36:38,359 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:36:38,359 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:36:38,359 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:36:38,359 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:36:38,374 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:37:08,537 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:37:08,537 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:37:08,537 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:37:08,537 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:37:08,568 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:37:38,630 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:37:38,630 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:37:38,630 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:37:38,630 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:37:38,661 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:38:08,677 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:38:08,677 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:38:08,677 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:38:08,677 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:38:08,708 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:38:38,786 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:38:38,786 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:38:38,786 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:38:38,786 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:38:38,817 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:39:08,932 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:39:08,932 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:39:08,932 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:39:08,932 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:39:08,964 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:39:39,010 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:39:39,010 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:39:39,010 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:39:39,010 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:39:39,041 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:40:09,088 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:40:09,088 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:40:09,088 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:40:09,088 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:40:09,119 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:40:39,181 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:40:39,181 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:40:39,181 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:40:39,181 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:40:39,213 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:41:09,239 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:41:09,239 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:41:09,239 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:41:09,239 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:41:09,270 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:41:39,349 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:41:39,349 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:41:39,349 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:41:39,349 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:41:39,382 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:42:09,482 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:42:09,482 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:42:09,482 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:42:09,482 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:42:09,513 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:42:39,561 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:42:39,561 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:42:39,561 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:42:39,561 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:42:39,593 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:43:09,641 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:43:09,641 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:43:09,641 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:43:09,641 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:43:09,673 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields
+2016-12-19 21:43:39,687 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:43:39,687 [1] DEBUG FlexImage [(null)] - -----------------------------------------------------
+2016-12-19 21:43:39,687 [1] DEBUG FlexImage [(null)] - 
+2016-12-19 21:43:39,687 [1] DEBUG FlexImage [(null)] - Getting Doc: NORMAL
+2016-12-19 21:43:39,722 [1] DEBUG FlexImage [(null)] - Nenhum documento na fila de OCR Fields

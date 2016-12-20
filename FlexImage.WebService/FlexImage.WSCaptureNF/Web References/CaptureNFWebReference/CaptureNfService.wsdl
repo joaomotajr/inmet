@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CaptureNfService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="closeBatchNf" type="tns:closeBatchNf" />
+      <xs:element name="closeBatchNfResponse" type="tns:closeBatchNfResponse" />
+      <xs:element name="getBatchNfToRecapture" type="tns:getBatchNfToRecapture" />
+      <xs:element name="getBatchNfToRecaptureResponse" type="tns:getBatchNfToRecaptureResponse" />
+      <xs:element name="getDocumentNfToRecapture" type="tns:getDocumentNfToRecapture" />
+      <xs:element name="getDocumentNfToRecaptureResponse" type="tns:getDocumentNfToRecaptureResponse" />
+      <xs:element name="insertDocumentNf" type="tns:insertDocumentNf" />
+      <xs:element name="insertDocumentNfResponse" type="tns:insertDocumentNfResponse" />
+      <xs:element name="openBatchNf" type="tns:openBatchNf" />
+      <xs:element name="openBatchNfResponse" type="tns:openBatchNfResponse" />
+      <xs:element name="setBatchNfTransmitted" type="tns:setBatchNfTransmitted" />
+      <xs:element name="setBatchNfTransmittedResponse" type="tns:setBatchNfTransmittedResponse" />
+      <xs:element name="setDocNfRecapture" type="tns:setDocNfRecapture" />
+      <xs:element name="setDocNfRecaptureResponse" type="tns:setDocNfRecaptureResponse" />
+      <xs:complexType name="getDocumentNfToRecapture">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getDocumentNfToRecaptureResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:documentNfDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="documentNfDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="backupsId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfTotalDocs" type="xs:int" />
+          <xs:element minOccurs="0" name="boxDesc1" type="xs:string" />
+          <xs:element minOccurs="0" name="boxDesc2" type="xs:string" />
+          <xs:element minOccurs="0" name="boxDesc3" type="xs:string" />
+          <xs:element minOccurs="0" name="boxGroup" type="xs:string" />
+          <xs:element minOccurs="0" name="boxId" type="xs:long" />
+          <xs:element minOccurs="0" name="boxNum" type="xs:int" />
+          <xs:element minOccurs="0" name="boxYear" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docKeyDtoList" nillable="true" type="tns:docKeyDto" />
+          <xs:element minOccurs="0" name="docKeysLabel" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfCaptureSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfCreated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="documentNfCrypto" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfFileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfFileType" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfHash" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfPages" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfReason" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfSecurityLevel" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="documentNfVirtualFolder" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeAlias" type="xs:string" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeName" type="xs:string" />
+          <xs:element minOccurs="0" name="typeOperation" type="xs:int" />
+          <xs:element minOccurs="0" name="typeParent" type="xs:long" />
+          <xs:element minOccurs="0" name="usrCaptId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrCaptName" type="xs:string" />
+          <xs:element minOccurs="0" name="usrIndexId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrIndexName" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="docKeyDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docKeyId" type="xs:long" />
+          <xs:element minOccurs="0" name="docKeyOcrScore" type="xs:int" />
+          <xs:element minOccurs="0" name="docKeyOcrText" type="xs:string" />
+          <xs:element minOccurs="0" name="docKeyValue" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefId" type="xs:long" />
+          <xs:element minOccurs="0" name="keyDefName" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeBatchNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docsNfCanceled" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeBatchNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="insertDocumentNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="docNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="typeId" type="xs:long" />
+          <xs:element minOccurs="0" name="virtualFolderId" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="origin" type="xs:int" />
+          <xs:element minOccurs="0" name="fileSize" type="xs:int" />
+          <xs:element minOccurs="0" name="captSeq" type="xs:int" />
+          <xs:element minOccurs="0" name="fileType" type="xs:string" />
+          <xs:element minOccurs="0" name="totalPages" type="xs:int" />
+          <xs:element minOccurs="0" name="originalFileName" type="xs:string" />
+          <xs:element minOccurs="0" name="hash" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="insertDocumentNfResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="setDocNfRecapture">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNfIdOld" type="xs:long" />
+          <xs:element minOccurs="0" name="documentNfIdNew" type="xs:long" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setDocNfRecaptureResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="openBatchNf">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openBatchNfResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setBatchNfTransmitted">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="batchNfId" type="xs:long" />
+          <xs:element minOccurs="0" name="workflowId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setBatchNfTransmittedResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getBatchNfToRecapture">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getBatchNfToRecaptureResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="closeBatchNfResponse">
+    <wsdl:part name="parameters" element="ns1:closeBatchNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBatchNfToRecapture">
+    <wsdl:part name="parameters" element="ns1:getBatchNfToRecapture" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentNfToRecaptureResponse">
+    <wsdl:part name="parameters" element="ns1:getDocumentNfToRecaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertDocumentNfResponse">
+    <wsdl:part name="parameters" element="ns1:insertDocumentNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="setDocNfRecaptureResponse">
+    <wsdl:part name="parameters" element="ns1:setDocNfRecaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBatchNfToRecaptureResponse">
+    <wsdl:part name="parameters" element="ns1:getBatchNfToRecaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="setBatchNfTransmitted">
+    <wsdl:part name="parameters" element="ns1:setBatchNfTransmitted" />
+  </wsdl:message>
+  <wsdl:message name="setBatchNfTransmittedResponse">
+    <wsdl:part name="parameters" element="ns1:setBatchNfTransmittedResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertDocumentNf">
+    <wsdl:part name="parameters" element="ns1:insertDocumentNf" />
+  </wsdl:message>
+  <wsdl:message name="setDocNfRecapture">
+    <wsdl:part name="parameters" element="ns1:setDocNfRecapture" />
+  </wsdl:message>
+  <wsdl:message name="openBatchNfResponse">
+    <wsdl:part name="parameters" element="ns1:openBatchNfResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeBatchNf">
+    <wsdl:part name="parameters" element="ns1:closeBatchNf" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentNfToRecapture">
+    <wsdl:part name="parameters" element="ns1:getDocumentNfToRecapture" />
+  </wsdl:message>
+  <wsdl:message name="openBatchNf">
+    <wsdl:part name="parameters" element="ns1:openBatchNf" />
+  </wsdl:message>
+  <wsdl:portType name="CaptureNfService">
+    <wsdl:operation name="getDocumentNfToRecapture">
+      <wsdl:input name="getDocumentNfToRecapture" message="ns1:getDocumentNfToRecapture" />
+      <wsdl:output name="getDocumentNfToRecaptureResponse" message="ns1:getDocumentNfToRecaptureResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="closeBatchNf">
+      <wsdl:input name="closeBatchNf" message="ns1:closeBatchNf" />
+      <wsdl:output name="closeBatchNfResponse" message="ns1:closeBatchNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="insertDocumentNf">
+      <wsdl:input name="insertDocumentNf" message="ns1:insertDocumentNf" />
+      <wsdl:output name="insertDocumentNfResponse" message="ns1:insertDocumentNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setDocNfRecapture">
+      <wsdl:input name="setDocNfRecapture" message="ns1:setDocNfRecapture" />
+      <wsdl:output name="setDocNfRecaptureResponse" message="ns1:setDocNfRecaptureResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="openBatchNf">
+      <wsdl:input name="openBatchNf" message="ns1:openBatchNf" />
+      <wsdl:output name="openBatchNfResponse" message="ns1:openBatchNfResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="setBatchNfTransmitted">
+      <wsdl:input name="setBatchNfTransmitted" message="ns1:setBatchNfTransmitted" />
+      <wsdl:output name="setBatchNfTransmittedResponse" message="ns1:setBatchNfTransmittedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getBatchNfToRecapture">
+      <wsdl:input name="getBatchNfToRecapture" message="ns1:getBatchNfToRecapture" />
+      <wsdl:output name="getBatchNfToRecaptureResponse" message="ns1:getBatchNfToRecaptureResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

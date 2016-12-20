@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.flexps.flexdoc.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ControlService" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.flexps.flexdoc.com.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.flexps.flexdoc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="checkControl" type="tns:checkControl" />
+      <xs:element name="checkControlResponse" type="tns:checkControlResponse" />
+      <xs:element name="checkSiteMov" type="tns:checkSiteMov" />
+      <xs:element name="checkSiteMovResponse" type="tns:checkSiteMovResponse" />
+      <xs:element name="checkSitesOpened" type="tns:checkSitesOpened" />
+      <xs:element name="checkSitesOpenedResponse" type="tns:checkSitesOpenedResponse" />
+      <xs:element name="closeControl" type="tns:closeControl" />
+      <xs:element name="closeControlResponse" type="tns:closeControlResponse" />
+      <xs:element name="closeSiteControl" type="tns:closeSiteControl" />
+      <xs:element name="closeSiteControlResponse" type="tns:closeSiteControlResponse" />
+      <xs:element name="findAllControl" type="tns:findAllControl" />
+      <xs:element name="findAllControlResponse" type="tns:findAllControlResponse" />
+      <xs:element name="findAllSiteControl" type="tns:findAllSiteControl" />
+      <xs:element name="findAllSiteControlResponse" type="tns:findAllSiteControlResponse" />
+      <xs:element name="getControl" type="tns:getControl" />
+      <xs:element name="getControlNextOpenDay" type="tns:getControlNextOpenDay" />
+      <xs:element name="getControlNextOpenDayResponse" type="tns:getControlNextOpenDayResponse" />
+      <xs:element name="getControlResponse" type="tns:getControlResponse" />
+      <xs:element name="getControlSuggestedCloseDay" type="tns:getControlSuggestedCloseDay" />
+      <xs:element name="getControlSuggestedCloseDayResponse" type="tns:getControlSuggestedCloseDayResponse" />
+      <xs:element name="getCurrentControl" type="tns:getCurrentControl" />
+      <xs:element name="getCurrentControlResponse" type="tns:getCurrentControlResponse" />
+      <xs:element name="getOpenedControlDate" type="tns:getOpenedControlDate" />
+      <xs:element name="getOpenedControlDateResponse" type="tns:getOpenedControlDateResponse" />
+      <xs:element name="getSiteControlBySiteId" type="tns:getSiteControlBySiteId" />
+      <xs:element name="getSiteControlBySiteIdResponse" type="tns:getSiteControlBySiteIdResponse" />
+      <xs:element name="getSiteControlNextOpenDay" type="tns:getSiteControlNextOpenDay" />
+      <xs:element name="getSiteControlNextOpenDayResponse" type="tns:getSiteControlNextOpenDayResponse" />
+      <xs:element name="openControl" type="tns:openControl" />
+      <xs:element name="openControlResponse" type="tns:openControlResponse" />
+      <xs:element name="openSiteControl" type="tns:openSiteControl" />
+      <xs:element name="openSiteControlResponse" type="tns:openSiteControlResponse" />
+      <xs:complexType name="checkSitesOpened">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checkSitesOpenedResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findAllControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findAllControlResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:controlDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="controlDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="controlTimeClose" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="controlTimeOpen" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getOpenedControlDate">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getOpenedControlDateResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openSiteControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openSiteControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="getSiteControlBySiteId">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSiteControlBySiteIdResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:siteControlDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="siteControlDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="control" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteControlPreviousDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteControlStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="siteControlTimeClose" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteControlTimeOpen" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteControlTimePreClose" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="siteControlTimeZone" type="xs:int" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getControlResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="tns:controlDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCurrentControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getCurrentControlResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getControlSuggestedCloseDay">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getControlSuggestedCloseDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checkSiteMov">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checkSiteMovResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="checkControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="checkControlResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSiteControlNextOpenDay">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getSiteControlNextOpenDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getControlNextOpenDay">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getControlNextOpenDayResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeSiteControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="siteId" type="xs:long" />
+          <xs:element minOccurs="0" name="controlDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+          <xs:element minOccurs="0" name="stationId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="closeSiteControlResponse">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="findAllSiteControl">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="token" type="xs:string" />
+          <xs:element minOccurs="0" name="usrId" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findAllSiteControlResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:siteControlDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FlexpsException" type="tns:FlexpsException" />
+      <xs:complexType name="FlexpsException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FlexpsException">
+    <wsdl:part name="FlexpsException" element="ns1:FlexpsException" />
+  </wsdl:message>
+  <wsdl:message name="checkSiteMovResponse">
+    <wsdl:part name="parameters" element="ns1:checkSiteMovResponse" />
+  </wsdl:message>
+  <wsdl:message name="openControl">
+    <wsdl:part name="parameters" element="ns1:openControl" />
+  </wsdl:message>
+  <wsdl:message name="checkControlResponse">
+    <wsdl:part name="parameters" element="ns1:checkControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="openControlResponse">
+    <wsdl:part name="parameters" element="ns1:openControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkSitesOpenedResponse">
+    <wsdl:part name="parameters" element="ns1:checkSitesOpenedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getControlNextOpenDayResponse">
+    <wsdl:part name="parameters" element="ns1:getControlNextOpenDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSiteControlBySiteIdResponse">
+    <wsdl:part name="parameters" element="ns1:getSiteControlBySiteIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCurrentControlResponse">
+    <wsdl:part name="parameters" element="ns1:getCurrentControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="findAllSiteControl">
+    <wsdl:part name="parameters" element="ns1:findAllSiteControl" />
+  </wsdl:message>
+  <wsdl:message name="findAllControl">
+    <wsdl:part name="parameters" element="ns1:findAllControl" />
+  </wsdl:message>
+  <wsdl:message name="openSiteControlResponse">
+    <wsdl:part name="parameters" element="ns1:openSiteControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOpenedControlDate">
+    <wsdl:part name="parameters" element="ns1:getOpenedControlDate" />
+  </wsdl:message>
+  <wsdl:message name="checkSiteMov">
+    <wsdl:part name="parameters" element="ns1:checkSiteMov" />
+  </wsdl:message>
+  <wsdl:message name="getCurrentControl">
+    <wsdl:part name="parameters" element="ns1:getCurrentControl" />
+  </wsdl:message>
+  <wsdl:message name="getControlResponse">
+    <wsdl:part name="parameters" element="ns1:getControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSiteControlNextOpenDay">
+    <wsdl:part name="parameters" element="ns1:getSiteControlNextOpenDay" />
+  </wsdl:message>
+  <wsdl:message name="closeControlResponse">
+    <wsdl:part name="parameters" element="ns1:closeControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeSiteControl">
+    <wsdl:part name="parameters" element="ns1:closeSiteControl" />
+  </wsdl:message>
+  <wsdl:message name="closeControl">
+    <wsdl:part name="parameters" element="ns1:closeControl" />
+  </wsdl:message>
+  <wsdl:message name="getControl">
+    <wsdl:part name="parameters" element="ns1:getControl" />
+  </wsdl:message>
+  <wsdl:message name="checkSitesOpened">
+    <wsdl:part name="parameters" element="ns1:checkSitesOpened" />
+  </wsdl:message>
+  <wsdl:message name="closeSiteControlResponse">
+    <wsdl:part name="parameters" element="ns1:closeSiteControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="findAllControlResponse">
+    <wsdl:part name="parameters" element="ns1:findAllControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="getControlSuggestedCloseDay">
+    <wsdl:part name="parameters" element="ns1:getControlSuggestedCloseDay" />
+  </wsdl:message>
+  <wsdl:message name="checkControl">
+    <wsdl:part name="parameters" element="ns1:checkControl" />
+  </wsdl:message>
+  <wsdl:message name="getSiteControlBySiteId">
+    <wsdl:part name="parameters" element="ns1:getSiteControlBySiteId" />
+  </wsdl:message>
+  <wsdl:message name="getOpenedControlDateResponse">
+    <wsdl:part name="parameters" element="ns1:getOpenedControlDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getControlSuggestedCloseDayResponse">
+    <wsdl:part name="parameters" element="ns1:getControlSuggestedCloseDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="getControlNextOpenDay">
+    <wsdl:part name="parameters" element="ns1:getControlNextOpenDay" />
+  </wsdl:message>
+  <wsdl:message name="findAllSiteControlResponse">
+    <wsdl:part name="parameters" element="ns1:findAllSiteControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSiteControlNextOpenDayResponse">
+    <wsdl:part name="parameters" element="ns1:getSiteControlNextOpenDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="openSiteControl">
+    <wsdl:part name="parameters" element="ns1:openSiteControl" />
+  </wsdl:message>
+  <wsdl:portType name="ControlService">
+    <wsdl:operation name="checkSitesOpened">
+      <wsdl:input name="checkSitesOpened" message="ns1:checkSitesOpened" />
+      <wsdl:output name="checkSitesOpenedResponse" message="ns1:checkSitesOpenedResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="findAllControl">
+      <wsdl:input name="findAllControl" message="ns1:findAllControl" />
+      <wsdl:output name="findAllControlResponse" message="ns1:findAllControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="closeControl">
+      <wsdl:input name="closeControl" message="ns1:closeControl" />
+      <wsdl:output name="closeControlResponse" message="ns1:closeControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getOpenedControlDate">
+      <wsdl:input name="getOpenedControlDate" message="ns1:getOpenedControlDate" />
+      <wsdl:output name="getOpenedControlDateResponse" message="ns1:getOpenedControlDateResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="openSiteControl">
+      <wsdl:input name="openSiteControl" message="ns1:openSiteControl" />
+      <wsdl:output name="openSiteControlResponse" message="ns1:openSiteControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getSiteControlBySiteId">
+      <wsdl:input name="getSiteControlBySiteId" message="ns1:getSiteControlBySiteId" />
+      <wsdl:output name="getSiteControlBySiteIdResponse" message="ns1:getSiteControlBySiteIdResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getControl">
+      <wsdl:input name="getControl" message="ns1:getControl" />
+      <wsdl:output name="getControlResponse" message="ns1:getControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentControl">
+      <wsdl:input name="getCurrentControl" message="ns1:getCurrentControl" />
+      <wsdl:output name="getCurrentControlResponse" message="ns1:getCurrentControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getControlSuggestedCloseDay">
+      <wsdl:input name="getControlSuggestedCloseDay" message="ns1:getControlSuggestedCloseDay" />
+      <wsdl:output name="getControlSuggestedCloseDayResponse" message="ns1:getControlSuggestedCloseDayResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSiteMov">
+      <wsdl:input name="checkSiteMov" message="ns1:checkSiteMov" />
+      <wsdl:output name="checkSiteMovResponse" message="ns1:checkSiteMovResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="openControl">
+      <wsdl:input name="openControl" message="ns1:openControl" />
+      <wsdl:output name="openControlResponse" message="ns1:openControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="checkControl">
+      <wsdl:input name="checkControl" message="ns1:checkControl" />
+      <wsdl:output name="checkControlResponse" message="ns1:checkControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getSiteControlNextOpenDay">
+      <wsdl:input name="getSiteControlNextOpenDay" message="ns1:getSiteControlNextOpenDay" />
+      <wsdl:output name="getSiteControlNextOpenDayResponse" message="ns1:getSiteControlNextOpenDayResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="getControlNextOpenDay">
+      <wsdl:input name="getControlNextOpenDay" message="ns1:getControlNextOpenDay" />
+      <wsdl:output name="getControlNextOpenDayResponse" message="ns1:getControlNextOpenDayResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="closeSiteControl">
+      <wsdl:input name="closeSiteControl" message="ns1:closeSiteControl" />
+      <wsdl:output name="closeSiteControlResponse" message="ns1:closeSiteControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+    <wsdl:operation name="findAllSiteControl">
+      <wsdl:input name="findAllSiteControl" message="ns1:findAllSiteControl" />
+      <wsdl:output name="findAllSiteControlResponse" message="ns1:findAllSiteControlResponse" />
+      <wsdl:fault name="FlexpsException" message="ns1:FlexpsException" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,16 @@
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\FlexImage.Core.dll
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\FlexImage.Core.pdb
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\Telerik.WinControls.dll
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\Telerik.WinControls.UI.dll
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\TelerikCommon.dll
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\Telerik.WinControls.xml
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\Telerik.WinControls.UI.xml
+C:\CSHARP\INMET\FlexImage.Core\bin\x86\Debug\TelerikCommon.xml
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.ConfirmCalendar.resources
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.StandardForm.resources
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.ToolbarStandard.resources
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.Properties.Resources.resources
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.csproj.GenerateResource.Cache
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.dll
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.pdb
+C:\CSHARP\INMET\FlexImage.Core\obj\x86\Debug\FlexImage.Core.csprojResolveAssemblyReference.cache
