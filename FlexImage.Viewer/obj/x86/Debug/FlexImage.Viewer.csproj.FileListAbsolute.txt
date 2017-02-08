@@ -28,3 +28,10 @@ C:\CSHARP\INMET\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.Viewer.resources
 C:\CSHARP\INMET\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.csproj.GenerateResource.Cache
 C:\CSHARP\INMET\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.dll
 C:\CSHARP\INMET\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.pdb
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.csprojResolveAssemblyReference.cache
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.SimpleViewer.resources
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.Resources.resources
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.Viewer.resources
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.csproj.GenerateResource.Cache
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.dll
+C:\projects\inmet\FlexImage.Viewer\obj\x86\Debug\FlexImage.Viewer.pdb

@@ -62,3 +62,7 @@ C:\projects\inmet\Robot INMET\obj\x86\Debug\Interop.FREngine.dll
 C:\projects\inmet\Robot INMET\obj\x86\Debug\Robot INMET.csproj.ResolveComReference.cache
 C:\projects\inmet\Robot INMET\obj\x86\Debug\INMET.exe
 C:\projects\inmet\Robot INMET\obj\x86\Debug\INMET.pdb
+C:\projects\inmet\Robot INMET\obj\x86\Debug\Robot INMET.csprojResolveAssemblyReference.cache
+C:\projects\inmet\Robot INMET\obj\x86\Debug\INMET.Robot_INMET.resources
+C:\projects\inmet\Robot INMET\obj\x86\Debug\INMET.Properties.Resources.resources
+C:\projects\inmet\Robot INMET\obj\x86\Debug\Robot INMET.csproj.GenerateResource.Cache
