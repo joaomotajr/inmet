@@ -1,8 +1,0 @@
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\bin\x86\Debug\FlexImage.WSCaptureNF.dll.config
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\bin\x86\Debug\FlexImage.WSCaptureNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\bin\x86\Debug\FlexImage.WSCaptureNF.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\obj\x86\Debug\FlexImage.WSCaptureNF.csprojResolveAssemblyReference.cache
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\obj\x86\Debug\FlexImage.WebService.Properties.Resources.resources
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\obj\x86\Debug\FlexImage.WSCaptureNF.csproj.GenerateResource.Cache
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\obj\x86\Debug\FlexImage.WSCaptureNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCaptureNF\obj\x86\Debug\FlexImage.WSCaptureNF.pdb

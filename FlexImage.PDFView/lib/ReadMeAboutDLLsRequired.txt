@@ -1,1 +1,0 @@
-Please acquire GhostScript 8.64 or higher and place gsdll32.dll in this directory.

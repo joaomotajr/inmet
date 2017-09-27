@@ -3,4 +3,23 @@ Robot INMET/.vs/ROBOT/v14/.suo
 *.cache
 Robot INMET/.vs/ROBOT/v14/.suo
 *.dll
+*.pdb
 *.cache
+/bin
+/obj
+FlexImage\.Binarize/bin/
+FlexImage\.Binarize/bin/*
+
+FlexImage\.Binarize/obj/x86/Debug/
+
+FlexImage\.Core/bin/x86/Debug/
+
+FlexImage\.WebService/FlexImage\.WSBasicTable/bin/x86/Debug/
+
+*.CopyComplete
+
+*.config
+
+*.txt
+
+Robot INMET/\.vs/ROBOT/v15/sqlite3/

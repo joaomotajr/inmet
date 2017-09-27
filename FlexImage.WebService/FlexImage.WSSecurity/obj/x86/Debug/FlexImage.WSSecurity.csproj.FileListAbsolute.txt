@@ -1,6 +1,0 @@
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSSecurity\bin\x86\Debug\FlexImage.WSSecurity.dll.config
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSSecurity\bin\x86\Debug\FlexImage.WSSecurity.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSSecurity\bin\x86\Debug\FlexImage.WSSecurity.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSSecurity\obj\x86\Debug\FlexImage.WSSecurity.csprojResolveAssemblyReference.cache
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSSecurity\obj\x86\Debug\FlexImage.WSSecurity.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSSecurity\obj\x86\Debug\FlexImage.WSSecurity.pdb

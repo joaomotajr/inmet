@@ -1,7 +1,0 @@
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\bin\x86\Debug\FlexImage.WSQueueNF.dll.config
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\bin\x86\Debug\FlexImage.WSQueueNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\bin\x86\Debug\FlexImage.WSQueueNF.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\obj\x86\Debug\FlexImage.WebService.Properties.Resources.resources
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\obj\x86\Debug\FlexImage.WSQueueNF.csproj.GenerateResource.Cache
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\obj\x86\Debug\FlexImage.WSQueueNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSQueueNF\obj\x86\Debug\FlexImage.WSQueueNF.pdb

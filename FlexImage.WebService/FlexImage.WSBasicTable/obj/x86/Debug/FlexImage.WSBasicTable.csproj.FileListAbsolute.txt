@@ -1,6 +1,0 @@
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSBasicTable\bin\x86\Debug\FlexImage.WSBasicTable.dll.config
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSBasicTable\bin\x86\Debug\FlexImage.WSBasicTable.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSBasicTable\bin\x86\Debug\FlexImage.WSBasicTable.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSBasicTable\obj\x86\Debug\FlexImage.WSBasicTable.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSBasicTable\obj\x86\Debug\FlexImage.WSBasicTable.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSBasicTable\obj\x86\Debug\FlexImage.WSBasicTable.csprojResolveAssemblyReference.cache

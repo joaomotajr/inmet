@@ -1,7 +1,0 @@
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\bin\x86\Debug\FlexImage.CancelNF.dll.config
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\bin\x86\Debug\FlexImage.CancelNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\bin\x86\Debug\FlexImage.CancelNF.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\obj\x86\Debug\FlexImage.WebService.Properties.Resources.resources
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\obj\x86\Debug\FlexImage.WSCancelNF.csproj.GenerateResource.Cache
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\obj\x86\Debug\FlexImage.CancelNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSCancelNF\obj\x86\Debug\FlexImage.CancelNF.pdb

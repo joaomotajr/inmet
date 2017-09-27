@@ -1,7 +1,0 @@
-C:\CSHARP\INMET\FlexImage.SingleInstance\bin\x86\Debug\FlexImage.SingleInstance.dll
-C:\CSHARP\INMET\FlexImage.SingleInstance\bin\x86\Debug\FlexImage.SingleInstance.pdb
-C:\CSHARP\INMET\FlexImage.SingleInstance\obj\x86\Debug\FlexImage.SingleInstance.csprojResolveAssemblyReference.cache
-C:\CSHARP\INMET\FlexImage.SingleInstance\obj\x86\Debug\FlexImage.SingleInstance.Properties.Resources.resources
-C:\CSHARP\INMET\FlexImage.SingleInstance\obj\x86\Debug\FlexImage.SingleInstance.csproj.GenerateResource.Cache
-C:\CSHARP\INMET\FlexImage.SingleInstance\obj\x86\Debug\FlexImage.SingleInstance.dll
-C:\CSHARP\INMET\FlexImage.SingleInstance\obj\x86\Debug\FlexImage.SingleInstance.pdb

@@ -1,8 +1,0 @@
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\bin\x86\Debug\FlexImage.WSProcessingNF.dll.config
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\bin\x86\Debug\FlexImage.WSProcessingNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\bin\x86\Debug\FlexImage.WSProcessingNF.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\obj\x86\Debug\FlexImage.WebService.Properties.Resources.resources
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\obj\x86\Debug\FlexImage.WSProcessingNF.csproj.GenerateResource.Cache
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\obj\x86\Debug\FlexImage.WSProcessingNF.dll
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\obj\x86\Debug\FlexImage.WSProcessingNF.pdb
-C:\CSHARP\INMET\FlexImage.WebService\FlexImage.WSProcessingNF\obj\x86\Debug\FlexImage.WSProcessingNF.csprojResolveAssemblyReference.cache
